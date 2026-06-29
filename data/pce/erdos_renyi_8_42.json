@@ -1,0 +1,109 @@
+{
+  "k": 2,
+  "num_physical_qubits": 2,
+  "num_variables": 8,
+  "compression_ratio": 4.0,
+  "strategy": "k2_paired_pauli",
+  "pauli_strings": {
+    "0": "YZ",
+    "1": "YX",
+    "2": "YY",
+    "3": "ZY",
+    "4": "XZ",
+    "5": "XX",
+    "6": "XY",
+    "7": "ZZ"
+  },
+  "variable_to_pauli_map": {
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "YZ"
+    },
+    "5": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "X"
+      ],
+      "pauli_string": "YX"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YY"
+    },
+    "6": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Y"
+      ],
+      "pauli_string": "ZY"
+    },
+    "3": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "XZ"
+    },
+    "4": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XX"
+    },
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XY"
+    },
+    "7": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZ"
+    }
+  },
+  "graph_id": "erdos_renyi_8_42",
+  "family": "erdos_renyi"
+}

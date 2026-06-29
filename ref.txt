@@ -1,0 +1,420 @@
+Here is the full updated README‑style roadmap for Direction 1, now including concrete model names and Hugging Face links in the LLM selection section. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+***
+
+# README: Roadmap for LLM‑Guided Pauli‑Correlation Encoding (Direction 1)
+
+## 0. High‑Level Goal
+
+Implement an LLM‑guided pipeline that:
+
+1. Learns and summarizes **interpretable structural patterns** in the QAOA / Pauli‑correlation design space (graph families, correlation order \(k\), Pauli assignments, trainability and approximation quality).  
+2. Uses these patterns to **select \(k\)**, allocate Pauli strings, and **shape the QAOA ansatz** for qubit‑efficient optimization on NISQ hardware via Pauli‑correlation encoding. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+3. Produces both a practical qubit‑efficient solver and **scientific design rules** (which graphs admit low‑order correlations, when higher‑order is needed, which Pauli layouts avoid barren plateaus, etc.).
+
+***
+
+## 1. LLM Selection for This Project
+
+We assume access to:
+
+- **NVIDIA T4 16 GB** – suitable for 7–9B models, typically FP16 or Q4 quantization, for utility tasks and fast iteration. [linkedin](https://www.linkedin.com/posts/shamsheransari_ai-genai-gpu-activity-7404148614132015107-sJnk)
+- **NVIDIA L4 24 GB** – suitable for ~20–32B models at Q4, or 8–14B FP16, for the main reasoning backend. [localllm](https://localllm.in/blog/best-local-llms-24gb-vram)
+
+### Primary reasoning model on L4 (24 GB)
+
+This model will be used in:
+
+- `src/llm/client.py`  
+- `src/pipeline/llm_guided_pce.py`  
+- Phases 2–3–4 for Pauli‑correlation encoding choices and pattern discovery. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+**Default (recommended)**
+
+- **Model name:** `Qwen/Qwen2.5-32B-Instruct`  
+- **Hugging Face:** https://huggingface.co/Qwen/Qwen2.5-32B-Instruct [docs.basebox](https://docs.basebox.ai/on-premise/llm-recommendations/)
+- **Role:** Main “quantum design” LLM that:  
+  - Consumes graph features and structure.  
+  - Chooses \(k\), proposes Pauli string layouts, and annotates regimes (`low_order_sufficient`, `needs_higher_order`, `gradient_risk`).  
+  - Produces structured JSON used to build QAOA/PCE circuits.
+
+**Alternative**
+
+- **Model name:** `google/gemma-2-27b-it`  
+- **Hugging Face:** https://huggingface.co/google/gemma-2-27b-it [docs.basebox](https://docs.basebox.ai/on-premise/llm-recommendations/)
+- **Role:** Same as above, with stronger coding capability (Qiskit/PennyLane snippets, documentation).
+
+Both models can run on the L4 with Q4_K_M or similar quantization, leaving enough VRAM for long contexts and KV cache. [intuitionlabs](https://intuitionlabs.ai/articles/local-llm-deployment-24gb-gpu-optimization)
+
+### Utility / dev model on T4 (16 GB)
+
+This model will be used for:
+
+- Fast iteration on prompts and JSON schemas.  
+- Documentation and code stubs.  
+- Small‑scale experiment and ablation runs. [localllm](https://localllm.in/blog/best-local-llms-16gb-vram)
+
+**Default**
+
+- **Model name:** `meta-llama/Llama-3.1-8B-Instruct`  
+- **Hugging Face:** https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct [docs.basebox](https://docs.basebox.ai/on-premise/llm-recommendations/)
+- **Role:** General‑purpose instruct model for:  
+  - Unit‑testing `src/llm/schema.py` and `src/llm/client.py`.  
+  - Generating docs (`docs/api_reference.md`, `docs/roadmap_timeline.md`).  
+  - Running small experiment suites while debugging orchestration.
+
+**Alternative**
+
+- **Model name:** `Qwen/Qwen2.5-7B-Instruct`  
+- **Hugging Face:** https://huggingface.co/Qwen/Qwen2.5-7B-Instruct [docs.basebox](https://docs.basebox.ai/on-premise/llm-recommendations/)
+- **Role:** Smaller sibling in the Qwen2.5 family; useful if you want prompt/style consistency between utility and primary models.
+
+### Config example
+
+In `src/config.py`:
+
+```python
+LLM_CONFIG = {
+    "primary_model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "primary_model_hf_url": "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct",
+    "utility_model_name": "meta-llama/Llama-3.1-8B-Instruct",
+    "utility_model_hf_url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+    "quantization": "q4_k_m",  # example; adjust per backend
+}
+```
+
+***
+
+## Phase 1 – Baseline Infrastructure & PCE/QAOA Reference
+
+### Objective
+
+Establish reference implementations of uncompressed QAOA and fixed Pauli‑correlation encoding, plus the core simulation and logging infrastructure. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+### 1.1 Repository & Core Structure
+
+**Files**
+
+- `README.md`  
+  - Content: High‑level description of Direction 1, phase overview, quickstart instructions.  
+  - Inputs: None.  
+  - Deliverable: Human‑readable project overview; updated at the end of each phase.
+
+- `requirements.txt`  
+  - Content: Python dependencies (Qiskit or PennyLane, NumPy, SciPy, Pandas, networkx, LLM SDK/client libraries).  
+  - Inputs: None.  
+  - Deliverable: Reproducible environment spec.
+
+- `src/config.py`  
+  - Content: Central configuration (paths, backend choice, default graph families, QAOA depth \(p\), LLM config as above).  
+  - Inputs: None (read by other modules).  
+  - Deliverable: Single source of truth for runtime configuration.
+
+### 1.2 Graph Generation & Ingestion
+
+**Files**
+
+- `src/graphs/generate_graphs.py`  
+  - Content: Functions to generate canonical graph families: Erdős–Rényi, d‑regular, community graphs, bipartite graphs, etc.  
+  - Inputs: CLI/JSON parameters (nodes, edge probability, degree, communities).  
+  - Deliverable: Saved graph instances `data/graphs/*.json` or `*.pkl` with metadata.
+
+- `src/graphs/features.py`  
+  - Content: Graph feature extraction: adjacency matrix, degree distribution, clustering coefficient, modularity, density, connected components.  
+  - Inputs: Graph object (networkx), config flags.  
+  - Deliverable: Feature dictionaries per graph, stored as `data/features/{graph_id}.json`.
+
+### 1.3 Baseline QAOA (Uncompressed)
+
+**Files**
+
+- `src/qaoa/baseline_qaoa.py`  
+  - Content:  
+    - Uncompressed QAOA circuits for MaxCut and other canonical problems, with 1:1 variable‑qubit mapping. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+    - Multiple depths \(p\) and classical optimizers.  
+  - Inputs: Graph instance, QAOA hyperparameters.  
+  - Deliverable: Approximation ratio, energy, gradients, and measurement data in `data/experiments/baseline_qaoa/{graph_id}.json`.
+
+### 1.4 Baseline Pauli‑Correlation Encoding (Hand‑Crafted)
+
+**Files**
+
+- `src/pce/manual_pce.py`  
+  - Content:  
+    - Reference implementation of Pauli‑correlation encoding with fixed, hand‑designed choices of \(k\) (e.g. low‑order \(k = 2\)) and Pauli patterns. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+  - Inputs: Graph instance, chosen \(k\), heuristic mapping strategy.  
+  - Deliverable: Pauli encoding spec `data/pce/manual/{graph_id}.json` with `k`, `pauli_strings`, `variable_to_pauli_map`.
+
+- `src/qaoa/pce_qaoa_baseline.py`  
+  - Content: QAOA circuits built using manual PCE mapping.  
+  - Inputs: Graph instance, encoding spec.  
+  - Deliverable: Performance metrics in `data/experiments/pce_baseline/{graph_id}.json`.
+
+### 1.5 Simulation & Logging Infrastructure
+
+**Files**
+
+- `src/infra/simulator.py`  
+  - Content: Wrapper over Qiskit/PennyLane backends for uniform job submission.  
+  - Inputs: Circuit constructor, backend config.  
+  - Deliverable: Standardized simulation outputs.
+
+- `src/infra/logger.py`  
+  - Content: Logging utilities for experiment metadata: graph features, encoding type, QAOA parameters, metrics.  
+  - Inputs: Metadata dictionaries.  
+  - Deliverable: Structured JSON logs under `data/experiments/…`.
+
+**Phase 1 Deliverables**
+
+- Stable baseline QAOA and manual PCE implementations.  
+- Corpus of graphs + features + baseline metrics. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+***
+
+## Phase 2 – LLM Interface & Orchestration Layer
+
+### Objective
+
+Build the end‑to‑end pipeline where graphs and features are fed into the LLM, and the LLM returns \(k\), Pauli assignments, and annotations about structural regimes. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+### 2.1 LLM Input/Output Schema
+
+**Files**
+
+- `src/llm/schema.py`  
+  - Content:  
+    - Input schema: graph type, size, adjacency (or compressed), feature vector (density, modularity, degree histogram, etc.).  
+    - Output schema:  
+      - `k` (compression order).  
+      - `pauli_strings` per variable/qubit.  
+      - Tags: `low_order_sufficient`, `needs_higher_order`, `gradient_risk`, `approx_ratio_expectation_band`.  
+  - Inputs: Graph features.  
+  - Deliverable: Dataclasses/JSON spec used across the project.
+
+### 2.2 LLM Client & Prompting
+
+**Files**
+
+- `src/llm/client.py`  
+  - Content:  
+    - Wrapper around the chosen LLM (primary on L4, utility on T4).  
+    - Supports model selection via `LLM_CONFIG` and JSON‑only output constraints.  
+  - Inputs: Prompt text, structured payload.  
+  - Deliverable: Parsed JSON output matching `schema.py`.
+
+- `src/llm/prompts/qaoa_pce_prompt.txt`  
+  - Content:  
+    - System + user prompts describing PCE and QAOA context.  
+    - Instructions to focus on interpretable patterns and design recommendations.  
+  - Inputs: None.  
+  - Deliverable: Versioned prompt file.
+
+### 2.3 Orchestration Pipeline
+
+**Files**
+
+- `src/pipeline/llm_guided_pce.py`  
+  - Content:  
+    - Flow:  
+      1. Load graph + features.  
+      2. Build LLM input.  
+      3. Call primary LLM (`Qwen/Qwen2.5-32B-Instruct` by default).  
+      4. Construct QAOA/PCE circuit from returned \(k\) and Pauli mapping.  
+      5. Run simulation and log metrics.  
+  - Inputs: Graph IDs, LLM config.  
+  - Deliverable: Experiment records `data/experiments/llm_pce/{graph_id}.json` containing LLM outputs and performance metrics.
+
+### 2.4 Versioning & Reproducibility
+
+**Files**
+
+- `src/infra/experiment_tracker.py`  
+  - Content: Versioning of prompts, model names, and encoding strategies.  
+  - Inputs: Experiment configs.  
+  - Deliverable: `data/experiments/index.csv` summarizing runs and versions.
+
+**Phase 2 Deliverables**
+
+- Working LLM‑guided pipeline generating \(k\), Pauli assignments, and structural annotations per graph. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+- Logs for direct comparison with baselines.
+
+***
+
+## Phase 3 – Pattern Discovery & Analysis
+
+### Objective
+
+Systematically explore the design space and mine **interpretable structural patterns** (graph structure vs \(k\), Pauli layouts vs trainability/approximation). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+### 3.1 Experiment Suites
+
+**Files**
+
+- `src/experiments/suites/maxcut_suites.py`  
+  - Content:  
+    - Defines grids over graph families and sizes.  
+    - For each graph: run baseline QAOA, manual PCE, LLM‑guided PCE (using primary LLM).  
+  - Inputs: Suite config.  
+  - Deliverable: Logs under `data/experiments/*`.
+
+### 3.2 Data Aggregation
+
+**Files**
+
+- `src/analysis/aggregate_results.py`  
+  - Content:  
+    - Merges logs into one dataset with features, encoding type, \(k\), Pauli stats, approximation ratios, gradient metrics.  
+  - Inputs: Experiment JSONs.  
+  - Deliverable: `data/analysis/qaoa_pce_results.parquet`.
+
+### 3.3 Pattern Mining & Visualization
+
+**Files**
+
+- `src/analysis/patterns.py`  
+  - Content:  
+    - Statistical & ML analysis to find patterns:  
+      - Feature regime → preferred \(k\).  
+      - Feature regime → Pauli layout that avoids vanishing gradients.  
+      - Pauli distributions → higher gradient magnitudes / better approximation.  
+  - Inputs: Aggregated dataset.  
+  - Deliverable: `data/analysis/patterns.json`.
+
+- `src/analysis/plots.py`  
+  - Content:  
+    - Plots (heatmaps, scatter, etc.) linking features, \(k\), metrics.  
+  - Inputs: Results dataset.  
+  - Deliverable: Figures in `output/plots/`.
+
+### 3.4 Pattern Documentation
+
+**Files**
+
+- `docs/pattern_catalog.md`  
+  - Content:  
+    - Human‑readable catalog of patterns, e.g.:  
+      - Pattern A: Sparse graphs → low‑order \(k = 2\) with X/Z dominance.  
+      - Pattern B: Dense modular graphs → \(k \ge 3\) mixed X/Y/Z.  
+      - Pattern C: Z on high‑degree nodes reduces barren plateaus.  
+  - Inputs: `patterns.json`, plots.  
+  - Deliverable: Scientific narrative for QAOA/PCE design space.
+
+**Phase 3 Deliverables**
+
+- Dataset of experiments with LLM outputs and metrics.  
+- Interpretable pattern catalog. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+***
+
+## Phase 4 – Formalized Design Rules & Rule‑Based Heuristics
+
+### Objective
+
+Turn patterns into explicit design rules and implement a rule‑based encoder that works with or without the LLM. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+### 4.1 Rule Engine
+
+**Files**
+
+- `src/rules/encoder_rules.py`  
+  - Content:  
+    - Encodes heuristics such as:  
+      - If `density < d0` and `modularity < m0` → `k = 2`, Pauli pattern A.  
+      - If `modularity > m1` → `k = 3`, Pauli pattern B.  
+      - If `gradient_risk` tags → avoid pattern C.  
+  - Inputs: Graph features.  
+  - Deliverable: Deterministic encoding recommendations.
+
+### 4.2 Rule‑Based QAOA Pipeline
+
+**Files**
+
+- `src/pipeline/rule_based_pce.py`  
+  - Content: QAOA/PCE pipeline using `encoder_rules.py` instead of LLM.  
+  - Inputs: Graph instances.  
+  - Deliverable: `data/experiments/rule_pce/{graph_id}.json`.
+
+### 4.3 Cross‑Validation: LLM vs Rule‑Based vs Baselines
+
+**Files**
+
+- `src/analysis/compare_methods.py`  
+  - Content:  
+    - Compares approximation ratios, compression, gradient behavior across:  
+      - Uncompressed QAOA, Manual PCE, LLM‑guided PCE, Rule‑based PCE.  
+  - Inputs: Experiment logs.  
+  - Deliverable: `data/analysis/method_comparison.json` + plots.
+
+### 4.4 Scientific Write‑up
+
+**Files**
+
+- `docs/paper_outline.md`  
+  - Content: Paper outline with background, method, experiments, discovered patterns, rules, and generalization.  
+  - Inputs: Pattern catalog, comparison analysis.  
+  - Deliverable: Draft structure for publication.
+
+**Phase 4 Deliverables**
+
+- Explicit, interpretable design rules and rule‑based encoder.  
+- Validated comparisons showing the scientific contribution beyond “LLM automation”. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+***
+
+## Phase 5 – Generalization & NISQ‑Oriented Deployment
+
+### Objective
+
+Extend the framework to other combinatorial tasks and prepare NISQ‑friendly implementations. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50190393/829df325-f99c-4cc5-9592-0c8fb60aec48/Formal_Quantum_Research_Proposal-1.pdf?AWSAccessKeyId=ASIA2F3EMEYEWGG42VM7&Signature=%2BiviikdL6bzjaBIT98aIFRvDarg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIE1SNVq%2Fowc5ha7fSy4PzRShYaVs2ABuLAI5AxSJC0OLAiEApWyj%2FsuXzAnJhkauyL4uBN%2BUF%2FJAljgnurEoAOqH6egq%2FAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDJzWuXpaiINOcelwgSrQBJyx%2FMDpTlG0%2FPV2%2BGosb4T1kYdAsOmxaZfOnzmpxSUYSXlicQF6a0sg7FAuiqO3PxlvisJ5i0H0mMh%2Faib0KCp2xG2EjofE0iMRCO6RtK5qGX69HHWufWRntNK91ZPKPsEwzfFmH8sW5y1gOa97l83Pw52Es0f8aMnAcBA%2F794ztYNRj4wM2Wh4H066U0EHk%2BTKukYOz0%2Bqa3sGr6feig5BZWLX6Ke2nFkUqRxPUcYYM%2FFG64YufK0LOhRD8VGONfhpXdTAYJ1UzsGpltvaqi8ubjA1g5u%2BFJUYUl94PtmLDbeEhUmZmlM1DDSRVT0PTIGQ037WhiPVUPcMB9a6nEKfDRiTmPJhtdU6iByDJrwJ4R7NgM%2Bi9KE4d3rleO8NkOOGozSKjR4ej0jfJYERKI0%2BSN0Bo8GmLCkaDzYKOpftZE%2FLVtGy%2F8Mj6je%2Bgn30yfJzOuxikXDCh31Bv0gHwfq0iuQ6cC7G1I3mBqtfWDiajEaWqtoQAIiMJr9BOCjZAjcqEcE6Jd6w%2B6FapC6Rr4S0W3VNAprzvZK1OspbXw67U5DK1FHS%2FXiK1xvqlM0ebCpJ%2FqQ%2B%2FSXLFOebBgRTrOGc%2FvDjXknDGsijtedVaU9yzIZUQz%2BdqDfCrwuVEZC5DQNKBiDKs9PEmwZzfpnNfppmaiArT2W1aVsnfyHFolPZcavEj886O9AoX55%2FMmMiLLsoWpk6ndpBIRwOrWYakfh13sJEgnTmEphFFeHV4AiSX24lUF90SPdD%2BHYUum8fTwXV9Ixdd3ldVhwnkaKNcRcwi7qK0gY6mAF%2B8l3myyWR%2Bnwo9xbHpjtSFlk%2FWHNiYgjpFw4SrY2%2F7Xl56fGIXicW06mRuCvY0i%2FvQq5gKiMKhXlrlAj%2BI7O7wb1nt7AWiQCQqroq289f%2B3EZSHW%2BPqLS4SCpn77ioq4L82xuiK9u%2BJ4udpOrD7RwhS6qEiMnztrnzihlWFNxFdfrSnk9G1byI4xWHOafT%2Bi8Ynsl655pKA%3D%3D&Expires=1782754014)
+
+### 5.1 New Problem Families
+
+**Files**
+
+- `src/problems/labs.py`  
+  - Content: LABS or similar PCE‑relevant problem implementations.  
+  - Inputs: Problem parameters.  
+  - Deliverable: New domains using existing pipelines.
+
+- `src/problems/budget_constrained.py`  
+  - Content: Budget‑constrained optimization problems.  
+  - Inputs: Budget/constraint parameters.  
+  - Deliverable: Extended evaluation domain.
+
+### 5.2 NISQ‑Hardware‑Aware Tuning
+
+**Files**
+
+- `src/infra/hardware_mapping.py`  
+  - Content: Mapping abstract qubits to device topology and noise profiles.  
+  - Inputs: Device config.  
+  - Deliverable: Hardware‑aware compiled circuits.
+
+- `src/experiments/nisq_runs.py`  
+  - Content: Scripts for NISQ device / noisy simulator runs.  
+  - Inputs: Selected experiments, hardware configs.  
+  - Deliverable: NISQ‑level performance logs.
+
+### 5.3 Final Documentation & Packaging
+
+**Files**
+
+- `README.md` (final update)  
+  - Content:  
+    - Full roadmap summary.  
+    - Run instructions for all pipelines (Baseline QAOA, Manual PCE, LLM‑guided PCE, Rule‑based PCE).  
+    - LLM selection section (models + Hugging Face links).  
+  - Inputs: Outputs from all phases.  
+  - Deliverable: Client‑ready and collaborator‑ready documentation.
+
+- `docs/api_reference.md`  
+  - Content: Function‑level API documentation.  
+  - Inputs: Source code.  
+  - Deliverable: Developer documentation.
+
+**Phase 5 Deliverables**
+
+- Generalization to additional problems.  
+- NISQ‑oriented runs and final documentation, including model configuration and links.
+
+If you want, I can now generate a separate `docs/roadmap_timeline.md` with approximate **time estimates per phase and sub‑phase** so you can share a concrete schedule with the client.
