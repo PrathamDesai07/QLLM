@@ -29,7 +29,7 @@ from transformers import (
     BitsAndBytesConfig,
 )
 
-from config import LLM_CONFIG
+from config import LLM_CONFIG, HF_TOKEN
 from llm.schema import LLMOutput, PauliAssignment, build_input_text, LLMGraphInput
 
 logger = logging.getLogger(__name__)
@@ -51,6 +51,17 @@ def _load_model(
 
     logger.info("Loading model %s …", model_name)
 
+    token_kwargs = {"trust_remote_code": True}
+    model_kwargs = {
+        "device_map": "auto",
+        "torch_dtype": torch.bfloat16 if torch.cuda.is_available() else torch.float32,
+        "trust_remote_code": True,
+    }
+
+    if HF_TOKEN:
+        token_kwargs["token"] = HF_TOKEN
+        model_kwargs["token"] = HF_TOKEN
+
     quantization_config = None
     if use_quantization and torch.cuda.is_available():
         quantization_config = BitsAndBytesConfig(
@@ -59,8 +70,9 @@ def _load_model(
             bnb_4bit_compute_dtype=torch.bfloat16,
             bnb_4bit_use_double_quant=True,
         )
+    model_kwargs["quantization_config"] = quantization_config
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained(model_name, **token_kwargs)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     # Always pad from left for decoder-only generation
@@ -68,10 +80,7 @@ def _load_model(
 
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        quantization_config=quantization_config,
-        device_map="auto",
-        torch_dtype=torch.bfloat16 if torch.cuda.is_available() else torch.float32,
-        trust_remote_code=True,
+        **model_kwargs,
     )
 
     _model_cache[model_name] = (model, tokenizer)

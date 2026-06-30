@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from config import DATA_DIR
+from config import DATA_DIR, LLM_CONFIG
 
 
 INDEX_PATH = DATA_DIR / "experiments" / "index.csv"
@@ -122,7 +122,7 @@ def run_metadata(
         "git_commit": _git_hash(),
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "model_name": model_name,
-        "quantization": None,
+        "quantization": LLM_CONFIG.get("quantization", None),
         "prompt_file": prompt_file or "none",
     }
     meta["prompt_hashes"] = _prompt_hashes()

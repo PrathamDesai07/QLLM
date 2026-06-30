@@ -46,6 +46,24 @@ PCE = {
     "max_k": 4,                        # maximum order to consider
 }
 
+# ── HuggingFace Token ──────────────────────────────────────────────────
+HF_TOKEN_PATH = PROJECT_ROOT / "hf.txt"
+
+def _load_hf_token() -> str | None:
+    """Read the HuggingFace token from hf.txt, or return None."""
+    try:
+        if HF_TOKEN_PATH.exists():
+            token = HF_TOKEN_PATH.read_text().strip()
+            # Support both "hf_token: xxx" and bare token formats
+            if ":" in token and not token.startswith("hf_"):
+                token = token.split(":", 1)[1].strip()
+            return token if token else None
+    except Exception:
+        pass
+    return None
+
+HF_TOKEN = _load_hf_token()
+
 # ── LLM Configuration ──────────────────────────────────────────────────
 LLM_CONFIG = {
     "primary_model_name": "Qwen/Qwen2.5-32B-Instruct",

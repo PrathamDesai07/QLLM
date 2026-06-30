@@ -10,10 +10,13 @@ pandas>=2.0.0
 # Graph analysis
 networkx>=3.0
 
-# LLM client
-openai>=1.0.0
+# LLM inference (transformers + HF ecosystem)
+transformers>=4.44.0
+torch>=2.3.0
+accelerate>=0.30.0
+bitsandbytes>=0.43.0
+sentencepiece>=0.2.0
 huggingface-hub>=0.20.0
-PyYAML>=6.0
 
 # Utilities
 tqdm>=4.65.0
