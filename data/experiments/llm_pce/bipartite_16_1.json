@@ -1,0 +1,82 @@
+{
+  "graph_id": "bipartite_16_1",
+  "family": "bipartite",
+  "num_nodes": 16,
+  "num_edges": 40,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": 0.7055586693196438,
+  "optimal_params": [
+    4.130809586088429,
+    1.9560639363388534
+  ],
+  "approximation_ratio": 0.491181,
+  "gradient_norm_at_opt": 0.002786,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T06:42:02.319611+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 16,
+    "num_edges": 40,
+    "density": 0.333333,
+    "degree_min": 2,
+    "degree_max": 8,
+    "degree_mean": 5.0,
+    "degree_std": 1.6583,
+    "degree_histogram": [
+      1,
+      2,
+      0,
+      3,
+      0,
+      5,
+      2,
+      0,
+      1,
+      2
+    ],
+    "degree_bin_edges": [
+      2.0,
+      2.6,
+      3.2,
+      3.8,
+      4.4,
+      5.0,
+      5.6,
+      6.2,
+      6.8,
+      7.3999999999999995,
+      8.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 1,
+    "largest_component_size": 16,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.506965,
+    "graph_id": "bipartite_16_1",
+    "family": "bipartite",
+    "params": {
+      "seed": 1
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 8,
+    "num_variables": 16,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 19.64722066534018,
+    "optimal_maxcut_exact": 40.0,
+    "nfeval": 38,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is bipartite with moderate density and degree variability, making k=2 suitable for efficient qubit usage while avoiding barren plateaus.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

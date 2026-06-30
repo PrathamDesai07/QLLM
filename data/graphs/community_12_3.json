@@ -1,0 +1,192 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "partition": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "name": "stochastic_block_model"
+  },
+  "nodes": [
+    {
+      "block": 0,
+      "id": 0
+    },
+    {
+      "block": 0,
+      "id": 1
+    },
+    {
+      "block": 0,
+      "id": 2
+    },
+    {
+      "block": 0,
+      "id": 3
+    },
+    {
+      "block": 0,
+      "id": 4
+    },
+    {
+      "block": 0,
+      "id": 5
+    },
+    {
+      "block": 1,
+      "id": 6
+    },
+    {
+      "block": 1,
+      "id": 7
+    },
+    {
+      "block": 1,
+      "id": 8
+    },
+    {
+      "block": 1,
+      "id": 9
+    },
+    {
+      "block": 1,
+      "id": 10
+    },
+    {
+      "block": 1,
+      "id": 11
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1
+    },
+    {
+      "source": 0,
+      "target": 2
+    },
+    {
+      "source": 0,
+      "target": 3
+    },
+    {
+      "source": 0,
+      "target": 4
+    },
+    {
+      "source": 0,
+      "target": 5
+    },
+    {
+      "source": 1,
+      "target": 2
+    },
+    {
+      "source": 1,
+      "target": 3
+    },
+    {
+      "source": 1,
+      "target": 5
+    },
+    {
+      "source": 1,
+      "target": 8
+    },
+    {
+      "source": 1,
+      "target": 11
+    },
+    {
+      "source": 2,
+      "target": 3
+    },
+    {
+      "source": 2,
+      "target": 5
+    },
+    {
+      "source": 3,
+      "target": 5
+    },
+    {
+      "source": 4,
+      "target": 5
+    },
+    {
+      "source": 4,
+      "target": 6
+    },
+    {
+      "source": 5,
+      "target": 6
+    },
+    {
+      "source": 6,
+      "target": 7
+    },
+    {
+      "source": 6,
+      "target": 8
+    },
+    {
+      "source": 6,
+      "target": 9
+    },
+    {
+      "source": 6,
+      "target": 10
+    },
+    {
+      "source": 6,
+      "target": 11
+    },
+    {
+      "source": 7,
+      "target": 9
+    },
+    {
+      "source": 7,
+      "target": 10
+    },
+    {
+      "source": 8,
+      "target": 9
+    },
+    {
+      "source": 8,
+      "target": 11
+    },
+    {
+      "source": 9,
+      "target": 11
+    }
+  ],
+  "metadata": {
+    "graph_id": "community_12_3",
+    "family": "community",
+    "params": {
+      "seed": 3
+    },
+    "num_nodes": 12,
+    "num_edges": 26,
+    "density": 0.3939393939393939,
+    "created_at": "2026-06-30T03:34:08.431636+00:00"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "graph_id": "erdos_renyi_20_0",
+  "family": "erdos_renyi",
+  "num_nodes": 20,
+  "num_edges": 124,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": 5.00927405329482,
+  "optimal_params": [
+    7.199355634253971,
+    2.6477956281317794
+  ],
+  "approximation_ratio": 0.753106,
+  "gradient_norm_at_opt": 0.010832,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T09:34:55.739956+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 20,
+    "num_edges": 124,
+    "density": 0.652632,
+    "degree_min": 10,
+    "degree_max": 16,
+    "degree_mean": 12.4,
+    "degree_std": 1.7146,
+    "degree_histogram": [
+      2,
+      6,
+      0,
+      4,
+      0,
+      2,
+      3,
+      0,
+      2,
+      1
+    ],
+    "degree_bin_edges": [
+      10.0,
+      10.6,
+      11.2,
+      11.8,
+      12.4,
+      13.0,
+      13.6,
+      14.2,
+      14.8,
+      15.399999999999999,
+      16.0
+    ],
+    "avg_clustering": 0.628189,
+    "transitivity": 0.629938,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.800193,
+    "graph_id": "erdos_renyi_20_0",
+    "family": "erdos_renyi",
+    "params": {
+      "graph_id": "erdos_renyi_20_4",
+      "family": "erdos_renyi",
+      "params": {
+        "n": 20,
+        "p": null
+      }
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 10,
+    "num_variables": 20,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 59.49536297335259,
+    "optimal_maxcut_exact": 79.0,
+    "nfeval": 44,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is dense with high connectivity and average degree. Using k=2 helps reduce the number of qubits needed while maintaining diversity in Pauli operators. However, there is a risk of encountering barren plateaus due to the complexity.",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

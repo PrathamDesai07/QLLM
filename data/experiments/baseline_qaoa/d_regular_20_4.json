@@ -1,0 +1,29 @@
+{
+  "graph_id": "d_regular_20_4",
+  "family": "d_regular",
+  "num_nodes": 20,
+  "num_edges": 50,
+  "method": "baseline_qaoa",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -2.1298389144270833,
+  "optimal_params": [
+    4.972902495180221,
+    2.921580851588537
+  ],
+  "approximation_ratio": 0.651623,
+  "gradient_norm_at_opt": 0.003052,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T04:55:45.923515+00:00",
+  "duration_seconds": 195.9986,
+  "params": {
+    "seed": 4
+  },
+  "extra": {
+    "optimal_maxcut": 26.06491945721354,
+    "optimal_maxcut_exact": 40.0,
+    "nfeval": 37
+  }
+}

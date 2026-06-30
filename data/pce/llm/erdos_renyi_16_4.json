@@ -1,0 +1,255 @@
+{
+  "k": 2,
+  "num_physical_qubits": 8,
+  "num_variables": 16,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIIIII",
+    "1": "YYIIIIII",
+    "2": "ZZIIIIII",
+    "3": "IXXIIIII",
+    "4": "IYYIIIII",
+    "5": "IZZIIIII",
+    "6": "IIXXIIII",
+    "7": "IIYYIIII",
+    "8": "IIZZIIII",
+    "9": "IIIIXXII",
+    "10": "IIIIXYII",
+    "11": "IIIIXZII",
+    "12": "IIIIYYII",
+    "13": "IIIIYZII",
+    "14": "IIIIZZII",
+    "15": "IIIIIIXX"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIIIII"
+    },
+    "3": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXXIIIII"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYYIIIII"
+    },
+    "5": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZZIIIII"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXIIII"
+    },
+    "7": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYIIII"
+    },
+    "8": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZIIII"
+    },
+    "9": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXXII"
+    },
+    "10": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIIIXYII"
+    },
+    "11": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "IIIIXZII"
+    },
+    "12": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIIIYYII"
+    },
+    "13": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "IIIIYZII"
+    },
+    "14": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIZZII"
+    },
+    "15": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIXX"
+    }
+  },
+  "tags": [
+    "gradient_risk"
+  ],
+  "reasoning": "The graph is dense with high connectivity, suggesting higher-order encoding (k=2) to capture correlations efficiently. However, there's a risk of barren plateaus due to the complexity.",
+  "approx_ratio_band": "0.6-0.7",
+  "graph_id": "erdos_renyi_16_4",
+  "family": "erdos_renyi",
+  "features": {
+    "num_nodes": 16,
+    "num_edges": 78,
+    "density": 0.65,
+    "degree_min": 6,
+    "degree_max": 12,
+    "degree_mean": 9.75,
+    "degree_std": 1.8875,
+    "degree_histogram": [
+      1,
+      1,
+      0,
+      2,
+      0,
+      4,
+      2,
+      0,
+      1,
+      5
+    ],
+    "degree_bin_edges": [
+      6.0,
+      6.6,
+      7.2,
+      7.8,
+      8.4,
+      9.0,
+      9.6,
+      10.2,
+      10.8,
+      11.399999999999999,
+      12.0
+    ],
+    "avg_clustering": 0.669593,
+    "transitivity": 0.662447,
+    "num_components": 1,
+    "largest_component_size": 16,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.689697,
+    "graph_id": "erdos_renyi_16_4",
+    "family": "erdos_renyi",
+    "params": {
+      "seed": 4
+    }
+  }
+}

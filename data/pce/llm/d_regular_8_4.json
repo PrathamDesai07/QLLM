@@ -1,0 +1,159 @@
+{
+  "k": 2,
+  "num_physical_qubits": 4,
+  "num_variables": 8,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXII",
+    "1": "YYII",
+    "2": "ZZII",
+    "3": "IIXX",
+    "4": "IIYY",
+    "5": "IIZZ",
+    "6": "XYII",
+    "7": "YZII"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZII"
+    },
+    "3": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXX"
+    },
+    "4": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYY"
+    },
+    "5": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZ"
+    },
+    "6": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XYII"
+    },
+    "7": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "YZII"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is sparse with low density and small size, making k=2 sufficient for efficient encoding while avoiding barren plateaus.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "d_regular_8_4",
+  "family": "d_regular",
+  "features": {
+    "num_nodes": 8,
+    "num_edges": 8,
+    "density": 0.285714,
+    "degree_min": 2,
+    "degree_max": 2,
+    "degree_mean": 2.0,
+    "degree_std": 0.0,
+    "degree_histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree_bin_edges": [
+      1.5,
+      1.6,
+      1.7,
+      1.8,
+      1.9,
+      2.0,
+      2.1,
+      2.2,
+      2.3,
+      2.4,
+      2.5
+    ],
+    "avg_clustering": 0.375,
+    "transitivity": 0.375,
+    "num_components": 2,
+    "largest_component_size": 5,
+    "component_size_ratio": 0.625,
+    "algebraic_connectivity": 0.0,
+    "graph_id": "d_regular_8_4",
+    "family": "d_regular",
+    "params": {
+      "seed": 4
+    }
+  }
+}

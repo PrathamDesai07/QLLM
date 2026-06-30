@@ -1,0 +1,82 @@
+{
+  "graph_id": "bipartite_20_3",
+  "family": "bipartite",
+  "num_nodes": 20,
+  "num_edges": 63,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": 2.768047917326098,
+  "optimal_params": [
+    5.546724922922203,
+    2.9992766704060685
+  ],
+  "approximation_ratio": 0.478031,
+  "gradient_norm_at_opt": 0.005331,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T07:16:06.005278+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 20,
+    "num_edges": 63,
+    "density": 0.331579,
+    "degree_min": 4,
+    "degree_max": 9,
+    "degree_mean": 6.3,
+    "degree_std": 1.4866,
+    "degree_histogram": [
+      2,
+      0,
+      5,
+      0,
+      5,
+      0,
+      3,
+      0,
+      3,
+      2
+    ],
+    "degree_bin_edges": [
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.581425,
+    "graph_id": "bipartite_20_3",
+    "family": "bipartite",
+    "params": {
+      "seed": 3
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 10,
+    "num_variables": 20,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 30.11597604133695,
+    "optimal_maxcut_exact": 63.0,
+    "nfeval": 42,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is bipartite with moderate density and average degree, making k=2 a suitable choice for efficient compression while avoiding potential barren plateaus.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

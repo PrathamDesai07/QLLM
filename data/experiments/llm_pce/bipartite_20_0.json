@@ -1,0 +1,87 @@
+{
+  "graph_id": "bipartite_20_0",
+  "family": "bipartite",
+  "num_nodes": 20,
+  "num_edges": 70,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": 3.9165482306953256,
+  "optimal_params": [
+    7.061983252045923,
+    2.662404154390362
+  ],
+  "approximation_ratio": 0.472025,
+  "gradient_norm_at_opt": 0.003813,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T07:02:18.335134+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 20,
+    "num_edges": 38,
+    "density": 0.2,
+    "degree_min": 2,
+    "degree_max": 7,
+    "degree_mean": 3.8,
+    "degree_std": 1.3638,
+    "degree_histogram": [
+      3,
+      0,
+      7,
+      0,
+      5,
+      0,
+      2,
+      0,
+      2,
+      1
+    ],
+    "degree_bin_edges": [
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.319703,
+    "graph_id": "bipartite_20_0",
+    "family": "bipartite",
+    "params": {
+      "graph_id": "bipartite_20_4",
+      "family": "bipartite",
+      "params": {
+        "n_left": 10,
+        "n_right": 10
+      }
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 10,
+    "num_variables": 20,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 33.04172588465234,
+    "optimal_maxcut_exact": 70.0,
+    "nfeval": 40,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is bipartite with moderate density and degree variability. Using k=2 allows efficient compression while maintaining diversity in Pauli operators.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

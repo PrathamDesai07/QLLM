@@ -1,0 +1,82 @@
+{
+  "graph_id": "community_20_3",
+  "family": "community",
+  "num_nodes": 20,
+  "num_edges": 49,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -2.071499433688836,
+  "optimal_params": [
+    4.623011489830646,
+    3.9382504252614625
+  ],
+  "approximation_ratio": 0.690155,
+  "gradient_norm_at_opt": 8.3e-05,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T08:03:03.476953+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 20,
+    "num_edges": 49,
+    "density": 0.257895,
+    "degree_min": 3,
+    "degree_max": 6,
+    "degree_mean": 4.9,
+    "degree_std": 0.8888,
+    "degree_histogram": [
+      1,
+      0,
+      0,
+      6,
+      0,
+      0,
+      7,
+      0,
+      0,
+      6
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.3,
+      3.6,
+      3.9,
+      4.2,
+      4.5,
+      4.8,
+      5.1,
+      5.4,
+      5.699999999999999,
+      6.0
+    ],
+    "avg_clustering": 0.41,
+    "transitivity": 0.361809,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.247389,
+    "graph_id": "community_20_3",
+    "family": "community",
+    "params": {
+      "seed": 3
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 10,
+    "num_variables": 20,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 25.535749716844418,
+    "optimal_maxcut_exact": 37.0,
+    "nfeval": 31,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is sufficient while avoiding higher-order complexity.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

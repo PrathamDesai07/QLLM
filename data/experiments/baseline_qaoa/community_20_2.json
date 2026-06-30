@@ -1,0 +1,29 @@
+{
+  "graph_id": "community_20_2",
+  "family": "community",
+  "num_nodes": 20,
+  "num_edges": 38,
+  "method": "baseline_qaoa",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -3.2819196355845626,
+  "optimal_params": [
+    4.993322844365466,
+    2.9005255990082492
+  ],
+  "approximation_ratio": 0.665837,
+  "gradient_norm_at_opt": 0.007878,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T04:27:49.507682+00:00",
+  "duration_seconds": 163.361,
+  "params": {
+    "seed": 2
+  },
+  "extra": {
+    "optimal_maxcut": 20.640959817792282,
+    "optimal_maxcut_exact": 31.0,
+    "nfeval": 37
+  }
+}

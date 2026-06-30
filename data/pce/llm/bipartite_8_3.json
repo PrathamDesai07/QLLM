@@ -1,0 +1,159 @@
+{
+  "k": 2,
+  "num_physical_qubits": 4,
+  "num_variables": 8,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXII",
+    "1": "YYII",
+    "2": "ZZII",
+    "3": "XYII",
+    "4": "IXXI",
+    "5": "IYYI",
+    "6": "IZZI",
+    "7": "IXYI"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZII"
+    },
+    "3": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XYII"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXXI"
+    },
+    "5": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYYI"
+    },
+    "6": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZZI"
+    },
+    "7": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IXYI"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is bipartite with low density and average degree, making k=2 sufficient for efficient encoding while avoiding barren plateaus.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "bipartite_8_3",
+  "family": "bipartite",
+  "features": {
+    "num_nodes": 8,
+    "num_edges": 10,
+    "density": 0.357143,
+    "degree_min": 2,
+    "degree_max": 4,
+    "degree_mean": 2.5,
+    "degree_std": 0.7071,
+    "degree_histogram": [
+      5,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    "degree_bin_edges": [
+      2.0,
+      2.2,
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      3.2,
+      3.4000000000000004,
+      3.6,
+      3.8,
+      4.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 1,
+    "largest_component_size": 8,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.354503,
+    "graph_id": "bipartite_8_3",
+    "family": "bipartite",
+    "params": {
+      "seed": 3
+    }
+  }
+}

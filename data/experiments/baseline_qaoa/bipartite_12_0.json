@@ -2,31 +2,33 @@
   "graph_id": "bipartite_12_0",
   "family": "bipartite",
   "num_nodes": 12,
-  "num_edges": 21,
+  "num_edges": 16,
   "method": "baseline_qaoa",
   "qaoa_p": 1,
   "optimizer": "COBYLA",
   "max_iters": 200,
-  "optimal_energy": -5.352429530012674,
+  "optimal_energy": -2.4932250565259526,
   "optimal_params": [
-    5.105151034243175,
-    2.8690491999041994
+    5.105157781293502,
+    2.851369370489068
   ],
-  "approximation_ratio": 0.627439,
-  "gradient_norm_at_opt": 0.006865,
+  "approximation_ratio": 0.577913,
+  "gradient_norm_at_opt": 0.002795,
   "convergence_iters": null,
   "success": true,
-  "timestamp": "2026-06-30T03:10:21.488567+00:00",
-  "duration_seconds": 0.4634,
+  "timestamp": "2026-06-30T03:34:23.080303+00:00",
+  "duration_seconds": 0.4423,
   "params": {
-    "n_left": 6,
-    "n_right": 6,
-    "p": 0.638,
-    "seed": 0
+    "graph_id": "bipartite_12_4",
+    "family": "bipartite",
+    "params": {
+      "n_left": 6,
+      "n_right": 6
+    }
   },
   "extra": {
-    "optimal_maxcut": 13.176214765006337,
-    "optimal_maxcut_exact": 21.0,
-    "nfeval": 35
+    "optimal_maxcut": 9.246612528262975,
+    "optimal_maxcut_exact": 16.0,
+    "nfeval": 40
   }
 }

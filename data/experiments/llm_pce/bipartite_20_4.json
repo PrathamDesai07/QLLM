@@ -1,0 +1,82 @@
+{
+  "graph_id": "bipartite_20_4",
+  "family": "bipartite",
+  "num_nodes": 20,
+  "num_edges": 70,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": 0.3100615363332155,
+  "optimal_params": [
+    5.599402404378941,
+    2.6328021861532553
+  ],
+  "approximation_ratio": 0.497785,
+  "gradient_norm_at_opt": 0.009969,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T07:22:38.075410+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 20,
+    "num_edges": 70,
+    "density": 0.368421,
+    "degree_min": 4,
+    "degree_max": 9,
+    "degree_mean": 7.0,
+    "degree_std": 1.3416,
+    "degree_histogram": [
+      1,
+      0,
+      1,
+      0,
+      5,
+      0,
+      7,
+      0,
+      2,
+      4
+    ],
+    "degree_bin_edges": [
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.615274,
+    "graph_id": "bipartite_20_4",
+    "family": "bipartite",
+    "params": {
+      "seed": 4
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 10,
+    "num_variables": 20,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 34.84496923183339,
+    "optimal_maxcut_exact": 70.0,
+    "nfeval": 33,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The bipartite graph with moderate density and degree suggests k=2 is sufficient to capture correlations without excessive training complexity.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

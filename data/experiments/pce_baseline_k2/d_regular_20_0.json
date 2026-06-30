@@ -1,0 +1,39 @@
+{
+  "graph_id": "d_regular_20_0",
+  "family": "d_regular",
+  "num_nodes": 20,
+  "num_edges": 50,
+  "method": "pce_baseline_k2",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -1.3814360575530191,
+  "optimal_params": [
+    4.868600994249343,
+    2.769033775902549
+  ],
+  "approximation_ratio": 0.642268,
+  "gradient_norm_at_opt": 0.0257,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T06:12:41.101782+00:00",
+  "duration_seconds": 6.4552,
+  "params": {
+    "graph_id": "d_regular_20_4",
+    "family": "d_regular",
+    "params": {
+      "n": 20,
+      "d": 5
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "k2_paired_pauli",
+    "num_physical_qubits": 3,
+    "num_variables": 20,
+    "compression_ratio": 6.67,
+    "optimal_pce_value": 25.69071802877651,
+    "optimal_maxcut_exact": 40.0,
+    "nfeval": 38
+  }
+}

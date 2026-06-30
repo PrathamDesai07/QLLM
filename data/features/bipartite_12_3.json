@@ -1,0 +1,45 @@
+{
+  "num_nodes": 12,
+  "num_edges": 17,
+  "density": 0.257576,
+  "degree_min": 1,
+  "degree_max": 4,
+  "degree_mean": 2.8333,
+  "degree_std": 0.986,
+  "degree_histogram": [
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    0,
+    3
+  ],
+  "degree_bin_edges": [
+    1.0,
+    1.3,
+    1.6,
+    1.9,
+    2.2,
+    2.5,
+    2.8,
+    3.1,
+    3.4,
+    3.6999999999999997,
+    4.0
+  ],
+  "avg_clustering": 0.0,
+  "transitivity": 0.0,
+  "num_components": 1,
+  "largest_component_size": 12,
+  "component_size_ratio": 1.0,
+  "algebraic_connectivity": 0.230724,
+  "graph_id": "bipartite_12_3",
+  "family": "bipartite",
+  "params": {
+    "seed": 3
+  }
+}

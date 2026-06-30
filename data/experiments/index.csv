@@ -1,76 +1,325 @@
 graph_id,family,method,model_name,prompt_file,prompt_hash,timestamp,k,num_physical_qubits,compression_ratio,optimal_energy,approximation_ratio,gradient_norm_at_opt,success,convergence_iters,duration_seconds,llm_tags,llm_reasoning,git_commit
-bipartite_12_0,bipartite,baseline_qaoa,,,,2026-06-30T03:10:21.488567+00:00,,,,-5.352429530012674,0.627439,0.006865,True,,0.4634,,,af46760
-bipartite_12_1,bipartite,baseline_qaoa,,,,2026-06-30T03:10:21.842822+00:00,,,,-2.877112808240162,0.602754,0.006968,True,,0.3534,,,af46760
-bipartite_12_2,bipartite,baseline_qaoa,,,,2026-06-30T03:10:22.332421+00:00,,,,-4.816943133375574,0.604716,0.01198,True,,0.489,,,af46760
-bipartite_8_0,bipartite,baseline_qaoa,,,,2026-06-30T03:19:18.586029+00:00,,,,-3.206616817337647,0.645755,0.00442,True,,0.2817,,,af46760
-bipartite_8_1,bipartite,baseline_qaoa,,,,2026-06-30T03:10:22.713618+00:00,,,,-2.1120521492768836,0.676004,0.004475,True,,0.15,,,af46760
-bipartite_8_2,bipartite,baseline_qaoa,,,,2026-06-30T03:10:22.916141+00:00,,,,-2.1657801410592055,0.608289,0.001531,True,,0.2019,,,af46760
-community_12_0,community,baseline_qaoa,,,,2026-06-30T03:10:23.588750+00:00,,,,-3.4812050796319087,0.749553,0.005265,True,,0.6806,,,af46760
-community_12_1,community,baseline_qaoa,,,,2026-06-30T03:10:24.314850+00:00,,,,-3.930547280672861,0.80787,0.022961,True,,0.7165,,,af46760
-community_12_2,community,baseline_qaoa,,,,2026-06-30T03:10:24.976937+00:00,,,,-4.369241826882052,0.809231,0.009821,True,,0.6817,,,af46760
-community_8_0,community,baseline_qaoa,,,,2026-06-30T03:10:25.265904+00:00,,,,-2.0713525112177744,0.75446,0.004918,True,,0.2999,,,af46760
-community_8_1,community,baseline_qaoa,,,,2026-06-30T03:10:25.579987+00:00,,,,-2.1794662409464256,0.732193,0.006355,True,,0.281,,,af46760
-community_8_2,community,baseline_qaoa,,,,2026-06-30T03:10:25.788556+00:00,,,,-1.9074763818700435,0.779105,0.003592,True,,0.208,,,af46760
-d_regular_12_0,d_regular,baseline_qaoa,,,,2026-06-30T03:10:26.273574+00:00,,,,-1.3961991476627538,0.606131,0.002868,True,,0.4843,,,af46760
-d_regular_12_1,d_regular,baseline_qaoa,,,,2026-06-30T03:10:26.724101+00:00,,,,-1.9286812656996815,0.622771,0.002287,True,,0.45,,,af46760
-d_regular_12_2,d_regular,baseline_qaoa,,,,2026-06-30T03:10:27.188394+00:00,,,,-1.5048649707014428,0.609527,0.002934,True,,0.4636,,,af46760
-d_regular_8_0,d_regular,baseline_qaoa,,,,2026-06-30T03:10:27.400381+00:00,,,,-0.6180338745327512,0.538627,0.001852,True,,0.211,,,af46760
-d_regular_8_1,d_regular,baseline_qaoa,,,,2026-06-30T03:10:27.568924+00:00,,,,-0.6343886494912785,0.719532,0.001813,True,,0.1676,,,af46760
-d_regular_8_2,d_regular,baseline_qaoa,,,,2026-06-30T03:10:27.733926+00:00,,,,-1.9849458432739118,0.832079,0.002683,True,,0.1644,,,af46760
-erdos_renyi_12_0,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:28.666314+00:00,,,,-2.913167655856918,0.77617,0.009716,True,,0.9321,,,af46760
-erdos_renyi_12_1,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:29.232931+00:00,,,,-2.160047418878379,0.662107,0.006275,True,,0.5658,,,af46760
-erdos_renyi_12_2,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:30.076507+00:00,,,,-3.1533298713589746,0.799136,0.020973,True,,0.843,,,af46760
-erdos_renyi_8_0,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:30.337446+00:00,,,,-1.8783918696463349,0.744933,0.004083,True,,0.2598,,,af46760
-erdos_renyi_8_1,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:30.540548+00:00,,,,-0.956241615574744,0.664236,0.001559,True,,0.2025,,,af46760
-erdos_renyi_8_2,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:30.883515+00:00,,,,-1.6719130548055856,0.773997,0.009587,True,,0.3426,,,af46760
-erdos_renyi_8_42,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:31.159504+00:00,,,,-1.7835162882166105,0.706554,0.00259,True,,0.2754,,,af46760
-bipartite_12_0,bipartite,pce_baseline,,,,2026-06-30T03:10:41.909674+00:00,1,4,3.0,-3.2289682403625894,0.57688,0.034757,True,,1.9646,,,af46760
-bipartite_12_1,bipartite,pce_baseline,,,,2026-06-30T03:10:42.548181+00:00,1,4,3.0,-0.8313769992820709,0.529692,0.002894,True,,0.6375,,,af46760
-bipartite_12_2,bipartite,pce_baseline,,,,2026-06-30T03:10:43.651228+00:00,1,4,3.0,-1.6124091156162328,0.535052,0.007079,True,,1.1491,,,af46760
-bipartite_8_0,bipartite,pce_baseline,,,,2026-06-30T03:19:19.399574+00:00,1,3,2.67,-1.6721277619729593,0.576006,0.005987,True,,0.8096,,,af46760
-bipartite_8_1,bipartite,pce_baseline,,,,2026-06-30T03:10:45.463322+00:00,1,3,2.67,-0.999999986485337,0.583333,0.000517,True,,0.8654,,,af46760
-bipartite_8_2,bipartite,pce_baseline,,,,2026-06-30T03:10:45.837903+00:00,1,3,2.67,-1.6795543564747617,0.583978,0.001295,True,,0.3737,,,af46760
-community_12_0,community,pce_baseline,,,,2026-06-30T03:10:47.224145+00:00,1,4,3.0,-1.193131428592961,0.695075,0.030219,True,,1.386,,,af46760
-community_12_1,community,pce_baseline,,,,2026-06-30T03:10:48.593559+00:00,1,4,3.0,-1.3460903414195564,0.746335,0.018041,True,,1.3684,,,af46760
-community_12_2,community,pce_baseline,,,,2026-06-30T03:10:51.278346+00:00,1,4,3.0,-1.7196248666755627,0.742991,0.00926,True,,2.6843,,,af46760
-community_8_0,community,pce_baseline,,,,2026-06-30T03:10:52.072264+00:00,1,3,2.67,-2.7018146374664043,0.793863,0.00784,True,,0.7929,,,af46760
-community_8_1,community,pce_baseline,,,,2026-06-30T03:10:52.834053+00:00,1,3,2.67,-1.9275849638576905,0.718199,0.003988,True,,0.7611,,,af46760
-community_8_2,community,pce_baseline,,,,2026-06-30T03:10:54.134441+00:00,1,3,2.67,-0.5167178277871385,0.679766,0.006734,True,,1.2995,,,af46760
-d_regular_12_0,d_regular,pce_baseline,,,,2026-06-30T03:10:55.048273+00:00,1,4,3.0,-0.4241068052521289,0.575753,0.018421,True,,0.913,,,af46760
-d_regular_12_1,d_regular,pce_baseline,,,,2026-06-30T03:10:55.627227+00:00,1,4,3.0,-0.8236854435605647,0.58824,0.002105,True,,0.5785,,,af46760
-d_regular_12_2,d_regular,pce_baseline,,,,2026-06-30T03:10:56.329918+00:00,1,4,3.0,-1.7120375254448152,0.616001,0.010452,True,,0.7024,,,af46760
-d_regular_8_0,d_regular,pce_baseline,,,,2026-06-30T03:10:56.927880+00:00,1,3,2.67,-0.8152709879039948,0.550954,0.005101,True,,0.5966,,,af46760
-d_regular_8_1,d_regular,pce_baseline,,,,2026-06-30T03:10:57.386955+00:00,1,3,2.67,-1.0376155241057423,0.753135,0.000838,True,,0.4582,,,af46760
-d_regular_8_2,d_regular,pce_baseline,,,,2026-06-30T03:10:57.909649+00:00,1,3,2.67,-2.069637457526831,0.839136,0.003698,True,,0.5219,,,af46760
-erdos_renyi_12_0,erdos_renyi,pce_baseline,,,,2026-06-30T03:10:58.951675+00:00,1,4,3.0,-1.292513236810267,0.746158,0.025951,True,,1.0414,,,af46760
-erdos_renyi_12_1,erdos_renyi,pce_baseline,,,,2026-06-30T03:10:59.521189+00:00,1,4,3.0,-2.235112794890434,0.664082,0.014446,True,,0.5674,,,af46760
-erdos_renyi_12_2,erdos_renyi,pce_baseline,,,,2026-06-30T03:11:01.690459+00:00,1,4,3.0,-4.481954648474508,0.82374,0.179568,True,,2.1689,,,af46760
-erdos_renyi_8_0,erdos_renyi,pce_baseline,,,,2026-06-30T03:11:02.660041+00:00,1,3,2.67,-1.761712113920937,0.740071,0.014407,True,,0.9686,,,af46760
-erdos_renyi_8_1,erdos_renyi,pce_baseline,,,,2026-06-30T03:11:03.201605+00:00,1,3,2.67,-1.0812165574920984,0.671179,0.001159,True,,0.5406,,,af46760
-erdos_renyi_8_2,erdos_renyi,pce_baseline,,,,2026-06-30T03:11:28.057629+00:00,1,3,2.67,-2.1542785574123644,0.791224,0.018431,True,,4.0122,,,af46760
-erdos_renyi_8_42,erdos_renyi,pce_baseline,,,,2026-06-30T03:11:06.605483+00:00,1,3,2.67,-2.1095115794818486,0.718197,0.01948,True,,0.9103,,,af46760
-bipartite_12_0,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:29:40.663326+00:00,2,6,2.0,0.433824990199442,0.489671,0.000897,True,,,low_order_sufficient,"The graph is bipartite with moderate density and degree, making k=2 suitable for efficient encoding while avoiding barre",af46760
-bipartite_12_1,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:31:29.455244+00:00,2,6,2.0,-2.3215984247448156,0.582914,0.013703,True,,,low_order_sufficient,"The graph is bipartite with low density and small size, making k=2 sufficient for efficient encoding while avoiding barr",af46760
-bipartite_12_2,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:33:25.633036+00:00,2,6,2.0,-0.8271990173093685,0.517983,0.003145,True,,,low_order_sufficient,The graph is bipartite with moderate density and average degree. Using k=2 allows efficient compression while maintainin,af46760
-bipartite_8_0,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:34:45.136294+00:00,2,4,2.0,-2.7714653776275937,0.625976,0.016076,True,,,low_order_sufficient,"The graph is bipartite with moderate density and low average degree, making it suitable for k=2 encoding without signifi",af46760
-bipartite_8_1,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:35:55.486965+00:00,1,4,2.0,-0.8740546255025279,0.572838,0.000482,True,,,low_order_sufficient,"The graph is bipartite with low density and small size, making k=1 sufficient.",af46760
-bipartite_8_2,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:37:14.657629+00:00,2,4,2.0,-0.42016413299471844,0.521008,0.000703,True,,,low_order_sufficient,"The graph is bipartite with low density and average degree, making k=2 suitable for efficient encoding without significa",af46760
-community_12_0,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:39:08.661389+00:00,2,6,2.0,-2.7060880103240312,0.731097,0.003411,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is appropriate to balance qubit efficiency and ",af46760
-community_12_1,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:41:02.737511+00:00,2,6,2.0,-3.818998919635862,0.805214,0.003893,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is sufficient for capturing correlations withou",af46760
-community_12_2,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:42:57.326183+00:00,2,6,2.0,-1.205089494494931,0.730127,0.001239,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for capturing correlations without excessi",af46760
-community_8_0,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:44:15.855279+00:00,2,4,2.0,-1.4282848132872856,0.714268,0.002891,True,,,low_order_sufficient,"The graph is relatively sparse with a community structure, making k=2 a suitable choice for balancing qubit efficiency a",af46760
-community_8_1,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:45:32.798964+00:00,2,4,2.0,-0.6332147505984227,0.64629,0.000606,True,,,low_order_sufficient,"The graph has a community structure and moderate density, suggesting k=2 is sufficient.",af46760
-community_8_2,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:46:52.617160+00:00,2,4,2.0,-1.4061452338650948,0.743296,0.000556,True,,,low_order_sufficient,"The graph is relatively sparse and has a community structure, making k=2 a suitable choice for balancing qubit efficienc",af46760
-d_regular_12_0,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:48:46.613992+00:00,2,6,2.0,0.33082443406119344,0.552162,0.002797,True,,,low_order_sufficient,"The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient encoding while avoid",af46760
-d_regular_12_1,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:50:41.347124+00:00,2,6,2.0,-2.5606785119115747,0.642521,0.003252,True,,,low_order_sufficient,"The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient compression while ma",af46760
-d_regular_12_2,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:52:37.262912+00:00,2,6,2.0,-1.192672810282045,0.599771,0.001472,True,,,low_order_sufficient,"The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient encoding while avoid",af46760
-d_regular_8_0,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-29T18:36:46.318722+00:00,2,4,2.0,-1.9999998786519881,0.625,0.002546,True,,,low_order_sufficient,"The graph is sparse with low degree and no clustering, making k=2 sufficient.",af46760
-d_regular_8_1,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-29T18:38:00.081027+00:00,2,4,2.0,-2.528081086653232,0.87734,0.004202,True,,,low_order_sufficient,"The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while avoiding barren plat",af46760
-d_regular_8_2,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:53:56.263827+00:00,2,4,2.0,-2.009826549602216,0.834152,0.002373,True,,,low_order_sufficient,"The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while avoiding barren plat",af46760
-erdos_renyi_12_0,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:55:52.146745+00:00,2,6,2.0,0.8639133888964933,0.706224,0.003097,True,,,gradient_risk,"The graph is dense with a high degree mean and standard deviation, indicating a complex structure that benefits from hig",af46760
-erdos_renyi_12_1,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:57:49.964459+00:00,2,6,2.0,-0.20611301912297564,0.610687,0.008792,True,,,low_order_sufficient,The graph is moderately dense with a degree mean of 3.83 and average clustering coefficient of 0.375. Given these charac,af46760
-erdos_renyi_12_2,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:59:43.337874+00:00,2,6,2.0,-0.7996383120881836,0.755549,0.006249,True,,,gradient_risk,"The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding (k=2) to capture t",af46760
-erdos_renyi_8_0,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:19:54.635429+00:00,2,4,2.0,-2.9450423751717505,0.789377,0.002863,True,,,low_order_sufficient,The graph is moderately dense with a density of 0.571429 and average degree of 4.0. Using k=2 allows efficient use of qu,af46760
-erdos_renyi_8_1,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-29T18:40:31.392774+00:00,2,4,2.0,-1.8284269068935832,0.71269,0.005908,True,,,low_order_sufficient,"The graph is not highly dense and has a moderate degree range, making k=2 suitable for efficient representation while av",af46760
-erdos_renyi_8_2,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T03:00:58.311916+00:00,2,4,2.0,-1.5102337582597143,0.768223,0.004336,True,,,gradient_risk,"The graph is dense with high modularity, suggesting k=2 for better compression while monitoring gradient risk.",af46760
-erdos_renyi_8_42,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T03:05:42.182639+00:00,2,,,-4.597384242914863,0.807049,0.001,True,,,gradient_risk,The graph is dense with a density of 0.642857 and high average degree. Using k=2 allows efficient compression while avoi,af46760
+bipartite_12_0,bipartite,baseline_qaoa,,,,2026-06-30T03:34:23.080303+00:00,,,,-2.4932250565259526,0.577913,0.002795,True,,0.4423,,,8f88b7b
+bipartite_12_1,bipartite,baseline_qaoa,,,,2026-06-30T03:34:23.500731+00:00,,,,-2.877112808240162,0.602754,0.006968,True,,0.4206,,,8f88b7b
+bipartite_12_2,bipartite,baseline_qaoa,,,,2026-06-30T03:34:24.087852+00:00,,,,-4.816943133375574,0.604716,0.01198,True,,0.5967,,,8f88b7b
+bipartite_12_3,bipartite,baseline_qaoa,,,,2026-06-30T03:34:24.654270+00:00,,,,-4.653314725681013,0.636862,0.004256,True,,0.5973,,,8f88b7b
+bipartite_12_4,bipartite,baseline_qaoa,,,,2026-06-30T03:34:25.223313+00:00,,,,-2.4932250565259526,0.577913,0.002795,True,,0.5248,,,8f88b7b
+bipartite_16_0,bipartite,baseline_qaoa,,,,2026-06-30T03:34:45.772976+00:00,,,,-6.284853784954186,0.58729,0.018596,True,,20.5596,,,8f88b7b
+bipartite_16_1,bipartite,baseline_qaoa,,,,2026-06-30T03:35:10.493963+00:00,,,,-7.237153634203089,0.590464,0.014122,True,,24.7249,,,8f88b7b
+bipartite_16_2,bipartite,baseline_qaoa,,,,2026-06-30T03:35:21.934982+00:00,,,,-1.819553242033456,0.556861,0.003033,True,,11.4328,,,8f88b7b
+bipartite_16_3,bipartite,baseline_qaoa,,,,2026-06-30T03:35:41.123325+00:00,,,,-6.778238231318983,0.591598,0.013562,True,,19.188,,,8f88b7b
+bipartite_16_4,bipartite,baseline_qaoa,,,,2026-06-30T03:36:01.564552+00:00,,,,-6.284853784954186,0.58729,0.018596,True,,20.4315,,,8f88b7b
+bipartite_20_0,bipartite,baseline_qaoa,,,,2026-06-30T03:40:55.631801+00:00,,,,-12.174472051553872,0.586961,0.061547,True,,294.0546,,,8f88b7b
+bipartite_20_1,bipartite,baseline_qaoa,,,,2026-06-30T03:49:48.250643+00:00,,,,-11.524643762600554,0.591465,0.034431,True,,292.3212,,,8f88b7b
+bipartite_20_2,bipartite,baseline_qaoa,,,,2026-06-30T03:52:53.474873+00:00,,,,-3.7496035767753098,0.549337,0.009145,True,,185.2486,,,8f88b7b
+bipartite_20_3,bipartite,baseline_qaoa,,,,2026-06-30T04:06:22.157344+00:00,,,,-10.553343928588864,0.583757,0.050125,True,,280.9996,,,8f88b7b
+bipartite_20_4,bipartite,baseline_qaoa,,,,2026-06-30T04:17:20.284424+00:00,,,,-12.17447205155515,0.586961,0.061547,True,,326.9698,,,8f88b7b
+bipartite_8_0,bipartite,baseline_qaoa,,,,2026-06-30T03:19:18.586029+00:00,,,,-3.206616817337647,0.645755,0.00442,True,,0.2817,,,8f88b7b
+bipartite_8_1,bipartite,baseline_qaoa,,,,2026-06-30T03:10:22.713618+00:00,,,,-2.1120521492768836,0.676004,0.004475,True,,0.15,,,8f88b7b
+bipartite_8_2,bipartite,baseline_qaoa,,,,2026-06-30T03:10:22.916141+00:00,,,,-2.1657801410592055,0.608289,0.001531,True,,0.2019,,,8f88b7b
+bipartite_8_3,bipartite,baseline_qaoa,,,,2026-06-30T03:44:41.589535+00:00,,,,-3.505825249763151,0.675291,0.002984,True,,0.2269,,,8f88b7b
+bipartite_8_4,bipartite,baseline_qaoa,,,,2026-06-30T03:44:41.850071+00:00,,,,-3.7556516362032815,0.656485,0.0053,True,,0.259,,,8f88b7b
+community_12_0,community,baseline_qaoa,,,,2026-06-30T03:10:23.588750+00:00,,,,-3.4812050796319087,0.749553,0.005265,True,,0.6806,,,8f88b7b
+community_12_1,community,baseline_qaoa,,,,2026-06-30T03:10:24.314850+00:00,,,,-3.930547280672861,0.80787,0.022961,True,,0.7165,,,8f88b7b
+community_12_2,community,baseline_qaoa,,,,2026-06-30T03:10:24.976937+00:00,,,,-4.369241826882052,0.809231,0.009821,True,,0.6817,,,8f88b7b
+community_12_3,community,baseline_qaoa,,,,2026-06-30T03:44:42.484370+00:00,,,,-2.9076069825107913,0.802989,0.012364,True,,0.6331,,,8f88b7b
+community_12_4,community,baseline_qaoa,,,,2026-06-30T03:44:42.991994+00:00,,,,-2.9689163633868976,0.788656,0.008252,True,,0.5075,,,8f88b7b
+community_16_0,community,baseline_qaoa,,,,2026-06-30T03:55:28.822928+00:00,,,,-3.0550346477122186,0.741101,0.005048,True,,19.9371,,,8f88b7b
+community_16_1,community,baseline_qaoa,,,,2026-06-30T03:55:49.665919+00:00,,,,-3.8585929672061856,0.792241,0.014395,True,,20.8433,,,8f88b7b
+community_16_2,community,baseline_qaoa,,,,2026-06-30T03:56:05.195535+00:00,,,,-4.257431139953403,0.745149,0.005134,True,,15.5282,,,8f88b7b
+community_16_3,community,baseline_qaoa,,,,2026-06-30T03:56:24.216154+00:00,,,,-3.2802348581802274,0.765605,0.006371,True,,19.022,,,8f88b7b
+community_16_4,community,baseline_qaoa,,,,2026-06-30T03:56:42.928820+00:00,,,,-3.0550346477122186,0.741101,0.005048,True,,18.7121,,,8f88b7b
+community_20_0,community,baseline_qaoa,,,,2026-06-30T04:19:38.759321+00:00,,,,-5.245080081731955,0.724902,0.01284,True,,138.4718,,,8f88b7b
+community_20_1,community,baseline_qaoa,,,,2026-06-30T04:25:06.145899+00:00,,,,-4.796908122380964,0.763282,0.012139,True,,180.0878,,,8f88b7b
+community_20_2,community,baseline_qaoa,,,,2026-06-30T04:27:49.507682+00:00,,,,-3.2819196355845626,0.665837,0.007878,True,,163.361,,,8f88b7b
+community_20_3,community,baseline_qaoa,,,,2026-06-30T04:31:14.390998+00:00,,,,-5.228932703093102,0.732823,0.019076,True,,204.8893,,,8f88b7b
+community_20_4,community,baseline_qaoa,,,,2026-06-30T04:34:34.579478+00:00,,,,-5.245079968540378,0.724902,0.016041,True,,137.9659,,,8f88b7b
+community_8_0,community,baseline_qaoa,,,,2026-06-30T03:10:25.265904+00:00,,,,-2.0713525112177744,0.75446,0.004918,True,,0.2999,,,8f88b7b
+community_8_1,community,baseline_qaoa,,,,2026-06-30T03:10:25.579987+00:00,,,,-2.1794662409464256,0.732193,0.006355,True,,0.281,,,8f88b7b
+community_8_2,community,baseline_qaoa,,,,2026-06-30T03:10:25.788556+00:00,,,,-1.9074763818700435,0.779105,0.003592,True,,0.208,,,8f88b7b
+community_8_3,community,baseline_qaoa,,,,2026-06-30T03:44:43.257134+00:00,,,,-2.3584623709461576,0.834904,0.005104,True,,0.3057,,,8f88b7b
+community_8_4,community,baseline_qaoa,,,,2026-06-30T03:44:43.610430+00:00,,,,-2.321411765455831,0.766071,0.005264,True,,0.3143,,,8f88b7b
+d_regular_12_0,d_regular,baseline_qaoa,,,,2026-06-30T03:10:26.273574+00:00,,,,-1.3961991476627538,0.606131,0.002868,True,,0.4843,,,8f88b7b
+d_regular_12_1,d_regular,baseline_qaoa,,,,2026-06-30T03:10:26.724101+00:00,,,,-1.9286812656996815,0.622771,0.002287,True,,0.45,,,8f88b7b
+d_regular_12_2,d_regular,baseline_qaoa,,,,2026-06-30T03:10:27.188394+00:00,,,,-1.5048649707014428,0.609527,0.002934,True,,0.4636,,,8f88b7b
+d_regular_12_3,d_regular,baseline_qaoa,,,,2026-06-30T03:44:44.048705+00:00,,,,4.242569837109578e-14,0.5625,0.0,True,,0.486,,,8f88b7b
+d_regular_12_4,d_regular,baseline_qaoa,,,,2026-06-30T03:44:44.649945+00:00,,,,-2.1688425632293638,0.630276,0.005763,True,,0.5977,,,8f88b7b
+d_regular_16_0,d_regular,baseline_qaoa,,,,2026-06-30T03:56:58.571750+00:00,,,,-2.960874808395567,0.672325,0.004235,True,,15.6409,,,8f88b7b
+d_regular_16_1,d_regular,baseline_qaoa,,,,2026-06-30T03:57:14.185521+00:00,,,,-3.705389808333694,0.686642,0.01418,True,,15.6161,,,8f88b7b
+d_regular_16_2,d_regular,baseline_qaoa,,,,2026-06-30T03:57:30.444799+00:00,,,,-1.4062261366918933,0.695963,0.006352,True,,16.2433,,,8f88b7b
+d_regular_16_3,d_regular,baseline_qaoa,,,,2026-06-30T03:57:47.568386+00:00,,,,-2.7602754934739586,0.668467,0.00408,True,,17.1305,,,8f88b7b
+d_regular_16_4,d_regular,baseline_qaoa,,,,2026-06-30T03:58:02.793835+00:00,,,,-2.960874808395567,0.672325,0.004235,True,,15.227,,,8f88b7b
+d_regular_20_0,d_regular,baseline_qaoa,,,,2026-06-30T04:38:12.423607+00:00,,,,-2.1298388650366995,0.651623,0.003326,True,,217.8429,,,8f88b7b
+d_regular_20_1,d_regular,baseline_qaoa,,,,2026-06-30T04:41:35.225784+00:00,,,,-1.626509513293821,0.645331,0.002242,True,,202.8026,,,8f88b7b
+d_regular_20_2,d_regular,baseline_qaoa,,,,2026-06-30T04:45:40.530515+00:00,,,,-1.7845411970772869,0.663904,0.002817,True,,197.7149,,,8f88b7b
+d_regular_20_3,d_regular,baseline_qaoa,,,,2026-06-30T04:49:11.282191+00:00,,,,-1.372134054490877,0.675949,0.00408,True,,210.7508,,,8f88b7b
+d_regular_20_4,d_regular,baseline_qaoa,,,,2026-06-30T04:55:45.923515+00:00,,,,-2.1298389144270833,0.651623,0.003052,True,,195.9986,,,8f88b7b
+d_regular_8_0,d_regular,baseline_qaoa,,,,2026-06-30T03:10:27.400381+00:00,,,,-0.6180338745327512,0.538627,0.001852,True,,0.211,,,8f88b7b
+d_regular_8_1,d_regular,baseline_qaoa,,,,2026-06-30T03:10:27.568924+00:00,,,,-0.6343886494912785,0.719532,0.001813,True,,0.1676,,,8f88b7b
+d_regular_8_2,d_regular,baseline_qaoa,,,,2026-06-30T03:10:27.733926+00:00,,,,-1.9849458432739118,0.832079,0.002683,True,,0.1644,,,8f88b7b
+d_regular_8_3,d_regular,baseline_qaoa,,,,2026-06-30T03:44:44.915852+00:00,,,,-1.9999997559845777,0.625,0.003952,True,,0.215,,,8f88b7b
+d_regular_8_4,d_regular,baseline_qaoa,,,,2026-06-30T03:44:45.124544+00:00,,,,-1.1856402396607484,0.76547,0.001229,True,,0.2095,,,8f88b7b
+erdos_renyi_12_0,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:28.666314+00:00,,,,-2.913167655856918,0.77617,0.009716,True,,0.9321,,,8f88b7b
+erdos_renyi_12_1,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:29.232931+00:00,,,,-2.160047418878379,0.662107,0.006275,True,,0.5658,,,8f88b7b
+erdos_renyi_12_2,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:30.076507+00:00,,,,-3.1533298713589746,0.799136,0.020973,True,,0.843,,,8f88b7b
+erdos_renyi_12_3,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:44:45.901185+00:00,,,,-3.107291348802305,0.779765,0.011003,True,,0.7756,,,8f88b7b
+erdos_renyi_12_4,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:44:46.706567+00:00,,,,-2.3653081286462774,0.774381,0.015514,True,,0.805,,,8f88b7b
+erdos_renyi_16_0,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:58:37.682337+00:00,,,,-5.352628974236165,0.833526,0.033156,True,,34.8643,,,8f88b7b
+erdos_renyi_16_1,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:59:00.169009+00:00,,,,-2.0267835201972226,0.643335,0.010202,True,,22.4961,,,8f88b7b
+erdos_renyi_16_2,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:59:39.003116+00:00,,,,-3.2955666157448946,0.825995,0.043265,True,,38.8317,,,8f88b7b
+erdos_renyi_16_3,erdos_renyi,baseline_qaoa,,,,2026-06-30T04:00:51.423869+00:00,,,,-3.127496325747904,0.756675,0.016127,True,,35.0196,,,8f88b7b
+erdos_renyi_16_4,erdos_renyi,baseline_qaoa,,,,2026-06-30T04:01:28.323513+00:00,,,,-5.352628974236165,0.833526,0.033156,True,,36.8907,,,8f88b7b
+erdos_renyi_20_0,erdos_renyi,baseline_qaoa,,,,2026-06-30T05:10:31.050569+00:00,,,,-5.571167217754126,0.820071,0.044084,True,,468.2259,,,8f88b7b
+erdos_renyi_20_1,erdos_renyi,baseline_qaoa,,,,2026-06-30T05:16:50.562318+00:00,,,,-1.6369604751814268,0.704552,0.010828,True,,235.8785,,,8f88b7b
+erdos_renyi_20_2,erdos_renyi,baseline_qaoa,,,,2026-06-30T05:21:39.728323+00:00,,,,-4.740116042497144,0.784755,0.029509,True,,282.9039,,,8f88b7b
+erdos_renyi_20_3,erdos_renyi,baseline_qaoa,,,,2026-06-30T05:26:26.478452+00:00,,,,-2.6820296533623167,0.747259,0.024855,True,,279.9441,,,8f88b7b
+erdos_renyi_20_4,erdos_renyi,baseline_qaoa,,,,2026-06-30T05:39:50.400425+00:00,,,,-5.57116721775374,0.820071,0.044084,True,,486.2897,,,8f88b7b
+erdos_renyi_8_0,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:30.337446+00:00,,,,-1.8783918696463349,0.744933,0.004083,True,,0.2598,,,8f88b7b
+erdos_renyi_8_1,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:30.540548+00:00,,,,-0.956241615574744,0.664236,0.001559,True,,0.2025,,,8f88b7b
+erdos_renyi_8_2,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:30.883515+00:00,,,,-1.6719130548055856,0.773997,0.009587,True,,0.3426,,,8f88b7b
+erdos_renyi_8_3,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:44:46.980799+00:00,,,,-1.9902012839295276,0.791258,0.00666,True,,0.2731,,,8f88b7b
+erdos_renyi_8_4,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:44:47.290559+00:00,,,,-1.5734743018521191,0.778674,0.004001,True,,0.3094,,,8f88b7b
+erdos_renyi_8_42,erdos_renyi,baseline_qaoa,,,,2026-06-30T03:10:31.159504+00:00,,,,-1.7835162882166105,0.706554,0.00259,True,,0.2754,,,8f88b7b
+bipartite_12_0,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:51.740428+00:00,1,4,3.0,-1.328749475911669,0.541523,0.003283,True,,0.8372,,,8f88b7b
+bipartite_12_1,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:52.325876+00:00,1,4,3.0,-0.8313769992820709,0.529692,0.002894,True,,0.5825,,,8f88b7b
+bipartite_12_2,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:53.284287+00:00,1,4,3.0,-1.6124091156162328,0.535052,0.007079,True,,0.9648,,,8f88b7b
+bipartite_12_3,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:54.037213+00:00,1,4,3.0,-0.16543036159901753,0.504866,0.001173,True,,0.8001,,,8f88b7b
+bipartite_12_4,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:55.087268+00:00,1,4,3.0,-1.328749475911669,0.541523,0.003283,True,,1.0045,,,8f88b7b
+bipartite_16_0,bipartite,pce_baseline_k1,,,,2026-06-30T05:58:45.161417+00:00,1,6,2.67,0.29067984380086487,0.495963,0.006135,True,,5.3912,,,8f88b7b
+bipartite_16_1,bipartite,pce_baseline_k1,,,,2026-06-30T05:58:53.529664+00:00,1,6,2.67,-2.6233961406204664,0.532792,0.012759,True,,8.3699,,,8f88b7b
+bipartite_16_2,bipartite,pce_baseline_k1,,,,2026-06-30T05:58:58.624027+00:00,1,6,2.67,-0.6734634497795113,0.521046,0.000658,True,,5.0885,,,8f88b7b
+bipartite_16_3,bipartite,pce_baseline_k1,,,,2026-06-30T05:59:10.923016+00:00,1,6,2.67,-2.0381395047445574,0.527542,0.014308,True,,12.3075,,,8f88b7b
+bipartite_16_4,bipartite,pce_baseline_k1,,,,2026-06-30T05:59:16.459528+00:00,1,6,2.67,0.29067984380086487,0.495963,0.006135,True,,5.5181,,,8f88b7b
+bipartite_20_0,bipartite,pce_baseline_k1,,,,2026-06-30T05:59:47.679228+00:00,1,7,2.86,-2.5346637862742494,0.518105,0.048267,True,,31.2218,,,8f88b7b
+bipartite_20_1,bipartite,pce_baseline_k1,,,,2026-06-30T06:00:17.349895+00:00,1,7,2.86,-1.910384265883591,0.515162,0.028544,True,,29.6778,,,8f88b7b
+bipartite_20_2,bipartite,pce_baseline_k1,,,,2026-06-30T06:00:31.677053+00:00,1,7,2.86,-2.0173047510571043,0.526543,0.002538,True,,14.3161,,,8f88b7b
+bipartite_20_3,bipartite,pce_baseline_k1,,,,2026-06-30T06:00:56.886010+00:00,1,7,2.86,-2.627359983913705,0.520852,0.029995,True,,25.2072,,,8f88b7b
+bipartite_20_4,bipartite,pce_baseline_k1,,,,2026-06-30T06:01:28.228805+00:00,1,7,2.86,-2.5346637862742494,0.518105,0.048267,True,,31.3391,,,8f88b7b
+bipartite_8_0,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:55.674954+00:00,1,3,2.67,-1.8180978874682294,0.575754,0.002758,True,,0.5778,,,8f88b7b
+bipartite_8_1,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:56.364365+00:00,1,3,2.67,-0.999999986485337,0.583333,0.000517,True,,0.6892,,,8f88b7b
+bipartite_8_2,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:56.723716+00:00,1,3,2.67,-1.6795543564747617,0.583978,0.001295,True,,0.3594,,,8f88b7b
+bipartite_8_3,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:58.857477+00:00,1,3,2.67,-1.3842058765584038,0.56921,0.580817,False,,2.1327,,,8f88b7b
+bipartite_8_4,bipartite,pce_baseline_k1,,,,2026-06-30T05:57:59.424444+00:00,1,3,2.67,-1.8180978874682294,0.575754,0.002758,True,,0.5666,,,8f88b7b
+community_12_0,community,pce_baseline_k1,,,,2026-06-30T05:58:00.436628+00:00,1,4,3.0,-2.1926274503666074,0.768227,0.02484,True,,1.0133,,,8f88b7b
+community_12_1,community,pce_baseline_k1,,,,2026-06-30T05:58:01.588612+00:00,1,4,3.0,-1.3460903414195564,0.746335,0.018041,True,,1.1505,,,8f88b7b
+community_12_2,community,pce_baseline_k1,,,,2026-06-30T05:58:04.136926+00:00,1,4,3.0,-1.7196248666755627,0.742991,0.00926,True,,2.5469,,,8f88b7b
+community_12_3,community,pce_baseline_k1,,,,2026-06-30T05:58:06.588570+00:00,1,4,3.0,-3.141208063895942,0.809478,0.028302,True,,2.4519,,,8f88b7b
+community_12_4,community,pce_baseline_k1,,,,2026-06-30T05:58:07.605832+00:00,1,4,3.0,-2.1926274503666074,0.768227,0.02484,True,,1.0167,,,8f88b7b
+community_16_0,community,pce_baseline_k1,,,,2026-06-30T06:01:33.315666+00:00,1,6,2.67,0.2508192408163308,0.674984,0.015553,True,,5.0961,,,8f88b7b
+community_16_1,community,pce_baseline_k1,,,,2026-06-30T06:01:38.019695+00:00,1,6,2.67,2.0832876312267103,0.657198,0.00463,True,,4.6954,,,8f88b7b
+community_16_2,community,pce_baseline_k1,,,,2026-06-30T06:01:43.691655+00:00,1,6,2.67,-0.27993405245548175,0.665599,0.013744,True,,5.6702,,,8f88b7b
+community_16_3,community,pce_baseline_k1,,,,2026-06-30T06:01:50.542962+00:00,1,6,2.67,-0.5677246991672833,0.711354,0.012082,True,,6.8509,,,8f88b7b
+community_16_4,community,pce_baseline_k1,,,,2026-06-30T06:01:55.536755+00:00,1,6,2.67,0.2508192408163308,0.674984,0.015553,True,,4.9853,,,8f88b7b
+community_20_0,community,pce_baseline_k1,,,,2026-06-30T06:02:06.807488+00:00,1,7,2.86,0.5059913876113835,0.60988,0.007017,True,,11.2845,,,8f88b7b
+community_20_1,community,pce_baseline_k1,,,,2026-06-30T06:02:19.363859+00:00,1,7,2.86,-1.851729090075052,0.714195,0.002597,True,,12.5573,,,8f88b7b
+community_20_2,community,pce_baseline_k1,,,,2026-06-30T06:02:38.662531+00:00,1,7,2.86,-0.9295582481550466,0.627896,0.005713,True,,19.2819,,,8f88b7b
+community_20_3,community,pce_baseline_k1,,,,2026-06-30T06:02:53.160927+00:00,1,7,2.86,-1.1512369061755596,0.677719,0.006095,True,,14.542,,,8f88b7b
+community_20_4,community,pce_baseline_k1,,,,2026-06-30T06:03:04.422172+00:00,1,7,2.86,0.5059913876113835,0.60988,0.007017,True,,11.2163,,,8f88b7b
+community_8_0,community,pce_baseline_k1,,,,2026-06-30T05:58:08.241926+00:00,1,3,2.67,-2.0420336159170556,0.752102,0.009195,True,,0.6364,,,8f88b7b
+community_8_1,community,pce_baseline_k1,,,,2026-06-30T05:58:09.010082+00:00,1,3,2.67,-1.9275849638576905,0.718199,0.003988,True,,0.7668,,,8f88b7b
+community_8_2,community,pce_baseline_k1,,,,2026-06-30T05:58:10.102842+00:00,1,3,2.67,-0.5167178277871385,0.679766,0.006734,True,,1.0918,,,8f88b7b
+community_8_3,community,pce_baseline_k1,,,,2026-06-30T05:58:12.148575+00:00,1,3,2.67,-1.1592989598578511,0.759956,0.202395,False,,2.0456,,,8f88b7b
+community_8_4,community,pce_baseline_k1,,,,2026-06-30T05:58:12.761670+00:00,1,3,2.67,-2.0420336159170556,0.752102,0.009195,True,,0.6124,,,8f88b7b
+d_regular_12_0,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:13.377512+00:00,1,4,3.0,-0.38455211194524375,0.574517,0.001476,True,,0.6281,,,8f88b7b
+d_regular_12_1,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:14.007949+00:00,1,4,3.0,-0.8236854435605647,0.58824,0.002105,True,,0.6186,,,8f88b7b
+d_regular_12_2,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:14.783427+00:00,1,4,3.0,-1.7120375254448152,0.616001,0.010452,True,,0.7727,,,8f88b7b
+d_regular_12_3,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:16.277822+00:00,1,4,3.0,-2.3395776219914666,0.635612,0.013089,True,,1.4952,,,8f88b7b
+d_regular_12_4,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:16.827923+00:00,1,4,3.0,-0.38455211194524375,0.574517,0.001476,True,,0.5482,,,8f88b7b
+d_regular_16_0,d_regular,pce_baseline_k1,,,,2026-06-30T06:03:09.662548+00:00,1,6,2.67,-0.7715874567451264,0.630223,0.008861,True,,5.2404,,,8f88b7b
+d_regular_16_1,d_regular,pce_baseline_k1,,,,2026-06-30T06:03:15.302495+00:00,1,6,2.67,-1.8582231435468677,0.65112,0.020315,True,,5.6287,,,8f88b7b
+d_regular_16_2,d_regular,pce_baseline_k1,,,,2026-06-30T06:03:27.662027+00:00,1,6,2.67,-1.0054519321486102,0.687614,0.007217,True,,12.3608,,,8f88b7b
+d_regular_16_3,d_regular,pce_baseline_k1,,,,2026-06-30T06:03:34.078051+00:00,1,6,2.67,-0.5563359669907795,0.626083,0.009051,True,,6.4569,,,8f88b7b
+d_regular_16_4,d_regular,pce_baseline_k1,,,,2026-06-30T06:03:39.523228+00:00,1,6,2.67,-0.7715874567451264,0.630223,0.008861,True,,5.4083,,,8f88b7b
+d_regular_20_0,d_regular,pce_baseline_k1,,,,2026-06-30T06:03:56.657141+00:00,1,7,2.86,-2.2881570454244375,0.653602,0.01042,True,,17.1255,,,8f88b7b
+d_regular_20_1,d_regular,pce_baseline_k1,,,,2026-06-30T06:04:13.370165+00:00,1,7,2.86,-0.9668739599162982,0.637086,0.007485,True,,16.7613,,,8f88b7b
+d_regular_20_2,d_regular,pce_baseline_k1,,,,2026-06-30T06:04:27.777688+00:00,1,7,2.86,-1.2546568095549995,0.657111,0.007669,True,,14.3618,,,8f88b7b
+d_regular_20_3,d_regular,pce_baseline_k1,,,,2026-06-30T06:04:44.593193+00:00,1,7,2.86,-1.5599988772603404,0.678421,0.004213,True,,16.8096,,,8f88b7b
+d_regular_20_4,d_regular,pce_baseline_k1,,,,2026-06-30T06:05:01.416353+00:00,1,7,2.86,-2.2881570454244375,0.653602,0.01042,True,,16.8257,,,8f88b7b
+d_regular_8_0,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:17.250831+00:00,1,3,2.67,-0.9861604124419332,0.748847,0.001175,True,,0.4226,,,8f88b7b
+d_regular_8_1,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:17.671708+00:00,1,3,2.67,-1.0376155241057423,0.753135,0.000838,True,,0.4212,,,8f88b7b
+d_regular_8_2,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:18.167280+00:00,1,3,2.67,-2.069637457526831,0.839136,0.003698,True,,0.4963,,,8f88b7b
+d_regular_8_3,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:18.652271+00:00,1,3,2.67,-0.1674565333032061,0.510466,0.001599,True,,0.4826,,,8f88b7b
+d_regular_8_4,d_regular,pce_baseline_k1,,,,2026-06-30T05:58:19.095511+00:00,1,3,2.67,-0.9861604124419332,0.748847,0.001175,True,,0.4425,,,8f88b7b
+erdos_renyi_12_0,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:20.503388+00:00,1,4,3.0,-1.4847984350486938,0.758657,0.073467,True,,1.4083,,,8f88b7b
+erdos_renyi_12_1,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:21.008490+00:00,1,4,3.0,-2.235112794890434,0.664082,0.014446,True,,0.5039,,,8f88b7b
+erdos_renyi_12_2,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:23.012608+00:00,1,4,3.0,-4.481954648474508,0.82374,0.179568,True,,2.0058,,,8f88b7b
+erdos_renyi_12_3,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:24.663952+00:00,1,4,3.0,-2.4814713481003694,0.768175,0.037648,True,,1.6489,,,8f88b7b
+erdos_renyi_12_4,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:26.076844+00:00,1,4,3.0,-1.4847984350486938,0.758657,0.073467,True,,1.4131,,,8f88b7b
+erdos_renyi_16_0,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:05:23.753807+00:00,1,6,2.67,-1.2157911581716645,0.792158,0.130393,False,,22.3311,,,8f88b7b
+erdos_renyi_16_1,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:05:29.333998+00:00,1,6,2.67,-0.09651584376826658,0.608866,0.002851,True,,5.6023,,,8f88b7b
+erdos_renyi_16_2,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:05:51.771446+00:00,1,6,2.67,-2.687573450735627,0.819662,0.377237,False,,22.4151,,,8f88b7b
+erdos_renyi_16_3,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:06:00.192741+00:00,1,6,2.67,-2.9097176945064396,0.754359,0.099077,True,,8.4161,,,8f88b7b
+erdos_renyi_16_4,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:06:22.439016+00:00,1,6,2.67,-1.2157911581716645,0.792158,0.130393,False,,22.2465,,,8f88b7b
+erdos_renyi_20_0,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:07:18.354776+00:00,1,7,2.86,-3.482592955273775,0.806852,0.162149,False,,55.9114,,,8f88b7b
+erdos_renyi_20_1,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:07:57.910520+00:00,1,7,2.86,-2.2120788580073816,0.710542,0.061078,True,,39.5536,,,8f88b7b
+erdos_renyi_20_2,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:08:27.602478+00:00,1,7,2.86,-3.2194445456476415,0.772291,0.025132,True,,29.7078,,,8f88b7b
+erdos_renyi_20_3,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:09:40.537966+00:00,1,7,2.86,-0.7701577025685301,0.730777,0.232741,False,,50.6638,,,8f88b7b
+erdos_renyi_20_4,erdos_renyi,pce_baseline_k1,,,,2026-06-30T06:10:36.528893+00:00,1,7,2.86,-3.482592955273775,0.806852,0.162149,False,,55.9963,,,8f88b7b
+erdos_renyi_8_0,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:27.780396+00:00,1,3,2.67,-2.695786017597829,0.834789,0.017291,True,,1.7028,,,8f88b7b
+erdos_renyi_8_1,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:28.269801+00:00,1,3,2.67,-1.0812165574920984,0.671179,0.001159,True,,0.5092,,,8f88b7b
+erdos_renyi_8_2,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:30.447952+00:00,1,3,2.67,-2.1503864025344064,0.791085,0.130366,False,,2.1581,,,8f88b7b
+erdos_renyi_8_3,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:31.227146+00:00,1,3,2.67,-1.324867760135447,0.763536,0.014946,True,,0.7772,,,8f88b7b
+erdos_renyi_8_4,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:32.926020+00:00,1,3,2.67,-2.695786017597829,0.834789,0.017291,True,,1.6996,,,8f88b7b
+erdos_renyi_8_42,erdos_renyi,pce_baseline_k1,,,,2026-06-30T05:58:33.895845+00:00,1,3,2.67,-2.1095115794818486,0.718197,0.01948,True,,0.9694,,,8f88b7b
+bipartite_12_0,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:43.361847+00:00,2,3,4.0,-4.384238694486992,0.637007,0.011612,True,,0.5896,,,8f88b7b
+bipartite_12_1,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:43.882455+00:00,2,3,4.0,-1.7446580332204884,0.562309,0.004062,True,,0.4816,,,8f88b7b
+bipartite_12_2,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:44.607688+00:00,2,3,4.0,-1.5885449973633325,0.534534,0.002861,True,,0.7254,,,8f88b7b
+bipartite_12_3,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:45.384169+00:00,2,3,4.0,-2.8874851691808976,0.584926,0.004106,True,,0.7753,,,8f88b7b
+bipartite_12_4,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:45.889651+00:00,2,3,4.0,-4.384238694486992,0.637007,0.011612,True,,0.5054,,,8f88b7b
+bipartite_16_0,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:14.638063+00:00,2,3,5.33,-3.210393295634317,0.544589,0.043475,False,,2.3518,,,8f88b7b
+bipartite_16_1,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:15.544868+00:00,2,3,5.33,-2.8047533119790318,0.535059,0.022638,True,,0.9048,,,8f88b7b
+bipartite_16_2,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:16.100946+00:00,2,3,5.33,-1.5374469531255603,0.548045,0.004879,True,,0.5564,,,8f88b7b
+bipartite_16_3,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:17.382694+00:00,2,3,5.33,-2.3292425964854253,0.531476,0.022736,True,,1.282,,,8f88b7b
+bipartite_16_4,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:19.791123+00:00,2,3,5.33,-3.210393295634317,0.544589,0.043475,False,,2.4072,,,8f88b7b
+bipartite_20_0,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:29.261500+00:00,2,3,6.67,-4.303252959835667,0.530738,0.140206,True,,9.4701,,,8f88b7b
+bipartite_20_1,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:38.290543+00:00,2,3,6.67,-5.936931756701815,0.547119,0.100589,True,,9.0281,,,8f88b7b
+bipartite_20_2,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:43.291642+00:00,2,3,6.67,-2.7626332510406755,0.53635,0.045097,True,,4.9997,,,8f88b7b
+bipartite_20_3,bipartite,pce_baseline_k2,,,,2026-06-30T06:11:51.515398+00:00,2,3,6.67,-5.152007160079256,0.540889,0.057623,True,,8.2244,,,8f88b7b
+bipartite_20_4,bipartite,pce_baseline_k2,,,,2026-06-30T06:12:00.821446+00:00,2,3,6.67,-4.303252959835667,0.530738,0.140206,True,,9.3066,,,8f88b7b
+bipartite_8_0,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:46.294955+00:00,2,2,4.0,-2.0780505874674517,0.586585,0.015217,True,,0.4043,,,8f88b7b
+bipartite_8_1,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:46.692309+00:00,2,2,4.0,-0.9999999596022011,0.583333,0.001132,True,,0.397,,,8f88b7b
+bipartite_8_2,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:47.066545+00:00,2,2,4.0,-2.2360677975394516,0.611803,0.00364,True,,0.3746,,,8f88b7b
+bipartite_8_3,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:47.495727+00:00,2,2,4.0,-2.82409040895055,0.641205,0.005037,True,,0.4276,,,8f88b7b
+bipartite_8_4,bipartite,pce_baseline_k2,,,,2026-06-30T06:10:47.860013+00:00,2,2,4.0,-2.0780505874674517,0.586585,0.015217,True,,0.3637,,,8f88b7b
+community_12_0,community,pce_baseline_k2,,,,2026-06-30T06:10:48.355487+00:00,2,3,4.0,-3.155372859535963,0.793562,0.010722,True,,0.4965,,,8f88b7b
+community_12_1,community,pce_baseline_k2,,,,2026-06-30T06:10:48.884072+00:00,2,3,4.0,-0.7465042530220471,0.73206,0.002363,True,,0.5265,,,8f88b7b
+community_12_2,community,pce_baseline_k2,,,,2026-06-30T06:10:49.404822+00:00,2,3,4.0,-3.4426800797763737,0.786067,0.011692,True,,0.5217,,,8f88b7b
+community_12_3,community,pce_baseline_k2,,,,2026-06-30T06:10:51.388068+00:00,2,3,4.0,-1.8563560267426964,0.773788,0.393216,False,,1.9827,,,8f88b7b
+community_12_4,community,pce_baseline_k2,,,,2026-06-30T06:10:51.843617+00:00,2,3,4.0,-3.155372859535963,0.793562,0.010722,True,,0.4537,,,8f88b7b
+community_16_0,community,pce_baseline_k2,,,,2026-06-30T06:12:01.640434+00:00,2,3,5.33,-3.1221740254521912,0.742443,0.017546,True,,0.8163,,,8f88b7b
+community_16_1,community,pce_baseline_k2,,,,2026-06-30T06:12:02.358029+00:00,2,3,5.33,-1.113523659915637,0.729853,0.003009,True,,0.7188,,,8f88b7b
+community_16_2,community,pce_baseline_k2,,,,2026-06-30T06:12:03.067816+00:00,2,3,5.33,-2.798993407623213,0.71598,0.019248,True,,0.7088,,,8f88b7b
+community_16_3,community,pce_baseline_k2,,,,2026-06-30T06:12:04.061181+00:00,2,3,5.33,-2.6150251882910918,0.752301,0.028218,True,,1.0292,,,8f88b7b
+community_16_4,community,pce_baseline_k2,,,,2026-06-30T06:12:05.019606+00:00,2,3,5.33,-3.1221740254521912,0.742443,0.017546,True,,0.9201,,,8f88b7b
+community_20_0,community,pce_baseline_k2,,,,2026-06-30T06:12:09.116323+00:00,2,3,6.67,-2.1130318406079263,0.662261,0.021618,True,,4.0965,,,8f88b7b
+community_20_1,community,pce_baseline_k2,,,,2026-06-30T06:12:14.522717+00:00,2,3,6.67,-1.1616809308535903,0.702695,0.003912,True,,5.4088,,,8f88b7b
+community_20_2,community,pce_baseline_k2,,,,2026-06-30T06:12:19.460171+00:00,2,3,6.67,-1.3543586501768126,0.634748,0.001922,True,,4.9359,,,8f88b7b
+community_20_3,community,pce_baseline_k2,,,,2026-06-30T06:12:25.933868+00:00,2,3,6.67,-0.9962559843881206,0.675625,0.004201,True,,6.4725,,,8f88b7b
+community_20_4,community,pce_baseline_k2,,,,2026-06-30T06:12:30.022301+00:00,2,3,6.67,-2.1130318406079263,0.662261,0.021618,True,,4.0885,,,8f88b7b
+community_8_0,community,pce_baseline_k2,,,,2026-06-30T06:10:52.187738+00:00,2,2,4.0,-1.093236140249111,0.704662,0.006304,True,,0.3437,,,8f88b7b
+community_8_1,community,pce_baseline_k2,,,,2026-06-30T06:10:52.573655+00:00,2,2,4.0,-2.408956232875109,0.744942,0.006674,True,,0.386,,,8f88b7b
+community_8_2,community,pce_baseline_k2,,,,2026-06-30T06:10:53.032100+00:00,2,2,4.0,-1.2670982485567643,0.733364,0.001038,True,,0.4576,,,8f88b7b
+community_8_3,community,pce_baseline_k2,,,,2026-06-30T06:10:55.045569+00:00,2,2,4.0,-1.6017783424085457,0.787611,3.444564,False,,2.0131,,,8f88b7b
+community_8_4,community,pce_baseline_k2,,,,2026-06-30T06:10:55.433186+00:00,2,2,4.0,-1.093236140249111,0.704662,0.006304,True,,0.3873,,,8f88b7b
+d_regular_12_0,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:55.868936+00:00,2,3,4.0,-1.574883015325105,0.611715,0.001848,True,,0.4342,,,8f88b7b
+d_regular_12_1,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:56.327199+00:00,2,3,4.0,-2.4159233533216673,0.637998,0.00331,True,,0.4582,,,8f88b7b
+d_regular_12_2,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:56.744344+00:00,2,3,4.0,-1.0832045084051174,0.59635,0.00265,True,,0.4166,,,8f88b7b
+d_regular_12_3,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:57.188250+00:00,2,3,4.0,-2.846398790079918,0.65145,0.013049,True,,0.4437,,,8f88b7b
+d_regular_12_4,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:57.626967+00:00,2,3,4.0,-1.574883015325105,0.611715,0.001848,True,,0.438,,,8f88b7b
+d_regular_16_0,d_regular,pce_baseline_k2,,,,2026-06-30T06:12:30.737202+00:00,2,3,5.33,-2.9999581310861583,0.673076,0.005793,True,,0.7125,,,8f88b7b
+d_regular_16_1,d_regular,pce_baseline_k2,,,,2026-06-30T06:12:31.632219+00:00,2,3,5.33,-2.7606590669077287,0.668474,0.047982,True,,0.8955,,,8f88b7b
+d_regular_16_2,d_regular,pce_baseline_k2,,,,2026-06-30T06:12:32.973452+00:00,2,3,5.33,-2.5342799700748353,0.719464,0.021276,True,,1.3416,,,8f88b7b
+d_regular_16_3,d_regular,pce_baseline_k2,,,,2026-06-30T06:12:33.799441+00:00,2,3,5.33,-1.242667147870788,0.639282,0.007171,True,,0.8248,,,8f88b7b
+d_regular_16_4,d_regular,pce_baseline_k2,,,,2026-06-30T06:12:34.647547+00:00,2,3,5.33,-2.9999581310861583,0.673076,0.005793,True,,0.8471,,,8f88b7b
+d_regular_20_0,d_regular,pce_baseline_k2,,,,2026-06-30T06:12:41.101782+00:00,2,3,6.67,-1.3814360575530191,0.642268,0.0257,True,,6.4552,,,8f88b7b
+d_regular_20_1,d_regular,pce_baseline_k2,,,,2026-06-30T06:12:48.053721+00:00,2,3,6.67,-3.7326481457833856,0.671658,0.06388,True,,6.9506,,,8f88b7b
+d_regular_20_2,d_regular,pce_baseline_k2,,,,2026-06-30T06:12:55.708547+00:00,2,3,6.67,-0.29067943211965086,0.644752,0.012818,True,,7.6544,,,8f88b7b
+d_regular_20_3,d_regular,pce_baseline_k2,,,,2026-06-30T06:13:02.474449+00:00,2,3,6.67,-2.464218576990086,0.690319,0.090105,True,,6.7659,,,8f88b7b
+d_regular_20_4,d_regular,pce_baseline_k2,,,,2026-06-30T06:13:08.980142+00:00,2,3,6.67,-1.3814360575530191,0.642268,0.0257,True,,6.5056,,,8f88b7b
+d_regular_8_0,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:57.991564+00:00,2,2,4.0,-1.9999998348317625,0.833333,0.003251,True,,0.3643,,,8f88b7b
+d_regular_8_1,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:58.422020+00:00,2,2,4.0,-2.5280811884038745,0.87734,0.003202,True,,0.4293,,,8f88b7b
+d_regular_8_2,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:58.780293+00:00,2,2,4.0,-2.0098261723514037,0.834152,0.006811,True,,0.3579,,,8f88b7b
+d_regular_8_3,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:59.221429+00:00,2,2,4.0,-0.5624999873583729,0.535156,0.000433,True,,0.4421,,,8f88b7b
+d_regular_8_4,d_regular,pce_baseline_k2,,,,2026-06-30T06:10:59.608258+00:00,2,2,4.0,-1.9999998348317625,0.833333,0.003251,True,,0.3845,,,8f88b7b
+erdos_renyi_12_0,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:00.053746+00:00,2,3,4.0,-2.650895778076276,0.77948,0.02123,True,,0.4464,,,8f88b7b
+erdos_renyi_12_1,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:00.451172+00:00,2,3,4.0,-2.627515278521441,0.674408,0.003396,True,,0.3972,,,8f88b7b
+erdos_renyi_12_2,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:01.371633+00:00,2,3,4.0,-3.6985080030338375,0.809232,0.033733,True,,0.9188,,,8f88b7b
+erdos_renyi_12_3,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:01.792359+00:00,2,3,4.0,-3.31180426606615,0.783552,0.006086,True,,0.4207,,,8f88b7b
+erdos_renyi_12_4,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:02.243472+00:00,2,3,4.0,-2.650895778076276,0.77948,0.02123,True,,0.4498,,,8f88b7b
+erdos_renyi_16_0,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:13:10.985795+00:00,2,3,5.33,-3.239851948451638,0.812399,0.055697,True,,2.0044,,,8f88b7b
+erdos_renyi_16_1,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:13:11.678199+00:00,2,3,5.33,-0.8641310668235868,0.622574,0.017354,True,,0.6911,,,8f88b7b
+erdos_renyi_16_2,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:13:12.974685+00:00,2,3,5.33,-2.4546557808853824,0.817236,0.131861,True,,1.2981,,,8f88b7b
+erdos_renyi_16_3,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:13:14.126924+00:00,2,3,5.33,-0.2422951891540911,0.725982,0.020132,True,,1.1487,,,8f88b7b
+erdos_renyi_16_4,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:13:16.288497+00:00,2,3,5.33,-3.239851948451638,0.812399,0.055697,True,,2.1633,,,8f88b7b
+erdos_renyi_20_0,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:13:32.959586+00:00,2,3,6.67,-5.582539018405476,0.820143,0.148198,False,,16.6695,,,8f88b7b
+erdos_renyi_20_1,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:13:41.476839+00:00,2,3,6.67,-2.7320592610097676,0.715959,0.040829,True,,8.5179,,,8f88b7b
+erdos_renyi_20_2,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:13:53.032350+00:00,2,3,6.67,-6.093663399771363,0.79585,0.072856,True,,11.554,,,8f88b7b
+erdos_renyi_20_3,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:14:05.183164+00:00,2,3,6.67,-5.35414235242261,0.770294,0.10667,False,,12.15,,,8f88b7b
+erdos_renyi_20_4,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:14:21.733280+00:00,2,3,6.67,-5.582539018405476,0.820143,0.148198,False,,16.5507,,,8f88b7b
+erdos_renyi_8_0,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:02.657037+00:00,2,2,4.0,-3.102567982910081,0.855128,0.024262,True,,0.4146,,,8f88b7b
+erdos_renyi_8_1,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:03.114225+00:00,2,2,4.0,-1.4088059528287744,0.689378,0.00078,True,,0.4571,,,8f88b7b
+erdos_renyi_8_2,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:03.631074+00:00,2,2,4.0,-3.77977651580536,0.849278,0.023388,True,,0.5748,,,8f88b7b
+erdos_renyi_8_3,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:04.118828+00:00,2,2,4.0,-2.3781105394428876,0.807421,0.008006,True,,0.4276,,,8f88b7b
+erdos_renyi_8_4,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:04.609667+00:00,2,2,4.0,-3.102567982910081,0.855128,0.024262,True,,0.4922,,,8f88b7b
+erdos_renyi_8_42,erdos_renyi,pce_baseline_k2,,,,2026-06-30T06:11:05.001787+00:00,2,2,4.0,-4.597384242914863,0.807049,0.023268,True,,0.3899,,,8f88b7b
+bipartite_12_0,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:29:40.663326+00:00,2,6,2.0,0.433824990199442,0.489671,0.000897,True,,,low_order_sufficient,"The graph is bipartite with moderate density and degree, making k=2 suitable for efficient encoding while avoiding barre",8f88b7b
+bipartite_12_1,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:31:29.455244+00:00,2,6,2.0,-2.3215984247448156,0.582914,0.013703,True,,,low_order_sufficient,"The graph is bipartite with low density and small size, making k=2 sufficient for efficient encoding while avoiding barr",8f88b7b
+bipartite_12_2,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:33:25.633036+00:00,2,6,2.0,-0.8271990173093685,0.517983,0.003145,True,,,low_order_sufficient,The graph is bipartite with moderate density and average degree. Using k=2 allows efficient compression while maintainin,8f88b7b
+bipartite_12_3,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:28:44.192836+00:00,2,6,2.0,0.9472341655334973,0.47214,0.002526,True,,,low_order_sufficient,"The graph is bipartite with low density and average degree, making k=2 suitable for efficient encoding while avoiding ba",8f88b7b
+bipartite_12_4,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:30:32.871230+00:00,2,6,2.0,-0.5852082118203888,0.518288,0.003013,True,,,low_order_sufficient,"The graph is bipartite with low density and average degree, making k=2 suitable for efficient encoding without significa",8f88b7b
+bipartite_16_0,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:39:39.217274+00:00,2,8,2.0,-1.9759848794595138,0.527444,0.013327,True,,,low_order_sufficient,The graph is bipartite with moderate density and degree. Using k=2 allows efficient use of qubits while maintaining dive,8f88b7b
+bipartite_16_1,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:42:02.319611+00:00,2,8,2.0,0.7055586693196438,0.491181,0.002786,True,,,low_order_sufficient,"The graph is bipartite with moderate density and degree variability, making k=2 suitable for efficient qubit usage while",8f88b7b
+bipartite_16_2,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:44:12.917091+00:00,1,6,2.67,-0.7763439674031481,0.524261,0.027698,True,,,low_order_sufficient,"The graph is bipartite with low density and small size, making k=1 sufficient.",8f88b7b
+bipartite_16_3,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:50:43.596982+00:00,2,8,2.0,-1.5376555763361164,0.520779,0.028617,True,,,low_order_sufficient,"The graph is bipartite with moderate density and degree, making k=2 suitable for efficient encoding without significant ",8f88b7b
+bipartite_16_4,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:53:13.320473+00:00,2,8,2.0,-3.086460234364978,0.542868,0.046164,True,,,low_order_sufficient,"The graph is bipartite with moderate density and low clustering, making it suitable for k=2 encoding.",8f88b7b
+bipartite_20_0,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:02:18.335134+00:00,2,10,2.0,3.9165482306953256,0.472025,0.003813,True,,,low_order_sufficient,The graph is bipartite with moderate density and degree variability. Using k=2 allows efficient compression while mainta,8f88b7b
+bipartite_20_1,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:06:09.849678+00:00,2,10,2.0,2.5624579842327733,0.479663,0.00516,True,,,low_order_sufficient,The graph is bipartite with moderate density and degree. Using k=2 allows efficient compression while maintaining divers,8f88b7b
+bipartite_20_2,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:12:12.449119+00:00,2,10,2.0,-0.00662523544037566,0.500087,0.003011,True,,,low_order_sufficient,"The graph is bipartite with moderate density and degree variability, making k=2 a suitable choice for balancing qubit ef",8f88b7b
+bipartite_20_3,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:16:06.005278+00:00,2,10,2.0,2.768047917326098,0.478031,0.005331,True,,,low_order_sufficient,"The graph is bipartite with moderate density and average degree, making k=2 a suitable choice for efficient compression ",8f88b7b
+bipartite_20_4,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:22:38.075410+00:00,2,10,2.0,0.3100615363332155,0.497785,0.009969,True,,,low_order_sufficient,The bipartite graph with moderate density and degree suggests k=2 is sufficient to capture correlations without excessiv,8f88b7b
+bipartite_8_0,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:34:45.136294+00:00,2,4,2.0,-2.7714653776275937,0.625976,0.016076,True,,,low_order_sufficient,"The graph is bipartite with moderate density and low average degree, making it suitable for k=2 encoding without signifi",8f88b7b
+bipartite_8_1,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:35:55.486965+00:00,1,4,2.0,-0.8740546255025279,0.572838,0.000482,True,,,low_order_sufficient,"The graph is bipartite with low density and small size, making k=1 sufficient.",8f88b7b
+bipartite_8_2,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:37:14.657629+00:00,2,4,2.0,-0.42016413299471844,0.521008,0.000703,True,,,low_order_sufficient,"The graph is bipartite with low density and average degree, making k=2 suitable for efficient encoding without significa",8f88b7b
+bipartite_8_3,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:18:03.026365+00:00,2,4,2.0,-0.999999955749648,0.55,0.000963,True,,,low_order_sufficient,"The graph is bipartite with low density and average degree, making k=2 sufficient for efficient encoding while avoiding ",8f88b7b
+bipartite_8_4,bipartite,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:19:16.753829+00:00,2,4,2.0,-2.5261310976633062,0.605255,0.002205,True,,,low_order_sufficient,The bipartite graph with moderate density and low average degree suggests that k=2 is sufficient to capture the structur,8f88b7b
+community_12_0,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:39:08.661389+00:00,2,6,2.0,-2.7060880103240312,0.731097,0.003411,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is appropriate to balance qubit efficiency and ",8f88b7b
+community_12_1,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:41:02.737511+00:00,2,6,2.0,-3.818998919635862,0.805214,0.003893,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is sufficient for capturing correlations withou",8f88b7b
+community_12_2,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:42:57.326183+00:00,2,6,2.0,-1.205089494494931,0.730127,0.001239,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for capturing correlations without excessi",8f88b7b
+community_12_3,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:32:18.146424+00:00,2,6,2.0,-0.5413853760776339,0.737261,0.001097,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is sufficient while avoiding barren plateaus.",8f88b7b
+community_12_4,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:34:04.336674+00:00,2,6,2.0,-1.3745936256203821,0.7467,0.004161,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is appropriate to balance qubit efficiency and ",8f88b7b
+community_16_0,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:25:00.459423+00:00,2,8,2.0,-2.6904975978332533,0.73381,0.003423,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr",8f88b7b
+community_16_1,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:31:25.093904+00:00,2,8,2.0,-3.2262374789638866,0.777869,0.001142,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for balancing qubit efficiency and trainin",8f88b7b
+community_16_2,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:33:48.645512+00:00,2,8,2.0,-0.5856961431226458,0.671714,0.001175,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is sufficient while avoiding potential barren p",8f88b7b
+community_16_3,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:36:11.930974+00:00,2,8,2.0,-0.371465817508484,0.707429,0.001573,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is sufficient to capture the correlations witho",8f88b7b
+community_16_4,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:41:25.071972+00:00,2,8,2.0,-2.6904975978332533,0.73381,0.003423,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr",8f88b7b
+community_20_0,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:45:04.622073+00:00,2,10,2.0,-0.43549296907914936,0.62871,0.001142,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr",8f88b7b
+community_20_1,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:53:01.810803+00:00,2,10,2.0,13.66185347485141,0.455636,0.003468,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for capturing correlations while avoiding ",8f88b7b
+community_20_2,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T07:56:42.000497+00:00,2,10,2.0,-1.079364239838982,0.630312,0.00167,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr",8f88b7b
+community_20_3,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:03:03.476953+00:00,2,10,2.0,-2.071499433688836,0.690155,8.3e-05,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is sufficient while avoiding higher-order compl",8f88b7b
+community_20_4,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:06:42.594264+00:00,2,10,2.0,-0.43549296907914936,0.62871,0.001142,True,,,low_order_sufficient,"The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr",8f88b7b
+community_8_0,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:44:15.855279+00:00,2,4,2.0,-1.4282848132872856,0.714268,0.002891,True,,,low_order_sufficient,"The graph is relatively sparse with a community structure, making k=2 a suitable choice for balancing qubit efficiency a",8f88b7b
+community_8_1,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:45:32.798964+00:00,2,4,2.0,-0.6332147505984227,0.64629,0.000606,True,,,low_order_sufficient,"The graph has a community structure and moderate density, suggesting k=2 is sufficient.",8f88b7b
+community_8_2,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:46:52.617160+00:00,2,4,2.0,-1.4061452338650948,0.743296,0.000556,True,,,low_order_sufficient,"The graph is relatively sparse and has a community structure, making k=2 a suitable choice for balancing qubit efficienc",8f88b7b
+community_8_3,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:20:29.135131+00:00,2,4,2.0,-1.23606774198411,0.764754,0.004384,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is appropriate to capture the correlations with",8f88b7b
+community_8_4,community,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:21:41.552584+00:00,2,4,2.0,-2.0925887621702364,0.754629,0.008162,True,,,low_order_sufficient,"The graph has moderate density and a community structure, suggesting k=2 is appropriate for capturing correlations witho",8f88b7b
+d_regular_12_0,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:48:46.613992+00:00,2,6,2.0,0.33082443406119344,0.552162,0.002797,True,,,low_order_sufficient,"The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient encoding while avoid",8f88b7b
+d_regular_12_1,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:50:41.347124+00:00,2,6,2.0,-2.5606785119115747,0.642521,0.003252,True,,,low_order_sufficient,"The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient compression while ma",8f88b7b
+d_regular_12_2,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:52:37.262912+00:00,2,6,2.0,-1.192672810282045,0.599771,0.001472,True,,,low_order_sufficient,"The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient encoding while avoid",8f88b7b
+d_regular_12_3,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:11:14.079323+00:00,2,6,2.0,-1.5807647606885686,0.611899,0.00132,True,,,low_order_sufficient,"The graph is regular with low density and moderate size, making k=2 suitable for efficient encoding while avoiding barre",8f88b7b
+d_regular_12_4,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:13:05.982915+00:00,2,6,2.0,-1.9704215477097518,0.624076,0.004066,True,,,low_order_sufficient,"The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient compression while ma",8f88b7b
+d_regular_16_0,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:15:28.108027+00:00,2,8,2.0,-0.49176323859466115,0.624842,0.009662,True,,,low_order_sufficient,"The graph is regular with moderate density and degree, making k=2 suitable for efficient encoding while avoiding potenti",8f88b7b
+d_regular_16_1,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:22:06.496507+00:00,2,8,2.0,1.606782674520314,0.584485,0.00291,True,,,low_order_sufficient,"The graph is regular with moderate density and degree, making k=2 suitable for efficient compression while avoiding barr",8f88b7b
+d_regular_16_2,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:24:32.721709+00:00,2,8,2.0,-0.6036411345987469,0.679243,0.009881,True,,,low_order_sufficient,"The graph is regular with moderate density and degree, making k=2 suitable for efficient encoding while avoiding barren ",8f88b7b
+d_regular_16_3,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:26:54.422427+00:00,2,8,2.0,0.22748910178643827,0.61101,0.01252,True,,,low_order_sufficient,"The graph is regular with moderate density and degree, making k=2 a suitable choice for efficient qubit usage while avoi",8f88b7b
+d_regular_16_4,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:32:10.743093+00:00,2,8,2.0,-0.49176323859466115,0.624842,0.009662,True,,,low_order_sufficient,"The graph is regular with moderate density and degree, making k=2 suitable for efficient qubit usage while avoiding pote",8f88b7b
+d_regular_20_0,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:43:55.103370+00:00,2,10,2.0,-1.0561754248378374,0.638202,0.00982,True,,,low_order_sufficient,"The graph is regular with moderate density and average clustering, suggesting that k=2 is sufficient for efficient encod",8f88b7b
+d_regular_20_1,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:47:42.796963+00:00,2,10,2.0,0.037652992973673874,0.624529,0.002046,True,,,low_order_sufficient,"The graph is regular with moderate density and average clustering, suggesting that k=2 can provide a good balance betwee",8f88b7b
+d_regular_20_2,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:53:29.344449+00:00,2,10,2.0,-5.404194368518543,0.71031,0.056154,True,,,low_order_sufficient,"The graph is regular with moderate density and average clustering, suggesting k=2 is sufficient.",8f88b7b
+d_regular_20_3,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T08:57:54.691272+00:00,2,10,2.0,9.264343261859548,0.535995,0.015407,True,,,low_order_sufficient,"The graph is regular with moderate density and connectivity, making k=2 suitable for efficient encoding while avoiding b",8f88b7b
+d_regular_20_4,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:06:29.724138+00:00,2,10,2.0,-0.5757440731185874,0.632197,0.010388,True,,,low_order_sufficient,"The graph is regular with moderate density and average clustering, making k=2 a suitable choice for balancing qubit effi",8f88b7b
+d_regular_8_0,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-29T18:36:46.318722+00:00,2,4,2.0,-1.9999998786519881,0.625,0.002546,True,,,low_order_sufficient,"The graph is sparse with low degree and no clustering, making k=2 sufficient.",8f88b7b
+d_regular_8_1,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-29T18:38:00.081027+00:00,2,4,2.0,-2.528081086653232,0.87734,0.004202,True,,,low_order_sufficient,"The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while avoiding barren plat",8f88b7b
+d_regular_8_2,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:53:56.263827+00:00,2,4,2.0,-2.009826549602216,0.834152,0.002373,True,,,low_order_sufficient,"The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while avoiding barren plat",8f88b7b
+d_regular_8_3,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:22:54.357259+00:00,2,4,2.0,-1.414213538024305,0.588388,0.000758,True,,,low_order_sufficient,"The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while maintaining diversit",8f88b7b
+d_regular_8_4,d_regular,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T06:24:07.400606+00:00,2,4,2.0,-3.125410098972761,0.927118,0.011857,True,,,low_order_sufficient,"The graph is sparse with low density and small size, making k=2 sufficient for efficient encoding while avoiding barren ",8f88b7b
+erdos_renyi_12_0,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:55:52.146745+00:00,2,6,2.0,0.8639133888964933,0.706224,0.003097,True,,,gradient_risk,"The graph is dense with a high degree mean and standard deviation, indicating a complex structure that benefits from hig",8f88b7b
+erdos_renyi_12_1,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:57:49.964459+00:00,2,6,2.0,-0.20611301912297564,0.610687,0.008792,True,,,low_order_sufficient,The graph is moderately dense with a degree mean of 3.83 and average clustering coefficient of 0.375. Given these charac,8f88b7b
+erdos_renyi_12_2,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:59:43.337874+00:00,2,6,2.0,-0.7996383120881836,0.755549,0.006249,True,,,gradient_risk,"The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding (k=2) to capture t",8f88b7b
+erdos_renyi_12_3,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:08:18.866195+00:00,2,6,2.0,0.7752662888658108,0.707865,0.00314,True,,,gradient_risk,"The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding to capture the com",8f88b7b
+erdos_renyi_12_4,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:12:21.709598+00:00,2,6,2.0,-0.30386198362988726,0.737569,0.004149,True,,,gradient_risk,"The graph is dense with high connectivity, suggesting k=2 for better compression while monitoring potential gradient iss",8f88b7b
+erdos_renyi_16_0,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:14:52.722893+00:00,2,8,2.0,-0.6920890296184405,0.786921,0.028331,True,,,gradient_risk,"The graph is dense with high average degree and clustering coefficient, suggesting a higher correlation order (k=2) to c",8f88b7b
+erdos_renyi_16_1,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:17:19.202928+00:00,2,8,2.0,0.05978338622655402,0.606075,0.006677,True,,,low_order_sufficient,The graph is not too dense (density = 0.283333) and has a moderate degree range (1-7). Using k=2 allows for efficient us,8f88b7b
+erdos_renyi_16_2,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:22:57.759704+00:00,2,8,2.0,0.41868869540553155,0.787305,0.009931,True,,,needs_higher_order,"The graph is dense with high average degree and clustering coefficient, suggesting higher-order encoding (k=2) to captur",8f88b7b
+erdos_renyi_16_3,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:25:20.179234+00:00,2,8,2.0,-0.6195320519725895,0.729995,0.016917,True,,,needs_higher_order,"The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding is necessary to ca",8f88b7b
+erdos_renyi_16_4,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:27:46.799646+00:00,2,8,2.0,-0.6920890296184405,0.786921,0.028331,True,,,gradient_risk,"The graph is dense with high connectivity, suggesting higher-order encoding (k=2) to capture correlations efficiently. H",8f88b7b
+erdos_renyi_20_0,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:34:55.739956+00:00,2,10,2.0,5.00927405329482,0.753106,0.010832,True,,,gradient_risk,The graph is dense with high connectivity and average degree. Using k=2 helps reduce the number of qubits needed while m,8f88b7b
+erdos_renyi_20_1,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:38:47.930018+00:00,2,10,2.0,5.195807662969815,0.633377,0.015476,True,,,low_order_sufficient,The graph is moderately dense with a single component and average degree of 6.6. Using k=2 allows efficient compression ,8f88b7b
+erdos_renyi_20_2,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:44:51.904986+00:00,2,10,2.0,-2.468151096125341,0.766132,0.037262,True,,,low_order_sufficient,The graph is moderately dense with a single component and relatively uniform degree distribution. Using k=2 allows effic,8f88b7b
+erdos_renyi_20_3,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T09:54:52.312123+00:00,2,10,2.0,-0.03494005690816908,0.724439,0.00337,True,,,low_order_sufficient,"The graph is moderately dense with a high degree mean and standard deviation, suggesting a balanced approach with k=2 to",8f88b7b
+erdos_renyi_20_4,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T10:09:06.892629+00:00,2,10,2.0,41.73106288796799,0.520689,2.748565,False,,,gradient_risk,The graph is dense with high connectivity and average degree. Using k=2 helps reduce the number of qubits needed while m,8f88b7b
+erdos_renyi_8_0,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T02:19:54.635429+00:00,2,4,2.0,-2.9450423751717505,0.789377,0.002863,True,,,low_order_sufficient,The graph is moderately dense with a density of 0.571429 and average degree of 4.0. Using k=2 allows efficient use of qu,8f88b7b
+erdos_renyi_8_1,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-29T18:40:31.392774+00:00,2,4,2.0,-1.8284269068935832,0.71269,0.005908,True,,,low_order_sufficient,"The graph is not highly dense and has a moderate degree range, making k=2 suitable for efficient representation while av",8f88b7b
+erdos_renyi_8_2,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T03:00:58.311916+00:00,2,4,2.0,-1.5102337582597143,0.768223,0.004336,True,,,gradient_risk,"The graph is dense with high modularity, suggesting k=2 for better compression while monitoring gradient risk.",8f88b7b
+erdos_renyi_8_3,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T10:12:28.942822+00:00,2,4,2.0,-2.529041029838075,0.81371,0.001812,True,,,needs_higher_order,"The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding is needed to captu",8f88b7b
+erdos_renyi_8_4,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T10:13:43.641266+00:00,2,4,2.0,-0.5941595812752037,0.729708,0.000625,True,,,low_order_sufficient,The graph is moderately dense with a density of 0.5 and average degree of 3.5. Using k=2 allows efficient representation,8f88b7b
+erdos_renyi_8_42,erdos_renyi,llm_pce,Qwen/Qwen2.5-32B-Instruct,default,bb9e8d4768c2,2026-06-30T03:05:42.182639+00:00,2,,,-4.597384242914863,0.807049,0.001,True,,,gradient_risk,The graph is dense with a density of 0.642857 and high average degree. Using k=2 allows efficient compression while avoi,8f88b7b

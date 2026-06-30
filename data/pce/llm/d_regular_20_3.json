@@ -1,0 +1,303 @@
+{
+  "k": 2,
+  "num_physical_qubits": 10,
+  "num_variables": 20,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIIIIIII",
+    "1": "YYIIIIIIII",
+    "2": "ZZIIIIIIII",
+    "3": "IXXIIIIIII",
+    "4": "IYYIIIIIII",
+    "5": "IZZIIIIIII",
+    "6": "IIXXIIIIII",
+    "7": "IIYYIIIIII",
+    "8": "IIZZIIIIII",
+    "9": "IIIIXXIIII",
+    "10": "IIIIXXIIII",
+    "11": "IIIIZZIIII",
+    "12": "IIIIIXXIII",
+    "13": "IIIIIXXIII",
+    "14": "IIIIIZZIII",
+    "15": "IIIIIIXXII",
+    "16": "IIIIIIXXII",
+    "17": "IIIIIIZZII",
+    "18": "IIIIIIIXXI",
+    "19": "IIIIIIIXXI"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIIIIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIIIIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIIIIIII"
+    },
+    "3": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXXIIIIIII"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYYIIIIIII"
+    },
+    "5": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZZIIIIIII"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXIIIIII"
+    },
+    "7": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYIIIIII"
+    },
+    "8": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZIIIIII"
+    },
+    "9": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXXIIII"
+    },
+    "10": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXXIIII"
+    },
+    "11": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIZZIIII"
+    },
+    "12": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIXXIII"
+    },
+    "13": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIXXIII"
+    },
+    "14": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIIZZIII"
+    },
+    "15": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIXXII"
+    },
+    "16": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIXXII"
+    },
+    "17": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIIIZZII"
+    },
+    "18": {
+      "qubits": [
+        7,
+        8
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIIXXI"
+    },
+    "19": {
+      "qubits": [
+        7,
+        8
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIIXXI"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is regular with moderate density and connectivity, making k=2 suitable for efficient encoding while avoiding barren plateaus.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "d_regular_20_3",
+  "family": "d_regular",
+  "features": {
+    "num_nodes": 20,
+    "num_edges": 50,
+    "density": 0.263158,
+    "degree_min": 5,
+    "degree_max": 5,
+    "degree_mean": 5.0,
+    "degree_std": 0.0,
+    "degree_histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree_bin_edges": [
+      4.5,
+      4.6,
+      4.7,
+      4.8,
+      4.9,
+      5.0,
+      5.1,
+      5.2,
+      5.3,
+      5.4,
+      5.5
+    ],
+    "avg_clustering": 0.195,
+    "transitivity": 0.195,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.393943,
+    "graph_id": "d_regular_20_3",
+    "family": "d_regular",
+    "params": {
+      "seed": 3
+    }
+  }
+}

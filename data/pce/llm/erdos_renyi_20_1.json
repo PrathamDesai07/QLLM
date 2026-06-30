@@ -1,0 +1,303 @@
+{
+  "k": 2,
+  "num_physical_qubits": 10,
+  "num_variables": 20,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIIIIIII",
+    "1": "YYIIIIIIII",
+    "2": "ZZIIIIIIII",
+    "3": "IXXIIIIIII",
+    "4": "IYYIIIIIII",
+    "5": "IZZIIIIIII",
+    "6": "IIXXIIIIII",
+    "7": "IIYYIIIIII",
+    "8": "IIZZIIIIII",
+    "9": "IIIIXXIIII",
+    "10": "IIIIXXIIII",
+    "11": "IIIIZZIIII",
+    "12": "IIIIIXXIII",
+    "13": "IIIIIXXIII",
+    "14": "IIIIIZZIII",
+    "15": "IIIIIIXXII",
+    "16": "IIIIIIXXII",
+    "17": "IIIIIIZZII",
+    "18": "IIIIIIIXXI",
+    "19": "IIIIIIIXXI"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIIIIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIIIIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIIIIIII"
+    },
+    "3": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXXIIIIIII"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYYIIIIIII"
+    },
+    "5": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZZIIIIIII"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXIIIIII"
+    },
+    "7": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYIIIIII"
+    },
+    "8": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZIIIIII"
+    },
+    "9": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXXIIII"
+    },
+    "10": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXXIIII"
+    },
+    "11": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIZZIIII"
+    },
+    "12": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIXXIII"
+    },
+    "13": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIXXIII"
+    },
+    "14": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIIZZIII"
+    },
+    "15": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIXXII"
+    },
+    "16": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIXXII"
+    },
+    "17": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIIIZZII"
+    },
+    "18": {
+      "qubits": [
+        7,
+        8
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIIXXI"
+    },
+    "19": {
+      "qubits": [
+        7,
+        8
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIIXXI"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is moderately dense with a single component and average degree of 6.6. Using k=2 allows efficient compression while maintaining diversity in Pauli operators.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "erdos_renyi_20_1",
+  "family": "erdos_renyi",
+  "features": {
+    "num_nodes": 20,
+    "num_edges": 66,
+    "density": 0.347368,
+    "degree_min": 3,
+    "degree_max": 11,
+    "degree_mean": 6.6,
+    "degree_std": 2.4576,
+    "degree_histogram": [
+      2,
+      1,
+      5,
+      4,
+      0,
+      2,
+      2,
+      0,
+      1,
+      3
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.8,
+      4.6,
+      5.4,
+      6.2,
+      7.0,
+      7.800000000000001,
+      8.600000000000001,
+      9.4,
+      10.2,
+      11.0
+    ],
+    "avg_clustering": 0.354069,
+    "transitivity": 0.383721,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.53722,
+    "graph_id": "erdos_renyi_20_1",
+    "family": "erdos_renyi",
+    "params": {
+      "seed": 1
+    }
+  }
+}

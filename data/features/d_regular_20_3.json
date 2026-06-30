@@ -1,0 +1,45 @@
+{
+  "num_nodes": 20,
+  "num_edges": 50,
+  "density": 0.263158,
+  "degree_min": 5,
+  "degree_max": 5,
+  "degree_mean": 5.0,
+  "degree_std": 0.0,
+  "degree_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    20,
+    0,
+    0,
+    0,
+    0
+  ],
+  "degree_bin_edges": [
+    4.5,
+    4.6,
+    4.7,
+    4.8,
+    4.9,
+    5.0,
+    5.1,
+    5.2,
+    5.3,
+    5.4,
+    5.5
+  ],
+  "avg_clustering": 0.195,
+  "transitivity": 0.195,
+  "num_components": 1,
+  "largest_component_size": 20,
+  "component_size_ratio": 1.0,
+  "algebraic_connectivity": 0.393943,
+  "graph_id": "d_regular_20_3",
+  "family": "d_regular",
+  "params": {
+    "seed": 3
+  }
+}

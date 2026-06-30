@@ -1,0 +1,82 @@
+{
+  "graph_id": "community_16_4",
+  "family": "community",
+  "num_nodes": 16,
+  "num_edges": 34,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -2.6904975978332533,
+  "optimal_params": [
+    5.014642178026527,
+    2.871122501446572
+  ],
+  "approximation_ratio": 0.73381,
+  "gradient_norm_at_opt": 0.003423,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T07:41:25.071972+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 16,
+    "num_edges": 34,
+    "density": 0.283333,
+    "degree_min": 1,
+    "degree_max": 6,
+    "degree_mean": 4.25,
+    "degree_std": 1.3463,
+    "degree_histogram": [
+      1,
+      0,
+      0,
+      0,
+      3,
+      0,
+      6,
+      0,
+      2,
+      4
+    ],
+    "degree_bin_edges": [
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0
+    ],
+    "avg_clustering": 0.614583,
+    "transitivity": 0.6,
+    "num_components": 1,
+    "largest_component_size": 16,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.132827,
+    "graph_id": "community_16_4",
+    "family": "community",
+    "params": {
+      "seed": 4
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 8,
+    "num_variables": 16,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 18.345248798916625,
+    "optimal_maxcut_exact": 25.0,
+    "nfeval": 40,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barren plateaus.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "graph_id": "bipartite_16_4",
+  "family": "bipartite",
+  "num_nodes": 16,
+  "num_edges": 36,
+  "method": "pce_baseline_k1",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": 0.29067984380086487,
+  "optimal_params": [
+    4.231585598162226,
+    2.794657598552397
+  ],
+  "approximation_ratio": 0.495963,
+  "gradient_norm_at_opt": 0.006135,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T05:59:16.459528+00:00",
+  "duration_seconds": 5.5181,
+  "params": {
+    "seed": 4
+  },
+  "extra": {
+    "k": 1,
+    "strategy": "k1_single_pauli",
+    "num_physical_qubits": 6,
+    "num_variables": 16,
+    "compression_ratio": 2.67,
+    "optimal_pce_value": 17.854660078099567,
+    "optimal_maxcut_exact": 36.0,
+    "nfeval": 48
+  }
+}

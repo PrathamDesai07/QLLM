@@ -1,0 +1,303 @@
+{
+  "k": 2,
+  "num_physical_qubits": 10,
+  "num_variables": 20,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIIIIIII",
+    "1": "YYIIIIIIII",
+    "2": "ZZIIIIIIII",
+    "3": "IXXIIIIIII",
+    "4": "IYYIIIIIII",
+    "5": "IZZIIIIIII",
+    "6": "IIXXIIIIII",
+    "7": "IIYYIIIIII",
+    "8": "IIZZIIIIII",
+    "9": "IIIIXXIIII",
+    "10": "IIIIXYIIII",
+    "11": "IIIIZXIIII",
+    "12": "IIIIIXXIII",
+    "13": "IIIIIXYIII",
+    "14": "IIIIIZXIII",
+    "15": "IIIIIIXXII",
+    "16": "IIIIIIXYII",
+    "17": "IIIIIIZXII",
+    "18": "IIIIIIIIXX",
+    "19": "IIIIIIIIXY"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIIIIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIIIIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIIIIIII"
+    },
+    "3": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXXIIIIIII"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYYIIIIIII"
+    },
+    "5": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZZIIIIIII"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXIIIIII"
+    },
+    "7": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYIIIIII"
+    },
+    "8": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZIIIIII"
+    },
+    "9": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXXIIII"
+    },
+    "10": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIIIXYIIII"
+    },
+    "11": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "X"
+      ],
+      "pauli_string": "IIIIZXIIII"
+    },
+    "12": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIXXIII"
+    },
+    "13": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIIIIXYIII"
+    },
+    "14": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "Z",
+        "X"
+      ],
+      "pauli_string": "IIIIIZXIII"
+    },
+    "15": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIXXII"
+    },
+    "16": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIIIIIXYII"
+    },
+    "17": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "Z",
+        "X"
+      ],
+      "pauli_string": "IIIIIIZXII"
+    },
+    "18": {
+      "qubits": [
+        8,
+        9
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIIIXX"
+    },
+    "19": {
+      "qubits": [
+        8,
+        9
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIIIIIIIXY"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is regular with moderate density and average clustering, making k=2 a suitable choice for balancing qubit efficiency and training complexity.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "d_regular_20_4",
+  "family": "d_regular",
+  "features": {
+    "num_nodes": 20,
+    "num_edges": 50,
+    "density": 0.263158,
+    "degree_min": 5,
+    "degree_max": 5,
+    "degree_mean": 5.0,
+    "degree_std": 0.0,
+    "degree_histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree_bin_edges": [
+      4.5,
+      4.6,
+      4.7,
+      4.8,
+      4.9,
+      5.0,
+      5.1,
+      5.2,
+      5.3,
+      5.4,
+      5.5
+    ],
+    "avg_clustering": 0.21,
+    "transitivity": 0.21,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.343171,
+    "graph_id": "d_regular_20_4",
+    "family": "d_regular",
+    "params": {
+      "seed": 4
+    }
+  }
+}

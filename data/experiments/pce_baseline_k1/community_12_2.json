@@ -1,0 +1,36 @@
+{
+  "graph_id": "community_12_2",
+  "family": "community",
+  "num_nodes": 12,
+  "num_edges": 28,
+  "method": "pce_baseline_k1",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -1.7196248666755627,
+  "optimal_params": [
+    4.275575209497914,
+    2.8653576915446335
+  ],
+  "approximation_ratio": 0.742991,
+  "gradient_norm_at_opt": 0.00926,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T05:58:04.136926+00:00",
+  "duration_seconds": 2.5469,
+  "params": {
+    "n": 12,
+    "num_communities": 2,
+    "seed": 2
+  },
+  "extra": {
+    "k": 1,
+    "strategy": "k1_single_pauli",
+    "num_physical_qubits": 4,
+    "num_variables": 12,
+    "compression_ratio": 3.0,
+    "optimal_pce_value": 14.859812433337781,
+    "optimal_maxcut_exact": 20.0,
+    "nfeval": 180
+  }
+}

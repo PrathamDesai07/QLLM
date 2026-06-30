@@ -1,0 +1,255 @@
+{
+  "k": 2,
+  "num_physical_qubits": 8,
+  "num_variables": 16,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIIIII",
+    "1": "YYIIIIII",
+    "2": "ZZIIIIII",
+    "3": "IXXIIIII",
+    "4": "IYYIIIII",
+    "5": "IZZIIIII",
+    "6": "IIXXIIII",
+    "7": "IIYYIIII",
+    "8": "IIZZIIII",
+    "9": "IIIIXXII",
+    "10": "IIIIXYII",
+    "11": "IIIIXZII",
+    "12": "IIIIYXII",
+    "13": "IIIIYYII",
+    "14": "IIIIYZII",
+    "15": "IIIIZXII"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIIIII"
+    },
+    "3": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXXIIIII"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYYIIIII"
+    },
+    "5": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZZIIIII"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXIIII"
+    },
+    "7": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYIIII"
+    },
+    "8": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZIIII"
+    },
+    "9": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXXII"
+    },
+    "10": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIIIXYII"
+    },
+    "11": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "IIIIXZII"
+    },
+    "12": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Y",
+        "X"
+      ],
+      "pauli_string": "IIIIYXII"
+    },
+    "13": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIIIYYII"
+    },
+    "14": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "IIIIYZII"
+    },
+    "15": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "X"
+      ],
+      "pauli_string": "IIIIZXII"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is bipartite with moderate density and degree, making k=2 suitable for efficient encoding without significant gradient risk.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "bipartite_16_3",
+  "family": "bipartite",
+  "features": {
+    "num_nodes": 16,
+    "num_edges": 37,
+    "density": 0.308333,
+    "degree_min": 3,
+    "degree_max": 7,
+    "degree_mean": 4.625,
+    "degree_std": 1.1659,
+    "degree_histogram": [
+      3,
+      0,
+      5,
+      0,
+      0,
+      4,
+      0,
+      3,
+      0,
+      1
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.4,
+      3.8,
+      4.2,
+      4.6,
+      5.0,
+      5.4,
+      5.800000000000001,
+      6.2,
+      6.6,
+      7.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 1,
+    "largest_component_size": 16,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.443437,
+    "graph_id": "bipartite_16_3",
+    "family": "bipartite",
+    "params": {
+      "seed": 3
+    }
+  }
+}

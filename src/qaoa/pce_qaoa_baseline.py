@@ -165,12 +165,13 @@ def run_pce_baseline(
     result = run_pce_qaoa(g, encoding, p=p, optimizer=optimizer,
                           max_iters=max_iters)
 
+    pce_k = encoding.get("k", "?")
     record = ExperimentRecord(
         graph_id=encoding.get("graph_id", graph_path.stem),
         family=meta.get("family", "unknown"),
         num_nodes=g.number_of_nodes(),
         num_edges=g.number_of_edges(),
-        method="pce_baseline",
+        method=f"pce_baseline_k{pce_k}",
         qaoa_p=p or QAOA["p"],
         optimizer=optimizer or QAOA["optimizer"],
         max_iters=max_iters or QAOA["max_iters"],
@@ -201,7 +202,7 @@ def run_pce_baseline(
     append_index({
         "graph_id": record.graph_id,
         "family": record.family,
-        "method": "pce_baseline",
+        "method": record.method,
         "model_name": "",
         "prompt_file": "",
         "prompt_hash": "",

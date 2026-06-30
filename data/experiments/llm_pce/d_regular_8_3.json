@@ -1,0 +1,82 @@
+{
+  "graph_id": "d_regular_8_3",
+  "family": "d_regular",
+  "num_nodes": 8,
+  "num_edges": 8,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -1.414213538024305,
+  "optimal_params": [
+    5.997187705899089,
+    2.625796988793388
+  ],
+  "approximation_ratio": 0.588388,
+  "gradient_norm_at_opt": 0.000758,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T06:22:54.357259+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 8,
+    "num_edges": 8,
+    "density": 0.285714,
+    "degree_min": 2,
+    "degree_max": 2,
+    "degree_mean": 2.0,
+    "degree_std": 0.0,
+    "degree_histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree_bin_edges": [
+      1.5,
+      1.6,
+      1.7,
+      1.8,
+      1.9,
+      2.0,
+      2.1,
+      2.2,
+      2.3,
+      2.4,
+      2.5
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 2,
+    "largest_component_size": 4,
+    "component_size_ratio": 0.5,
+    "algebraic_connectivity": 0.0,
+    "graph_id": "d_regular_8_3",
+    "family": "d_regular",
+    "params": {
+      "seed": 3
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 4,
+    "num_variables": 8,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 4.707106769012152,
+    "optimal_maxcut_exact": 8.0,
+    "nfeval": 41,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while maintaining diversity in Pauli operators.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

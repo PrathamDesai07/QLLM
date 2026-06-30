@@ -31,6 +31,14 @@
   "edges": [
     {
       "source": 0,
+      "target": 1
+    },
+    {
+      "source": 0,
+      "target": 2
+    },
+    {
+      "source": 0,
       "target": 3
     },
     {
@@ -47,14 +55,6 @@
     },
     {
       "source": 1,
-      "target": 2
-    },
-    {
-      "source": 1,
-      "target": 3
-    },
-    {
-      "source": 1,
       "target": 4
     },
     {
@@ -67,10 +67,14 @@
     },
     {
       "source": 2,
-      "target": 4
+      "target": 3
     },
     {
       "source": 2,
+      "target": 4
+    },
+    {
+      "source": 3,
       "target": 5
     },
     {
@@ -78,33 +82,23 @@
       "target": 6
     },
     {
-      "source": 4,
-      "target": 7
-    },
-    {
       "source": 5,
       "target": 6
-    },
-    {
-      "source": 5,
-      "target": 7
-    },
-    {
-      "source": 6,
-      "target": 7
     }
   ],
   "metadata": {
     "graph_id": "erdos_renyi_8_0",
     "family": "erdos_renyi",
     "params": {
-      "n": 8,
-      "p": 0.638,
-      "seed": 0
+      "graph_id": "erdos_renyi_8_4",
+      "family": "erdos_renyi",
+      "params": {
+        "n": 8
+      }
     },
     "num_nodes": 8,
-    "num_edges": 16,
-    "density": 0.5714285714285714,
-    "created_at": "2026-06-30T02:15:49.636949+00:00"
+    "num_edges": 14,
+    "density": 0.5,
+    "created_at": "2026-06-30T03:33:00.804169+00:00"
   }
 }

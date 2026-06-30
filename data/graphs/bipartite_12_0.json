@@ -2,7 +2,7 @@
   "directed": false,
   "multigraph": false,
   "graph": {
-    "name": "fast_gnp_random_graph(6,6,0.6377687406100192)"
+    "name": "fast_gnp_random_graph(6,6,0.3908954887139107)"
   },
   "nodes": [
     {
@@ -57,59 +57,35 @@
   "edges": [
     {
       "source": 0,
-      "target": 7
-    },
-    {
-      "source": 0,
-      "target": 9
-    },
-    {
-      "source": 0,
-      "target": 10
-    },
-    {
-      "source": 0,
-      "target": 11
-    },
-    {
-      "source": 1,
       "target": 6
     },
     {
+      "source": 0,
+      "target": 7
+    },
+    {
+      "source": 0,
+      "target": 9
+    },
+    {
+      "source": 0,
+      "target": 10
+    },
+    {
+      "source": 0,
+      "target": 11
+    },
+    {
       "source": 1,
       "target": 7
     },
     {
-      "source": 1,
-      "target": 9
-    },
-    {
-      "source": 1,
-      "target": 10
-    },
-    {
-      "source": 1,
-      "target": 11
-    },
-    {
       "source": 2,
-      "target": 6
-    },
-    {
-      "source": 2,
-      "target": 9
-    },
-    {
-      "source": 2,
-      "target": 10
-    },
-    {
-      "source": 2,
-      "target": 11
-    },
-    {
-      "source": 3,
       "target": 7
+    },
+    {
+      "source": 2,
+      "target": 11
     },
     {
       "source": 3,
@@ -120,38 +96,44 @@
       "target": 9
     },
     {
+      "source": 3,
+      "target": 11
+    },
+    {
       "source": 4,
       "target": 6
     },
     {
       "source": 4,
-      "target": 11
-    },
-    {
-      "source": 5,
       "target": 7
     },
     {
-      "source": 5,
-      "target": 10
+      "source": 4,
+      "target": 8
+    },
+    {
+      "source": 4,
+      "target": 9
     },
     {
       "source": 5,
-      "target": 11
+      "target": 9
     }
   ],
   "metadata": {
     "graph_id": "bipartite_12_0",
     "family": "bipartite",
     "params": {
-      "n_left": 6,
-      "n_right": 6,
-      "p": 0.638,
-      "seed": 0
+      "graph_id": "bipartite_12_4",
+      "family": "bipartite",
+      "params": {
+        "n_left": 6,
+        "n_right": 6
+      }
     },
     "num_nodes": 12,
-    "num_edges": 21,
-    "density": 0.3181818181818182,
-    "created_at": "2026-06-30T02:15:49.655362+00:00"
+    "num_edges": 16,
+    "density": 0.24242424242424243,
+    "created_at": "2026-06-30T03:33:00.843847+00:00"
   }
 }

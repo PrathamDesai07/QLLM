@@ -1,0 +1,82 @@
+{
+  "graph_id": "erdos_renyi_8_4",
+  "family": "erdos_renyi",
+  "num_nodes": 8,
+  "num_edges": 14,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -0.5941595812752037,
+  "optimal_params": [
+    4.3354684451817285,
+    3.5130035415021177
+  ],
+  "approximation_ratio": 0.729708,
+  "gradient_norm_at_opt": 0.000625,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T10:13:43.641266+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 8,
+    "num_edges": 14,
+    "density": 0.5,
+    "degree_min": 1,
+    "degree_max": 6,
+    "degree_mean": 3.5,
+    "degree_std": 1.3229,
+    "degree_histogram": [
+      1,
+      0,
+      0,
+      0,
+      3,
+      0,
+      3,
+      0,
+      0,
+      1
+    ],
+    "degree_bin_edges": [
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0
+    ],
+    "avg_clustering": 0.558333,
+    "transitivity": 0.571429,
+    "num_components": 1,
+    "largest_component_size": 8,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.49678,
+    "graph_id": "erdos_renyi_8_4",
+    "family": "erdos_renyi",
+    "params": {
+      "seed": 4
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 4,
+    "num_variables": 8,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 7.297079790637602,
+    "optimal_maxcut_exact": 10.0,
+    "nfeval": 35,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is moderately dense with a density of 0.5 and average degree of 3.5. Using k=2 allows efficient representation while avoiding potential barren plateaus.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

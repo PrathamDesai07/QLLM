@@ -1,0 +1,303 @@
+{
+  "k": 2,
+  "num_physical_qubits": 10,
+  "num_variables": 20,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIIIIIII",
+    "1": "YYIIIIIIII",
+    "2": "ZZIIIIIIII",
+    "3": "IXXIIIIIII",
+    "4": "IYYIIIIIII",
+    "5": "IZZIIIIIII",
+    "6": "IIXXIIIIII",
+    "7": "IIYYIIIIII",
+    "8": "IIZZIIIIII",
+    "9": "IIIXXIIIII",
+    "10": "IIIYYIIIII",
+    "11": "IIIIZZIIII",
+    "12": "IIIIIXXIII",
+    "13": "IIIIIYYIII",
+    "14": "IIIIIZZIII",
+    "15": "IIIIIIXXII",
+    "16": "IIIIIIYYII",
+    "17": "IIIIIIZZII",
+    "18": "IIIIIIIIXX",
+    "19": "IIIIIIIIYY"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIIIIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIIIIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIIIIIII"
+    },
+    "3": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXXIIIIIII"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYYIIIIIII"
+    },
+    "5": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZZIIIIIII"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXIIIIII"
+    },
+    "7": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYIIIIII"
+    },
+    "8": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZIIIIII"
+    },
+    "9": {
+      "qubits": [
+        3,
+        4
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIXXIIIII"
+    },
+    "10": {
+      "qubits": [
+        3,
+        4
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIIYYIIIII"
+    },
+    "11": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIZZIIII"
+    },
+    "12": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIXXIII"
+    },
+    "13": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIIIIYYIII"
+    },
+    "14": {
+      "qubits": [
+        5,
+        6
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIIZZIII"
+    },
+    "15": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIXXII"
+    },
+    "16": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIIIIIYYII"
+    },
+    "17": {
+      "qubits": [
+        6,
+        7
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIIIZZII"
+    },
+    "18": {
+      "qubits": [
+        8,
+        9
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIIIIIXX"
+    },
+    "19": {
+      "qubits": [
+        8,
+        9
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIIIIIIIYY"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barren plateaus.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "community_20_4",
+  "family": "community",
+  "features": {
+    "num_nodes": 20,
+    "num_edges": 31,
+    "density": 0.163158,
+    "degree_min": 1,
+    "degree_max": 5,
+    "degree_mean": 3.1,
+    "degree_std": 0.995,
+    "degree_histogram": [
+      1,
+      0,
+      4,
+      0,
+      0,
+      9,
+      0,
+      4,
+      0,
+      2
+    ],
+    "degree_bin_edges": [
+      1.0,
+      1.4,
+      1.8,
+      2.2,
+      2.6,
+      3.0,
+      3.4000000000000004,
+      3.8000000000000003,
+      4.2,
+      4.6,
+      5.0
+    ],
+    "avg_clustering": 0.416667,
+    "transitivity": 0.48,
+    "num_components": 2,
+    "largest_component_size": 15,
+    "component_size_ratio": 0.75,
+    "algebraic_connectivity": 0.0,
+    "graph_id": "community_20_4",
+    "family": "community",
+    "params": {
+      "seed": 4
+    }
+  }
+}

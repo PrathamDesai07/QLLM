@@ -1,0 +1,87 @@
+{
+  "graph_id": "erdos_renyi_16_0",
+  "family": "erdos_renyi",
+  "num_nodes": 16,
+  "num_edges": 78,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -0.6920890296184405,
+  "optimal_params": [
+    4.278718978286015,
+    1.515928830054542
+  ],
+  "approximation_ratio": 0.786921,
+  "gradient_norm_at_opt": 0.028331,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T09:14:52.722893+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 16,
+    "num_edges": 78,
+    "density": 0.65,
+    "degree_min": 6,
+    "degree_max": 12,
+    "degree_mean": 9.75,
+    "degree_std": 1.8875,
+    "degree_histogram": [
+      1,
+      1,
+      0,
+      2,
+      0,
+      4,
+      2,
+      0,
+      1,
+      5
+    ],
+    "degree_bin_edges": [
+      6.0,
+      6.6,
+      7.2,
+      7.8,
+      8.4,
+      9.0,
+      9.6,
+      10.2,
+      10.8,
+      11.399999999999999,
+      12.0
+    ],
+    "avg_clustering": 0.669593,
+    "transitivity": 0.662447,
+    "num_components": 1,
+    "largest_component_size": 16,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.689697,
+    "graph_id": "erdos_renyi_16_0",
+    "family": "erdos_renyi",
+    "params": {
+      "graph_id": "erdos_renyi_16_4",
+      "family": "erdos_renyi",
+      "params": {
+        "n": 16,
+        "p": null
+      }
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 8,
+    "num_variables": 16,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 39.34604451480922,
+    "optimal_maxcut_exact": 50.0,
+    "nfeval": 54,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is dense with high average degree and clustering coefficient, suggesting a higher correlation order (k=2) to capture the complexity. However, there's a risk of encountering barren plateaus due to the density.",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

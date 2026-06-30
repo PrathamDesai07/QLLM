@@ -1,0 +1,45 @@
+{
+  "num_nodes": 16,
+  "num_edges": 68,
+  "density": 0.566667,
+  "degree_min": 6,
+  "degree_max": 11,
+  "degree_mean": 8.5,
+  "degree_std": 1.4577,
+  "degree_histogram": [
+    2,
+    0,
+    2,
+    0,
+    4,
+    0,
+    3,
+    0,
+    4,
+    1
+  ],
+  "degree_bin_edges": [
+    6.0,
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5,
+    9.0,
+    9.5,
+    10.0,
+    10.5,
+    11.0
+  ],
+  "avg_clustering": 0.546456,
+  "transitivity": 0.535104,
+  "num_components": 1,
+  "largest_component_size": 16,
+  "component_size_ratio": 1.0,
+  "algebraic_connectivity": 0.658703,
+  "graph_id": "erdos_renyi_16_3",
+  "family": "erdos_renyi",
+  "params": {
+    "seed": 3
+  }
+}

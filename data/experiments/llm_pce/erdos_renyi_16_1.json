@@ -1,0 +1,82 @@
+{
+  "graph_id": "erdos_renyi_16_1",
+  "family": "erdos_renyi",
+  "num_nodes": 16,
+  "num_edges": 34,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": 0.05978338622655402,
+  "optimal_params": [
+    6.823141282889069,
+    3.691782075837837
+  ],
+  "approximation_ratio": 0.606075,
+  "gradient_norm_at_opt": 0.006677,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T09:17:19.202928+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 16,
+    "num_edges": 34,
+    "density": 0.283333,
+    "degree_min": 1,
+    "degree_max": 7,
+    "degree_mean": 4.25,
+    "degree_std": 1.4361,
+    "degree_histogram": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      7,
+      3,
+      0,
+      2,
+      1
+    ],
+    "degree_bin_edges": [
+      1.0,
+      1.6,
+      2.2,
+      2.8,
+      3.4,
+      4.0,
+      4.6,
+      5.2,
+      5.8,
+      6.3999999999999995,
+      7.0
+    ],
+    "avg_clustering": 0.264286,
+    "transitivity": 0.212598,
+    "num_components": 1,
+    "largest_component_size": 16,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.320869,
+    "graph_id": "erdos_renyi_16_1",
+    "family": "erdos_renyi",
+    "params": {
+      "seed": 1
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 8,
+    "num_variables": 16,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 16.970108306886722,
+    "optimal_maxcut_exact": 28.0,
+    "nfeval": 39,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is not too dense (density = 0.283333) and has a moderate degree range (1-7). Using k=2 allows for efficient use of qubits while maintaining a manageable training landscape.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

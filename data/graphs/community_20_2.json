@@ -1,0 +1,284 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "partition": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      [
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    ],
+    "name": "stochastic_block_model"
+  },
+  "nodes": [
+    {
+      "block": 0,
+      "id": 0
+    },
+    {
+      "block": 0,
+      "id": 1
+    },
+    {
+      "block": 0,
+      "id": 2
+    },
+    {
+      "block": 0,
+      "id": 3
+    },
+    {
+      "block": 0,
+      "id": 4
+    },
+    {
+      "block": 1,
+      "id": 5
+    },
+    {
+      "block": 1,
+      "id": 6
+    },
+    {
+      "block": 1,
+      "id": 7
+    },
+    {
+      "block": 1,
+      "id": 8
+    },
+    {
+      "block": 1,
+      "id": 9
+    },
+    {
+      "block": 2,
+      "id": 10
+    },
+    {
+      "block": 2,
+      "id": 11
+    },
+    {
+      "block": 2,
+      "id": 12
+    },
+    {
+      "block": 2,
+      "id": 13
+    },
+    {
+      "block": 2,
+      "id": 14
+    },
+    {
+      "block": 3,
+      "id": 15
+    },
+    {
+      "block": 3,
+      "id": 16
+    },
+    {
+      "block": 3,
+      "id": 17
+    },
+    {
+      "block": 3,
+      "id": 18
+    },
+    {
+      "block": 3,
+      "id": 19
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 3
+    },
+    {
+      "source": 0,
+      "target": 4
+    },
+    {
+      "source": 1,
+      "target": 3
+    },
+    {
+      "source": 1,
+      "target": 4
+    },
+    {
+      "source": 1,
+      "target": 16
+    },
+    {
+      "source": 1,
+      "target": 17
+    },
+    {
+      "source": 1,
+      "target": 19
+    },
+    {
+      "source": 2,
+      "target": 3
+    },
+    {
+      "source": 2,
+      "target": 4
+    },
+    {
+      "source": 3,
+      "target": 4
+    },
+    {
+      "source": 3,
+      "target": 11
+    },
+    {
+      "source": 4,
+      "target": 16
+    },
+    {
+      "source": 5,
+      "target": 6
+    },
+    {
+      "source": 5,
+      "target": 7
+    },
+    {
+      "source": 5,
+      "target": 8
+    },
+    {
+      "source": 5,
+      "target": 9
+    },
+    {
+      "source": 6,
+      "target": 7
+    },
+    {
+      "source": 6,
+      "target": 8
+    },
+    {
+      "source": 7,
+      "target": 8
+    },
+    {
+      "source": 7,
+      "target": 9
+    },
+    {
+      "source": 7,
+      "target": 18
+    },
+    {
+      "source": 7,
+      "target": 19
+    },
+    {
+      "source": 8,
+      "target": 9
+    },
+    {
+      "source": 9,
+      "target": 11
+    },
+    {
+      "source": 9,
+      "target": 17
+    },
+    {
+      "source": 10,
+      "target": 12
+    },
+    {
+      "source": 10,
+      "target": 13
+    },
+    {
+      "source": 11,
+      "target": 12
+    },
+    {
+      "source": 11,
+      "target": 13
+    },
+    {
+      "source": 11,
+      "target": 14
+    },
+    {
+      "source": 11,
+      "target": 16
+    },
+    {
+      "source": 13,
+      "target": 14
+    },
+    {
+      "source": 14,
+      "target": 17
+    },
+    {
+      "source": 15,
+      "target": 16
+    },
+    {
+      "source": 15,
+      "target": 18
+    },
+    {
+      "source": 16,
+      "target": 17
+    },
+    {
+      "source": 17,
+      "target": 18
+    },
+    {
+      "source": 17,
+      "target": 19
+    }
+  ],
+  "metadata": {
+    "graph_id": "community_20_2",
+    "family": "community",
+    "params": {
+      "seed": 2
+    },
+    "num_nodes": 20,
+    "num_edges": 38,
+    "density": 0.2,
+    "created_at": "2026-06-30T03:34:08.439794+00:00"
+  }
+}

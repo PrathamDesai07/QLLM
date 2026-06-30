@@ -1,0 +1,1296 @@
+[
+  {
+    "graph_id": "bipartite_12_0",
+    "family": "bipartite",
+    "num_nodes": 12,
+    "num_edges": 21,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.489671,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and degree, making k=2 suitable for efficient encoding while avoiding barre"
+  },
+  {
+    "graph_id": "bipartite_12_1",
+    "family": "bipartite",
+    "num_nodes": 12,
+    "num_edges": 14,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.582914,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with low density and small size, making k=2 sufficient for efficient encoding while avoiding barr"
+  },
+  {
+    "graph_id": "bipartite_12_2",
+    "family": "bipartite",
+    "num_nodes": 12,
+    "num_edges": 23,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.517983,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and average degree. Using k=2 allows efficient compression while maintainin"
+  },
+  {
+    "graph_id": "bipartite_12_3",
+    "family": "bipartite",
+    "num_nodes": 12,
+    "num_edges": 17,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.47214,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with low density and average degree, making k=2 suitable for efficient encoding while avoiding ba"
+  },
+  {
+    "graph_id": "bipartite_12_4",
+    "family": "bipartite",
+    "num_nodes": 12,
+    "num_edges": 16,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.518288,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with low density and average degree, making k=2 suitable for efficient encoding without significa"
+  },
+  {
+    "graph_id": "bipartite_16_0",
+    "family": "bipartite",
+    "num_nodes": 16,
+    "num_edges": 36,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.527444,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and degree. Using k=2 allows efficient use of qubits while maintaining dive"
+  },
+  {
+    "graph_id": "bipartite_16_1",
+    "family": "bipartite",
+    "num_nodes": 16,
+    "num_edges": 40,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.491181,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and degree variability, making k=2 suitable for efficient qubit usage while"
+  },
+  {
+    "graph_id": "bipartite_16_2",
+    "family": "bipartite",
+    "num_nodes": 16,
+    "num_edges": 16,
+    "k": 1,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.67,
+    "approx_ratio": 0.524261,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with low density and small size, making k=1 sufficient."
+  },
+  {
+    "graph_id": "bipartite_16_3",
+    "family": "bipartite",
+    "num_nodes": 16,
+    "num_edges": 37,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.520779,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and degree, making k=2 suitable for efficient encoding without significant "
+  },
+  {
+    "graph_id": "bipartite_16_4",
+    "family": "bipartite",
+    "num_nodes": 16,
+    "num_edges": 36,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.542868,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and low clustering, making it suitable for k=2 encoding."
+  },
+  {
+    "graph_id": "bipartite_20_0",
+    "family": "bipartite",
+    "num_nodes": 20,
+    "num_edges": 70,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.472025,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and degree variability. Using k=2 allows efficient compression while mainta"
+  },
+  {
+    "graph_id": "bipartite_20_1",
+    "family": "bipartite",
+    "num_nodes": 20,
+    "num_edges": 63,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.479663,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and degree. Using k=2 allows efficient compression while maintaining divers"
+  },
+  {
+    "graph_id": "bipartite_20_2",
+    "family": "bipartite",
+    "num_nodes": 20,
+    "num_edges": 38,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.500087,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and degree variability, making k=2 a suitable choice for balancing qubit ef"
+  },
+  {
+    "graph_id": "bipartite_20_3",
+    "family": "bipartite",
+    "num_nodes": 20,
+    "num_edges": 63,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.478031,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and average degree, making k=2 a suitable choice for efficient compression "
+  },
+  {
+    "graph_id": "bipartite_20_4",
+    "family": "bipartite",
+    "num_nodes": 20,
+    "num_edges": 70,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.497785,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The bipartite graph with moderate density and degree suggests k=2 is sufficient to capture correlations without excessiv"
+  },
+  {
+    "graph_id": "bipartite_8_0",
+    "family": "bipartite",
+    "num_nodes": 8,
+    "num_edges": 11,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.625976,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with moderate density and low average degree, making it suitable for k=2 encoding without signifi"
+  },
+  {
+    "graph_id": "bipartite_8_1",
+    "family": "bipartite",
+    "num_nodes": 8,
+    "num_edges": 6,
+    "k": 1,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.572838,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with low density and small size, making k=1 sufficient."
+  },
+  {
+    "graph_id": "bipartite_8_2",
+    "family": "bipartite",
+    "num_nodes": 8,
+    "num_edges": 10,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.521008,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with low density and average degree, making k=2 suitable for efficient encoding without significa"
+  },
+  {
+    "graph_id": "bipartite_8_3",
+    "family": "bipartite",
+    "num_nodes": 8,
+    "num_edges": 10,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.55,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is bipartite with low density and average degree, making k=2 sufficient for efficient encoding while avoiding "
+  },
+  {
+    "graph_id": "bipartite_8_4",
+    "family": "bipartite",
+    "num_nodes": 8,
+    "num_edges": 12,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.605255,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The bipartite graph with moderate density and low average degree suggests that k=2 is sufficient to capture the structur"
+  },
+  {
+    "graph_id": "community_12_0",
+    "family": "community",
+    "num_nodes": 12,
+    "num_edges": 28,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.731097,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is appropriate to balance qubit efficiency and "
+  },
+  {
+    "graph_id": "community_12_1",
+    "family": "community",
+    "num_nodes": 12,
+    "num_edges": 30,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.805214,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is sufficient for capturing correlations withou"
+  },
+  {
+    "graph_id": "community_12_2",
+    "family": "community",
+    "num_nodes": 12,
+    "num_edges": 28,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.730127,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for capturing correlations without excessi"
+  },
+  {
+    "graph_id": "community_12_3",
+    "family": "community",
+    "num_nodes": 12,
+    "num_edges": 26,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.737261,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is sufficient while avoiding barren plateaus."
+  },
+  {
+    "graph_id": "community_12_4",
+    "family": "community",
+    "num_nodes": 12,
+    "num_edges": 27,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.7467,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is appropriate to balance qubit efficiency and "
+  },
+  {
+    "graph_id": "community_16_0",
+    "family": "community",
+    "num_nodes": 16,
+    "num_edges": 34,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.73381,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr"
+  },
+  {
+    "graph_id": "community_16_1",
+    "family": "community",
+    "num_nodes": 16,
+    "num_edges": 31,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.777869,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for balancing qubit efficiency and trainin"
+  },
+  {
+    "graph_id": "community_16_2",
+    "family": "community",
+    "num_nodes": 16,
+    "num_edges": 33,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.671714,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is sufficient while avoiding potential barren p"
+  },
+  {
+    "graph_id": "community_16_3",
+    "family": "community",
+    "num_nodes": 16,
+    "num_edges": 35,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.707429,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is sufficient to capture the correlations witho"
+  },
+  {
+    "graph_id": "community_16_4",
+    "family": "community",
+    "num_nodes": 16,
+    "num_edges": 34,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.73381,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr"
+  },
+  {
+    "graph_id": "community_20_0",
+    "family": "community",
+    "num_nodes": 20,
+    "num_edges": 31,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.62871,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr"
+  },
+  {
+    "graph_id": "community_20_1",
+    "family": "community",
+    "num_nodes": 20,
+    "num_edges": 41,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.455636,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for capturing correlations while avoiding "
+  },
+  {
+    "graph_id": "community_20_2",
+    "family": "community",
+    "num_nodes": 20,
+    "num_edges": 38,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.630312,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr"
+  },
+  {
+    "graph_id": "community_20_3",
+    "family": "community",
+    "num_nodes": 20,
+    "num_edges": 49,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.690155,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is sufficient while avoiding higher-order compl"
+  },
+  {
+    "graph_id": "community_20_4",
+    "family": "community",
+    "num_nodes": 20,
+    "num_edges": 31,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.62871,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for efficient encoding while avoiding barr"
+  },
+  {
+    "graph_id": "community_8_0",
+    "family": "community",
+    "num_nodes": 8,
+    "num_edges": 10,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.714268,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is relatively sparse with a community structure, making k=2 a suitable choice for balancing qubit efficiency a"
+  },
+  {
+    "graph_id": "community_8_1",
+    "family": "community",
+    "num_nodes": 8,
+    "num_edges": 11,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.64629,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has a community structure and moderate density, suggesting k=2 is sufficient."
+  },
+  {
+    "graph_id": "community_8_2",
+    "family": "community",
+    "num_nodes": 8,
+    "num_edges": 9,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.743296,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is relatively sparse and has a community structure, making k=2 a suitable choice for balancing qubit efficienc"
+  },
+  {
+    "graph_id": "community_8_3",
+    "family": "community",
+    "num_nodes": 8,
+    "num_edges": 11,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.764754,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is appropriate to capture the correlations with"
+  },
+  {
+    "graph_id": "community_8_4",
+    "family": "community",
+    "num_nodes": 8,
+    "num_edges": 13,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.754629,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph has moderate density and a community structure, suggesting k=2 is appropriate for capturing correlations witho"
+  },
+  {
+    "graph_id": "d_regular_12_0",
+    "family": "d_regular",
+    "num_nodes": 12,
+    "num_edges": 18,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.552162,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient encoding while avoid"
+  },
+  {
+    "graph_id": "d_regular_12_1",
+    "family": "d_regular",
+    "num_nodes": 12,
+    "num_edges": 18,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.642521,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient compression while ma"
+  },
+  {
+    "graph_id": "d_regular_12_2",
+    "family": "d_regular",
+    "num_nodes": 12,
+    "num_edges": 18,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.599771,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient encoding while avoid"
+  },
+  {
+    "graph_id": "d_regular_12_3",
+    "family": "d_regular",
+    "num_nodes": 12,
+    "num_edges": 18,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.611899,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with low density and moderate size, making k=2 suitable for efficient encoding while avoiding barre"
+  },
+  {
+    "graph_id": "d_regular_12_4",
+    "family": "d_regular",
+    "num_nodes": 12,
+    "num_edges": 18,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.624076,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient compression while ma"
+  },
+  {
+    "graph_id": "d_regular_16_0",
+    "family": "d_regular",
+    "num_nodes": 16,
+    "num_edges": 32,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.624842,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and degree, making k=2 suitable for efficient encoding while avoiding potenti"
+  },
+  {
+    "graph_id": "d_regular_16_1",
+    "family": "d_regular",
+    "num_nodes": 16,
+    "num_edges": 32,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.584485,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and degree, making k=2 suitable for efficient compression while avoiding barr"
+  },
+  {
+    "graph_id": "d_regular_16_2",
+    "family": "d_regular",
+    "num_nodes": 16,
+    "num_edges": 32,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.679243,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and degree, making k=2 suitable for efficient encoding while avoiding barren "
+  },
+  {
+    "graph_id": "d_regular_16_3",
+    "family": "d_regular",
+    "num_nodes": 16,
+    "num_edges": 32,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.61101,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and degree, making k=2 a suitable choice for efficient qubit usage while avoi"
+  },
+  {
+    "graph_id": "d_regular_16_4",
+    "family": "d_regular",
+    "num_nodes": 16,
+    "num_edges": 32,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.624842,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and degree, making k=2 suitable for efficient qubit usage while avoiding pote"
+  },
+  {
+    "graph_id": "d_regular_20_0",
+    "family": "d_regular",
+    "num_nodes": 20,
+    "num_edges": 50,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.638202,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and average clustering, suggesting that k=2 is sufficient for efficient encod"
+  },
+  {
+    "graph_id": "d_regular_20_1",
+    "family": "d_regular",
+    "num_nodes": 20,
+    "num_edges": 50,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.624529,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and average clustering, suggesting that k=2 can provide a good balance betwee"
+  },
+  {
+    "graph_id": "d_regular_20_2",
+    "family": "d_regular",
+    "num_nodes": 20,
+    "num_edges": 50,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.71031,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and average clustering, suggesting k=2 is sufficient."
+  },
+  {
+    "graph_id": "d_regular_20_3",
+    "family": "d_regular",
+    "num_nodes": 20,
+    "num_edges": 50,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.535995,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and connectivity, making k=2 suitable for efficient encoding while avoiding b"
+  },
+  {
+    "graph_id": "d_regular_20_4",
+    "family": "d_regular",
+    "num_nodes": 20,
+    "num_edges": 50,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.632197,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is regular with moderate density and average clustering, making k=2 a suitable choice for balancing qubit effi"
+  },
+  {
+    "graph_id": "d_regular_8_0",
+    "family": "d_regular",
+    "num_nodes": 8,
+    "num_edges": 8,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.625,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is sparse with low degree and no clustering, making k=2 sufficient."
+  },
+  {
+    "graph_id": "d_regular_8_1",
+    "family": "d_regular",
+    "num_nodes": 8,
+    "num_edges": 8,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.87734,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while avoiding barren plat"
+  },
+  {
+    "graph_id": "d_regular_8_2",
+    "family": "d_regular",
+    "num_nodes": 8,
+    "num_edges": 8,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.834152,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while avoiding barren plat"
+  },
+  {
+    "graph_id": "d_regular_8_3",
+    "family": "d_regular",
+    "num_nodes": 8,
+    "num_edges": 8,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.588388,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while maintaining diversit"
+  },
+  {
+    "graph_id": "d_regular_8_4",
+    "family": "d_regular",
+    "num_nodes": 8,
+    "num_edges": 8,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.927118,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is sparse with low density and small size, making k=2 sufficient for efficient encoding while avoiding barren "
+  },
+  {
+    "graph_id": "erdos_renyi_12_0",
+    "family": "erdos_renyi",
+    "num_nodes": 12,
+    "num_edges": 39,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.706224,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with a high degree mean and standard deviation, indicating a complex structure that benefits from hig"
+  },
+  {
+    "graph_id": "erdos_renyi_12_1",
+    "family": "erdos_renyi",
+    "num_nodes": 12,
+    "num_edges": 23,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.610687,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is moderately dense with a degree mean of 3.83 and average clustering coefficient of 0.375. Given these charac"
+  },
+  {
+    "graph_id": "erdos_renyi_12_2",
+    "family": "erdos_renyi",
+    "num_nodes": 12,
+    "num_edges": 40,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.755549,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding (k=2) to capture t"
+  },
+  {
+    "graph_id": "erdos_renyi_12_3",
+    "family": "erdos_renyi",
+    "num_nodes": 12,
+    "num_edges": 39,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.707865,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding to capture the com"
+  },
+  {
+    "graph_id": "erdos_renyi_12_4",
+    "family": "erdos_renyi",
+    "num_nodes": 12,
+    "num_edges": 41,
+    "k": 2,
+    "num_physical_qubits": 6,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.737569,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with high connectivity, suggesting k=2 for better compression while monitoring potential gradient iss"
+  },
+  {
+    "graph_id": "erdos_renyi_16_0",
+    "family": "erdos_renyi",
+    "num_nodes": 16,
+    "num_edges": 78,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.786921,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with high average degree and clustering coefficient, suggesting a higher correlation order (k=2) to c"
+  },
+  {
+    "graph_id": "erdos_renyi_16_1",
+    "family": "erdos_renyi",
+    "num_nodes": 16,
+    "num_edges": 34,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.606075,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is not too dense (density = 0.283333) and has a moderate degree range (1-7). Using k=2 allows for efficient us"
+  },
+  {
+    "graph_id": "erdos_renyi_16_2",
+    "family": "erdos_renyi",
+    "num_nodes": 16,
+    "num_edges": 76,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.787305,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "needs_higher_order"
+    ],
+    "llm_reasoning": "The graph is dense with high average degree and clustering coefficient, suggesting higher-order encoding (k=2) to captur"
+  },
+  {
+    "graph_id": "erdos_renyi_16_3",
+    "family": "erdos_renyi",
+    "num_nodes": 16,
+    "num_edges": 68,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.729995,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "needs_higher_order"
+    ],
+    "llm_reasoning": "The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding is necessary to ca"
+  },
+  {
+    "graph_id": "erdos_renyi_16_4",
+    "family": "erdos_renyi",
+    "num_nodes": 16,
+    "num_edges": 78,
+    "k": 2,
+    "num_physical_qubits": 8,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.786921,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with high connectivity, suggesting higher-order encoding (k=2) to capture correlations efficiently. H"
+  },
+  {
+    "graph_id": "erdos_renyi_20_0",
+    "family": "erdos_renyi",
+    "num_nodes": 20,
+    "num_edges": 124,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.753106,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with high connectivity and average degree. Using k=2 helps reduce the number of qubits needed while m"
+  },
+  {
+    "graph_id": "erdos_renyi_20_1",
+    "family": "erdos_renyi",
+    "num_nodes": 20,
+    "num_edges": 66,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.633377,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is moderately dense with a single component and average degree of 6.6. Using k=2 allows efficient compression "
+  },
+  {
+    "graph_id": "erdos_renyi_20_2",
+    "family": "erdos_renyi",
+    "num_nodes": 20,
+    "num_edges": 91,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.766132,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is moderately dense with a single component and relatively uniform degree distribution. Using k=2 allows effic"
+  },
+  {
+    "graph_id": "erdos_renyi_20_3",
+    "family": "erdos_renyi",
+    "num_nodes": 20,
+    "num_edges": 84,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.724439,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is moderately dense with a high degree mean and standard deviation, suggesting a balanced approach with k=2 to"
+  },
+  {
+    "graph_id": "erdos_renyi_20_4",
+    "family": "erdos_renyi",
+    "num_nodes": 20,
+    "num_edges": 124,
+    "k": 2,
+    "num_physical_qubits": 10,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.520689,
+    "success": false,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with high connectivity and average degree. Using k=2 helps reduce the number of qubits needed while m"
+  },
+  {
+    "graph_id": "erdos_renyi_8_0",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 16,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.789377,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is moderately dense with a density of 0.571429 and average degree of 4.0. Using k=2 allows efficient use of qu"
+  },
+  {
+    "graph_id": "erdos_renyi_8_1",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 11,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.71269,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is not highly dense and has a moderate degree range, making k=2 suitable for efficient representation while av"
+  },
+  {
+    "graph_id": "erdos_renyi_8_2",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 20,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.768223,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_reasoning": "The graph is dense with high modularity, suggesting k=2 for better compression while monitoring gradient risk."
+  },
+  {
+    "graph_id": "erdos_renyi_8_3",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 17,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.81371,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "needs_higher_order"
+    ],
+    "llm_reasoning": "The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding is needed to captu"
+  },
+  {
+    "graph_id": "erdos_renyi_8_4",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 14,
+    "k": 2,
+    "num_physical_qubits": 4,
+    "compression_ratio": 2.0,
+    "approx_ratio": 0.729708,
+    "success": true,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_reasoning": "The graph is moderately dense with a density of 0.5 and average degree of 3.5. Using k=2 allows efficient representation"
+  },
+  {
+    "graph_id": "erdos_renyi_8_42",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 18,
+    "k": 2,
+    "num_physical_qubits": null,
+    "compression_ratio": null,
+    "approx_ratio": 0.807049,
+    "success": true,
+    "model_name": "",
+    "llm_tags": [],
+    "llm_reasoning": ""
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "graph_id": "bipartite_16_4",
+  "family": "bipartite",
+  "num_nodes": 16,
+  "num_edges": 36,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -3.086460234364978,
+  "optimal_params": [
+    4.398482993572665,
+    2.7301087795203314
+  ],
+  "approximation_ratio": 0.542868,
+  "gradient_norm_at_opt": 0.046164,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T06:53:13.320473+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 16,
+    "num_edges": 36,
+    "density": 0.3,
+    "degree_min": 3,
+    "degree_max": 6,
+    "degree_mean": 4.5,
+    "degree_std": 1.0,
+    "degree_histogram": [
+      3,
+      0,
+      0,
+      5,
+      0,
+      0,
+      5,
+      0,
+      0,
+      3
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.3,
+      3.6,
+      3.9,
+      4.2,
+      4.5,
+      4.8,
+      5.1,
+      5.4,
+      5.699999999999999,
+      6.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 1,
+    "largest_component_size": 16,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.44823,
+    "graph_id": "bipartite_16_4",
+    "family": "bipartite",
+    "params": {
+      "seed": 4
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 8,
+    "num_variables": 16,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 19.54323011718249,
+    "optimal_maxcut_exact": 36.0,
+    "nfeval": 77,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is bipartite with moderate density and low clustering, making it suitable for k=2 encoding.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

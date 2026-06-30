@@ -1,0 +1,82 @@
+{
+  "graph_id": "d_regular_12_4",
+  "family": "d_regular",
+  "num_nodes": 12,
+  "num_edges": 18,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -1.9704215477097518,
+  "optimal_params": [
+    5.830162957521343,
+    3.796379926194858
+  ],
+  "approximation_ratio": 0.624076,
+  "gradient_norm_at_opt": 0.004066,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T08:13:05.982915+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 12,
+    "num_edges": 18,
+    "density": 0.272727,
+    "degree_min": 3,
+    "degree_max": 3,
+    "degree_mean": 3.0,
+    "degree_std": 0.0,
+    "degree_histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree_bin_edges": [
+      2.5,
+      2.6,
+      2.7,
+      2.8,
+      2.9,
+      3.0,
+      3.1,
+      3.2,
+      3.3,
+      3.4,
+      3.5
+    ],
+    "avg_clustering": 0.166667,
+    "transitivity": 0.166667,
+    "num_components": 1,
+    "largest_component_size": 12,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.289133,
+    "graph_id": "d_regular_12_4",
+    "family": "d_regular",
+    "params": {
+      "seed": 4
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 6,
+    "num_variables": 12,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 9.985210773854876,
+    "optimal_maxcut_exact": 16.0,
+    "nfeval": 35,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is regular with low density and moderate size, making k=2 a suitable choice for efficient compression while maintaining good performance.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

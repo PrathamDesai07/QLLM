@@ -1,0 +1,82 @@
+{
+  "graph_id": "d_regular_20_2",
+  "family": "d_regular",
+  "num_nodes": 20,
+  "num_edges": 50,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -5.404194368518543,
+  "optimal_params": [
+    4.40567546239289,
+    0.14042384813278938
+  ],
+  "approximation_ratio": 0.71031,
+  "gradient_norm_at_opt": 0.056154,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T08:53:29.344449+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 20,
+    "num_edges": 50,
+    "density": 0.263158,
+    "degree_min": 5,
+    "degree_max": 5,
+    "degree_mean": 5.0,
+    "degree_std": 0.0,
+    "degree_histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree_bin_edges": [
+      4.5,
+      4.6,
+      4.7,
+      4.8,
+      4.9,
+      5.0,
+      5.1,
+      5.2,
+      5.3,
+      5.4,
+      5.5
+    ],
+    "avg_clustering": 0.225,
+    "transitivity": 0.225,
+    "num_components": 1,
+    "largest_component_size": 20,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.360725,
+    "graph_id": "d_regular_20_2",
+    "family": "d_regular",
+    "params": {
+      "seed": 2
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 10,
+    "num_variables": 20,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 27.702097184259273,
+    "optimal_maxcut_exact": 39.0,
+    "nfeval": 38,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is regular with moderate density and average clustering, suggesting k=2 is sufficient.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

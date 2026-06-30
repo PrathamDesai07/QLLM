@@ -53,11 +53,13 @@ def _load_hf_token() -> str | None:
     """Read the HuggingFace token from hf.txt, or return None."""
     try:
         if HF_TOKEN_PATH.exists():
-            token = HF_TOKEN_PATH.read_text().strip()
-            # Support both "hf_token: xxx" and bare token formats
-            if ":" in token and not token.startswith("hf_"):
-                token = token.split(":", 1)[1].strip()
-            return token if token else None
+            raw = HF_TOKEN_PATH.read_text().strip()
+            if not raw:
+                return None
+            # Support both "hf_token: xxx" and bare "hf_xxx" formats
+            if ":" in raw:
+                raw = raw.split(":", 1)[1].strip()
+            return raw if raw.startswith("hf_") else None
     except Exception:
         pass
     return None
