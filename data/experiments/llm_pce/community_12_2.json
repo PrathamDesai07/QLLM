@@ -1,0 +1,84 @@
+{
+  "graph_id": "community_12_2",
+  "family": "community",
+  "num_nodes": 12,
+  "num_edges": 28,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -1.205089494494931,
+  "optimal_params": [
+    5.415756881661253,
+    2.4834598983595986
+  ],
+  "approximation_ratio": 0.730127,
+  "gradient_norm_at_opt": 0.001239,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T02:42:57.326183+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 12,
+    "num_edges": 28,
+    "density": 0.424242,
+    "degree_min": 3,
+    "degree_max": 6,
+    "degree_mean": 4.6667,
+    "degree_std": 0.8498,
+    "degree_histogram": [
+      1,
+      0,
+      0,
+      4,
+      0,
+      0,
+      5,
+      0,
+      0,
+      2
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.3,
+      3.6,
+      3.9,
+      4.2,
+      4.5,
+      4.8,
+      5.1,
+      5.4,
+      5.699999999999999,
+      6.0
+    ],
+    "avg_clustering": 0.683333,
+    "transitivity": 0.64486,
+    "num_components": 1,
+    "largest_component_size": 12,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.151655,
+    "graph_id": "community_12_2",
+    "family": "community",
+    "params": {
+      "n": 12,
+      "num_communities": 2,
+      "seed": 2
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 6,
+    "num_variables": 12,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 14.602544747247466,
+    "optimal_maxcut_exact": 20.0,
+    "nfeval": 42,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph has a community structure and moderate density, making k=2 suitable for capturing correlations without excessive training difficulty.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

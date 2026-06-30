@@ -1,0 +1,202 @@
+[
+  {
+    "graph_id": "bipartite_12_0",
+    "family": "bipartite",
+    "num_nodes": 12,
+    "num_edges": 21,
+    "approx_ratio": 0.627439,
+    "success": true
+  },
+  {
+    "graph_id": "bipartite_12_1",
+    "family": "bipartite",
+    "num_nodes": 12,
+    "num_edges": 14,
+    "approx_ratio": 0.602754,
+    "success": true
+  },
+  {
+    "graph_id": "bipartite_12_2",
+    "family": "bipartite",
+    "num_nodes": 12,
+    "num_edges": 23,
+    "approx_ratio": 0.604716,
+    "success": true
+  },
+  {
+    "graph_id": "bipartite_8_0",
+    "family": "bipartite",
+    "num_nodes": 8,
+    "num_edges": 11,
+    "approx_ratio": 0.645755,
+    "success": true
+  },
+  {
+    "graph_id": "bipartite_8_1",
+    "family": "bipartite",
+    "num_nodes": 8,
+    "num_edges": 6,
+    "approx_ratio": 0.676004,
+    "success": true
+  },
+  {
+    "graph_id": "bipartite_8_2",
+    "family": "bipartite",
+    "num_nodes": 8,
+    "num_edges": 10,
+    "approx_ratio": 0.608289,
+    "success": true
+  },
+  {
+    "graph_id": "community_12_0",
+    "family": "community",
+    "num_nodes": 12,
+    "num_edges": 28,
+    "approx_ratio": 0.749553,
+    "success": true
+  },
+  {
+    "graph_id": "community_12_1",
+    "family": "community",
+    "num_nodes": 12,
+    "num_edges": 30,
+    "approx_ratio": 0.80787,
+    "success": true
+  },
+  {
+    "graph_id": "community_12_2",
+    "family": "community",
+    "num_nodes": 12,
+    "num_edges": 28,
+    "approx_ratio": 0.809231,
+    "success": true
+  },
+  {
+    "graph_id": "community_8_0",
+    "family": "community",
+    "num_nodes": 8,
+    "num_edges": 10,
+    "approx_ratio": 0.75446,
+    "success": true
+  },
+  {
+    "graph_id": "community_8_1",
+    "family": "community",
+    "num_nodes": 8,
+    "num_edges": 11,
+    "approx_ratio": 0.732193,
+    "success": true
+  },
+  {
+    "graph_id": "community_8_2",
+    "family": "community",
+    "num_nodes": 8,
+    "num_edges": 9,
+    "approx_ratio": 0.779105,
+    "success": true
+  },
+  {
+    "graph_id": "d_regular_12_0",
+    "family": "d_regular",
+    "num_nodes": 12,
+    "num_edges": 18,
+    "approx_ratio": 0.606131,
+    "success": true
+  },
+  {
+    "graph_id": "d_regular_12_1",
+    "family": "d_regular",
+    "num_nodes": 12,
+    "num_edges": 18,
+    "approx_ratio": 0.622771,
+    "success": true
+  },
+  {
+    "graph_id": "d_regular_12_2",
+    "family": "d_regular",
+    "num_nodes": 12,
+    "num_edges": 18,
+    "approx_ratio": 0.609527,
+    "success": true
+  },
+  {
+    "graph_id": "d_regular_8_0",
+    "family": "d_regular",
+    "num_nodes": 8,
+    "num_edges": 8,
+    "approx_ratio": 0.538627,
+    "success": true
+  },
+  {
+    "graph_id": "d_regular_8_1",
+    "family": "d_regular",
+    "num_nodes": 8,
+    "num_edges": 8,
+    "approx_ratio": 0.719532,
+    "success": true
+  },
+  {
+    "graph_id": "d_regular_8_2",
+    "family": "d_regular",
+    "num_nodes": 8,
+    "num_edges": 8,
+    "approx_ratio": 0.832079,
+    "success": true
+  },
+  {
+    "graph_id": "erdos_renyi_12_0",
+    "family": "erdos_renyi",
+    "num_nodes": 12,
+    "num_edges": 39,
+    "approx_ratio": 0.77617,
+    "success": true
+  },
+  {
+    "graph_id": "erdos_renyi_12_1",
+    "family": "erdos_renyi",
+    "num_nodes": 12,
+    "num_edges": 23,
+    "approx_ratio": 0.662107,
+    "success": true
+  },
+  {
+    "graph_id": "erdos_renyi_12_2",
+    "family": "erdos_renyi",
+    "num_nodes": 12,
+    "num_edges": 40,
+    "approx_ratio": 0.799136,
+    "success": true
+  },
+  {
+    "graph_id": "erdos_renyi_8_0",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 16,
+    "approx_ratio": 0.744933,
+    "success": true
+  },
+  {
+    "graph_id": "erdos_renyi_8_1",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 11,
+    "approx_ratio": 0.664236,
+    "success": true
+  },
+  {
+    "graph_id": "erdos_renyi_8_2",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 20,
+    "approx_ratio": 0.773997,
+    "success": true
+  },
+  {
+    "graph_id": "erdos_renyi_8_42",
+    "family": "erdos_renyi",
+    "num_nodes": 8,
+    "num_edges": 18,
+    "approx_ratio": 0.706554,
+    "success": true
+  }
+]

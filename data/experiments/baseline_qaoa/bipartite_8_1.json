@@ -1,0 +1,32 @@
+{
+  "graph_id": "bipartite_8_1",
+  "family": "bipartite",
+  "num_nodes": 8,
+  "num_edges": 6,
+  "method": "baseline_qaoa",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -2.1120521492768836,
+  "optimal_params": [
+    5.105219169427325,
+    2.724867567610641
+  ],
+  "approximation_ratio": 0.676004,
+  "gradient_norm_at_opt": 0.004475,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T03:10:22.713618+00:00",
+  "duration_seconds": 0.15,
+  "params": {
+    "n_left": 4,
+    "n_right": 4,
+    "p": 0.354,
+    "seed": 1
+  },
+  "extra": {
+    "optimal_maxcut": 4.056026074638442,
+    "optimal_maxcut_exact": 6.0,
+    "nfeval": 34
+  }
+}

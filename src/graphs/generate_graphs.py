@@ -83,6 +83,15 @@ def graph_metadata(g: nx.Graph, family: str, params: dict) -> dict:
     }
 
 
+def _json_default(obj: object) -> object:
+    """JSON encoder fallback for non-serializable types (set, numpy, etc.)."""
+    if isinstance(obj, set):
+        return list(obj)
+    if hasattr(obj, "item"):  # numpy scalar
+        return obj.item()
+    raise TypeError(f"Type {type(obj)} not serializable")
+
+
 def save_graph(g: nx.Graph, family: str, params: dict,
                directory: Path | None = None) -> Path:
     """Save graph as JSON (node-link format) alongside metadata."""
@@ -95,7 +104,7 @@ def save_graph(g: nx.Graph, family: str, params: dict,
 
     path = directory / f"{meta['graph_id']}.json"
     with open(path, "w") as f:
-        json.dump(out, f, indent=2)
+        json.dump(out, f, indent=2, default=_json_default)
     return path
 
 

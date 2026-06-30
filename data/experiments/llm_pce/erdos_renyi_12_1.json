@@ -1,0 +1,84 @@
+{
+  "graph_id": "erdos_renyi_12_1",
+  "family": "erdos_renyi",
+  "num_nodes": 12,
+  "num_edges": 23,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -0.20611301912297564,
+  "optimal_params": [
+    5.682029901252786,
+    2.798500046783362
+  ],
+  "approximation_ratio": 0.610687,
+  "gradient_norm_at_opt": 0.008792,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T02:57:49.964459+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 12,
+    "num_edges": 23,
+    "density": 0.348485,
+    "degree_min": 2,
+    "degree_max": 6,
+    "degree_mean": 3.8333,
+    "degree_std": 1.3437,
+    "degree_histogram": [
+      2,
+      0,
+      4,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      2
+    ],
+    "degree_bin_edges": [
+      2.0,
+      2.4,
+      2.8,
+      3.2,
+      3.6,
+      4.0,
+      4.4,
+      4.800000000000001,
+      5.2,
+      5.6,
+      6.0
+    ],
+    "avg_clustering": 0.375,
+    "transitivity": 0.394737,
+    "num_components": 1,
+    "largest_component_size": 12,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.376454,
+    "graph_id": "erdos_renyi_12_1",
+    "family": "erdos_renyi",
+    "params": {
+      "n": 12,
+      "p": 0.354,
+      "seed": 1
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 6,
+    "num_variables": 12,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 11.603056509561489,
+    "optimal_maxcut_exact": 19.0,
+    "nfeval": 43,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is moderately dense with a degree mean of 3.83 and average clustering coefficient of 0.375. Given these characteristics, k=2 provides a good balance between qubit efficiency and training complexity.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

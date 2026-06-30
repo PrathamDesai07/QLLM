@@ -1,0 +1,84 @@
+{
+  "graph_id": "erdos_renyi_12_2",
+  "family": "erdos_renyi",
+  "num_nodes": 12,
+  "num_edges": 40,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -0.7996383120881836,
+  "optimal_params": [
+    4.033690238249543,
+    3.8911702095608396
+  ],
+  "approximation_ratio": 0.755549,
+  "gradient_norm_at_opt": 0.006249,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T02:59:43.337874+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 12,
+    "num_edges": 40,
+    "density": 0.606061,
+    "degree_min": 3,
+    "degree_max": 9,
+    "degree_mean": 6.6667,
+    "degree_std": 1.6997,
+    "degree_histogram": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      2,
+      3,
+      0,
+      2,
+      2
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.6,
+      4.2,
+      4.8,
+      5.4,
+      6.0,
+      6.6,
+      7.2,
+      7.8,
+      8.399999999999999,
+      9.0
+    ],
+    "avg_clustering": 0.668717,
+    "transitivity": 0.614754,
+    "num_components": 1,
+    "largest_component_size": 12,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.671492,
+    "graph_id": "erdos_renyi_12_2",
+    "family": "erdos_renyi",
+    "params": {
+      "n": 12,
+      "p": 0.682,
+      "seed": 2
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 6,
+    "num_variables": 12,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 20.399819156044092,
+    "optimal_maxcut_exact": 27.0,
+    "nfeval": 63,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is dense with a high degree mean and standard deviation, suggesting a higher-order encoding (k=2) to capture the complexity while avoiding potential barren plateaus.",
+    "llm_tags": [
+      "gradient_risk"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

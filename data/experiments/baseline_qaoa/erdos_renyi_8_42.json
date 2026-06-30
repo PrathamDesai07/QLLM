@@ -7,25 +7,25 @@
   "qaoa_p": 1,
   "optimizer": "COBYLA",
   "max_iters": 200,
-  "optimal_energy": -1.7835162494445118,
+  "optimal_energy": -1.7835162882166105,
   "optimal_params": [
-    4.960257158818488,
-    2.9532113609843176
+    4.960209313654231,
+    2.953243604640859
   ],
   "approximation_ratio": 0.706554,
-  "gradient_norm_at_opt": 0.004062,
+  "gradient_norm_at_opt": 0.00259,
   "convergence_iters": null,
   "success": true,
-  "timestamp": "2026-06-29T17:29:50.219529+00:00",
-  "duration_seconds": 0.5689,
+  "timestamp": "2026-06-30T03:10:31.159504+00:00",
+  "duration_seconds": 0.2754,
   "params": {
     "n": 8,
     "p": 0.556,
     "seed": 42
   },
   "extra": {
-    "optimal_maxcut": 9.891758124722255,
+    "optimal_maxcut": 9.891758144108305,
     "optimal_maxcut_exact": 14.0,
-    "nfeval": 37
+    "nfeval": 34
   }
 }

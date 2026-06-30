@@ -1,0 +1,209 @@
+{
+  "k": 2,
+  "num_physical_qubits": 6,
+  "num_variables": 12,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIII",
+    "1": "YYIIII",
+    "2": "ZZIIII",
+    "3": "IIXXII",
+    "4": "IIYYII",
+    "5": "IIZZII",
+    "6": "IIIIXX",
+    "7": "IIIIZZ",
+    "8": "IIIIYY",
+    "9": "IXIXII",
+    "10": "IYIYII",
+    "11": "IZIZII"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIII"
+    },
+    "3": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXII"
+    },
+    "4": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYII"
+    },
+    "5": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZII"
+    },
+    "6": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXX"
+    },
+    "7": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIZZ"
+    },
+    "8": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIIIYY"
+    },
+    "9": {
+      "qubits": [
+        1,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXIXII"
+    },
+    "10": {
+      "qubits": [
+        1,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYIYII"
+    },
+    "11": {
+      "qubits": [
+        1,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZIZII"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph has moderate density and a community structure, suggesting k=2 is sufficient for capturing correlations without excessive training difficulty.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "community_12_1",
+  "family": "community",
+  "features": {
+    "num_nodes": 12,
+    "num_edges": 30,
+    "density": 0.454545,
+    "degree_min": 3,
+    "degree_max": 7,
+    "degree_mean": 5.0,
+    "degree_std": 0.9129,
+    "degree_histogram": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      8,
+      0,
+      1,
+      0,
+      1
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.4,
+      3.8,
+      4.2,
+      4.6,
+      5.0,
+      5.4,
+      5.800000000000001,
+      6.2,
+      6.6,
+      7.0
+    ],
+    "avg_clustering": 0.756746,
+    "transitivity": 0.696,
+    "num_components": 1,
+    "largest_component_size": 12,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.157065,
+    "graph_id": "community_12_1",
+    "family": "community",
+    "params": {
+      "n": 12,
+      "num_communities": 2,
+      "seed": 1
+    }
+  }
+}

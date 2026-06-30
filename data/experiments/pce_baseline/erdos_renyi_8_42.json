@@ -7,17 +7,17 @@
   "qaoa_p": 1,
   "optimizer": "COBYLA",
   "max_iters": 200,
-  "optimal_energy": -1.0793457815528127,
+  "optimal_energy": -2.1095115794818486,
   "optimal_params": [
-    4.771658213720246,
-    2.5854511761260444
+    3.969173984158225,
+    2.1772372774243793
   ],
-  "approximation_ratio": 0.681405,
-  "gradient_norm_at_opt": 0.007965,
+  "approximation_ratio": 0.718197,
+  "gradient_norm_at_opt": 0.01948,
   "convergence_iters": null,
   "success": true,
-  "timestamp": "2026-06-29T17:33:08.421657+00:00",
-  "duration_seconds": 0.7971,
+  "timestamp": "2026-06-30T03:11:06.605483+00:00",
+  "duration_seconds": 0.9103,
   "params": {
     "n": 8,
     "p": 0.556,
@@ -25,12 +25,12 @@
   },
   "extra": {
     "k": 1,
-    "strategy": "llm_k1",
+    "strategy": "k1_single_pauli",
     "num_physical_qubits": 3,
     "num_variables": 8,
     "compression_ratio": 2.67,
-    "optimal_pce_value": 9.539672890776407,
+    "optimal_pce_value": 10.054755789740923,
     "optimal_maxcut_exact": 14.0,
-    "nfeval": 58
+    "nfeval": 76
   }
 }

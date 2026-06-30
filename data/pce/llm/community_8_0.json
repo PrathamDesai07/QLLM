@@ -1,0 +1,161 @@
+{
+  "k": 2,
+  "num_physical_qubits": 4,
+  "num_variables": 8,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXII",
+    "1": "XYII",
+    "2": "XZII",
+    "3": "YXII",
+    "4": "IIXX",
+    "5": "IIXY",
+    "6": "IIXZ",
+    "7": "IYXI"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XYII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "XZII"
+    },
+    "3": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "X"
+      ],
+      "pauli_string": "YXII"
+    },
+    "4": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXX"
+    },
+    "5": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIXY"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "IIXZ"
+    },
+    "7": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "X"
+      ],
+      "pauli_string": "IYXI"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is relatively sparse with a community structure, making k=2 a suitable choice for balancing qubit efficiency and avoiding barren plateaus.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "community_8_0",
+  "family": "community",
+  "features": {
+    "num_nodes": 8,
+    "num_edges": 10,
+    "density": 0.357143,
+    "degree_min": 2,
+    "degree_max": 3,
+    "degree_mean": 2.5,
+    "degree_std": 0.5,
+    "degree_histogram": [
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    "degree_bin_edges": [
+      2.0,
+      2.1,
+      2.2,
+      2.3,
+      2.4,
+      2.5,
+      2.6,
+      2.7,
+      2.8,
+      2.9,
+      3.0
+    ],
+    "avg_clustering": 0.833333,
+    "transitivity": 0.75,
+    "num_components": 2,
+    "largest_component_size": 4,
+    "component_size_ratio": 0.5,
+    "algebraic_connectivity": 0.0,
+    "graph_id": "community_8_0",
+    "family": "community",
+    "params": {
+      "n": 8,
+      "num_communities": 2,
+      "seed": 0
+    }
+  }
+}

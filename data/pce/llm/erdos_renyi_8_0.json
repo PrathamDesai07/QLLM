@@ -107,7 +107,7 @@
   "tags": [
     "low_order_sufficient"
   ],
-  "reasoning": "The graph is moderately dense with a density of 0.571429 and average degree of 4.0. Using k=2 allows efficient compression while maintaining diversity in Pauli operators.",
+  "reasoning": "The graph is moderately dense with a density of 0.571429 and average degree of 4.0. Using k=2 allows efficient use of qubits while maintaining a manageable training landscape.",
   "approx_ratio_band": "0.7-0.8",
   "graph_id": "erdos_renyi_8_0",
   "family": "erdos_renyi",

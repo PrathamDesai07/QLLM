@@ -1,0 +1,157 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "name": "fast_gnp_random_graph(6,6,0.6377687406100192)"
+  },
+  "nodes": [
+    {
+      "bipartite": 0,
+      "id": 0
+    },
+    {
+      "bipartite": 0,
+      "id": 1
+    },
+    {
+      "bipartite": 0,
+      "id": 2
+    },
+    {
+      "bipartite": 0,
+      "id": 3
+    },
+    {
+      "bipartite": 0,
+      "id": 4
+    },
+    {
+      "bipartite": 0,
+      "id": 5
+    },
+    {
+      "bipartite": 1,
+      "id": 6
+    },
+    {
+      "bipartite": 1,
+      "id": 7
+    },
+    {
+      "bipartite": 1,
+      "id": 8
+    },
+    {
+      "bipartite": 1,
+      "id": 9
+    },
+    {
+      "bipartite": 1,
+      "id": 10
+    },
+    {
+      "bipartite": 1,
+      "id": 11
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 7
+    },
+    {
+      "source": 0,
+      "target": 9
+    },
+    {
+      "source": 0,
+      "target": 10
+    },
+    {
+      "source": 0,
+      "target": 11
+    },
+    {
+      "source": 1,
+      "target": 6
+    },
+    {
+      "source": 1,
+      "target": 7
+    },
+    {
+      "source": 1,
+      "target": 9
+    },
+    {
+      "source": 1,
+      "target": 10
+    },
+    {
+      "source": 1,
+      "target": 11
+    },
+    {
+      "source": 2,
+      "target": 6
+    },
+    {
+      "source": 2,
+      "target": 9
+    },
+    {
+      "source": 2,
+      "target": 10
+    },
+    {
+      "source": 2,
+      "target": 11
+    },
+    {
+      "source": 3,
+      "target": 7
+    },
+    {
+      "source": 3,
+      "target": 8
+    },
+    {
+      "source": 3,
+      "target": 9
+    },
+    {
+      "source": 4,
+      "target": 6
+    },
+    {
+      "source": 4,
+      "target": 11
+    },
+    {
+      "source": 5,
+      "target": 7
+    },
+    {
+      "source": 5,
+      "target": 10
+    },
+    {
+      "source": 5,
+      "target": 11
+    }
+  ],
+  "metadata": {
+    "graph_id": "bipartite_12_0",
+    "family": "bipartite",
+    "params": {
+      "n_left": 6,
+      "n_right": 6,
+      "p": 0.638,
+      "seed": 0
+    },
+    "num_nodes": 12,
+    "num_edges": 21,
+    "density": 0.3181818181818182,
+    "created_at": "2026-06-30T02:15:49.655362+00:00"
+  }
+}

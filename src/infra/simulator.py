@@ -1,9 +1,15 @@
 """Uniform simulation wrapper over Qiskit backends (Qiskit ≥ 1.x)."""
 
+import warnings
+
 import numpy as np
 from qiskit import QuantumCircuit
 from qiskit.primitives import StatevectorEstimator, StatevectorSampler
 from qiskit.quantum_info import SparsePauliOp
+
+# Qiskit's internal sparse ops trigger scipy SparseEfficiencyWarning
+warnings.filterwarnings("ignore", message=".*splu converted.*")
+warnings.filterwarnings("ignore", message=".*spsolve is more efficient.*")
 
 from config import BACKEND
 

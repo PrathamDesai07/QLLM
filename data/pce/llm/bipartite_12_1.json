@@ -1,0 +1,210 @@
+{
+  "k": 2,
+  "num_physical_qubits": 6,
+  "num_variables": 12,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIII",
+    "1": "YYIIII",
+    "2": "ZZIIII",
+    "3": "IIXXII",
+    "4": "IIYYII",
+    "5": "IIZZII",
+    "6": "IIIIXX",
+    "7": "IIIIZZ",
+    "8": "IIIIYY",
+    "9": "IIIIYZ",
+    "10": "IIIIZY",
+    "11": "IIIIXY"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIII"
+    },
+    "3": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXII"
+    },
+    "4": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYII"
+    },
+    "5": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZII"
+    },
+    "6": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXX"
+    },
+    "7": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIZZ"
+    },
+    "8": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIIIYY"
+    },
+    "9": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "IIIIYZ"
+    },
+    "10": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "Y"
+      ],
+      "pauli_string": "IIIIZY"
+    },
+    "11": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIIIXY"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is bipartite with low density and small size, making k=2 sufficient for efficient encoding while avoiding barren plateaus.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "bipartite_12_1",
+  "family": "bipartite",
+  "features": {
+    "num_nodes": 12,
+    "num_edges": 14,
+    "density": 0.212121,
+    "degree_min": 0,
+    "degree_max": 4,
+    "degree_mean": 2.3333,
+    "degree_std": 1.1785,
+    "degree_histogram": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      3,
+      0,
+      4,
+      0,
+      2
+    ],
+    "degree_bin_edges": [
+      0.0,
+      0.4,
+      0.8,
+      1.2000000000000002,
+      1.6,
+      2.0,
+      2.4000000000000004,
+      2.8000000000000003,
+      3.2,
+      3.6,
+      4.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 2,
+    "largest_component_size": 11,
+    "component_size_ratio": 0.916667,
+    "algebraic_connectivity": 0.0,
+    "graph_id": "bipartite_12_1",
+    "family": "bipartite",
+    "params": {
+      "n_left": 6,
+      "n_right": 6,
+      "p": 0.354,
+      "seed": 1
+    }
+  }
+}

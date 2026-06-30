@@ -1,0 +1,47 @@
+{
+  "num_nodes": 12,
+  "num_edges": 28,
+  "density": 0.424242,
+  "degree_min": 3,
+  "degree_max": 6,
+  "degree_mean": 4.6667,
+  "degree_std": 0.8498,
+  "degree_histogram": [
+    1,
+    0,
+    0,
+    4,
+    0,
+    0,
+    5,
+    0,
+    0,
+    2
+  ],
+  "degree_bin_edges": [
+    3.0,
+    3.3,
+    3.6,
+    3.9,
+    4.2,
+    4.5,
+    4.8,
+    5.1,
+    5.4,
+    5.699999999999999,
+    6.0
+  ],
+  "avg_clustering": 0.683333,
+  "transitivity": 0.64486,
+  "num_components": 1,
+  "largest_component_size": 12,
+  "component_size_ratio": 1.0,
+  "algebraic_connectivity": 0.151655,
+  "graph_id": "community_12_2",
+  "family": "community",
+  "params": {
+    "n": 12,
+    "num_communities": 2,
+    "seed": 2
+  }
+}

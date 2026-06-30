@@ -1,0 +1,101 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "name": "fast_gnp_random_graph(4,4,0.6377687406100192)"
+  },
+  "nodes": [
+    {
+      "bipartite": 0,
+      "id": 0
+    },
+    {
+      "bipartite": 0,
+      "id": 1
+    },
+    {
+      "bipartite": 0,
+      "id": 2
+    },
+    {
+      "bipartite": 0,
+      "id": 3
+    },
+    {
+      "bipartite": 1,
+      "id": 4
+    },
+    {
+      "bipartite": 1,
+      "id": 5
+    },
+    {
+      "bipartite": 1,
+      "id": 6
+    },
+    {
+      "bipartite": 1,
+      "id": 7
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 5
+    },
+    {
+      "source": 0,
+      "target": 7
+    },
+    {
+      "source": 1,
+      "target": 4
+    },
+    {
+      "source": 1,
+      "target": 5
+    },
+    {
+      "source": 1,
+      "target": 6
+    },
+    {
+      "source": 1,
+      "target": 7
+    },
+    {
+      "source": 2,
+      "target": 5
+    },
+    {
+      "source": 2,
+      "target": 6
+    },
+    {
+      "source": 2,
+      "target": 7
+    },
+    {
+      "source": 3,
+      "target": 4
+    },
+    {
+      "source": 3,
+      "target": 7
+    }
+  ],
+  "metadata": {
+    "graph_id": "bipartite_8_0",
+    "family": "bipartite",
+    "params": {
+      "n_left": 4,
+      "n_right": 4,
+      "p": 0.638,
+      "seed": 0
+    },
+    "num_nodes": 8,
+    "num_edges": 11,
+    "density": 0.39285714285714285,
+    "created_at": "2026-06-30T02:15:49.652823+00:00"
+  }
+}

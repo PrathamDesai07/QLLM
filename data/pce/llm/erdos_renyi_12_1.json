@@ -1,0 +1,209 @@
+{
+  "k": 2,
+  "num_physical_qubits": 6,
+  "num_variables": 12,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXIIII",
+    "1": "YYIIII",
+    "2": "ZZIIII",
+    "3": "IXXIII",
+    "4": "IYYIII",
+    "5": "IZZIII",
+    "6": "IIXXII",
+    "7": "IIYYII",
+    "8": "IIZZII",
+    "9": "IIIIXX",
+    "10": "IIIIXY",
+    "11": "IIIIZZ"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXIIII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYIIII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZIIII"
+    },
+    "3": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXXIII"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IYYIII"
+    },
+    "5": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IZZIII"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXXII"
+    },
+    "7": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYYII"
+    },
+    "8": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZII"
+    },
+    "9": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIIIXX"
+    },
+    "10": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IIIIXY"
+    },
+    "11": {
+      "qubits": [
+        4,
+        5
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIIIZZ"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is moderately dense with a degree mean of 3.83 and average clustering coefficient of 0.375. Given these characteristics, k=2 provides a good balance between qubit efficiency and training complexity.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "erdos_renyi_12_1",
+  "family": "erdos_renyi",
+  "features": {
+    "num_nodes": 12,
+    "num_edges": 23,
+    "density": 0.348485,
+    "degree_min": 2,
+    "degree_max": 6,
+    "degree_mean": 3.8333,
+    "degree_std": 1.3437,
+    "degree_histogram": [
+      2,
+      0,
+      4,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      2
+    ],
+    "degree_bin_edges": [
+      2.0,
+      2.4,
+      2.8,
+      3.2,
+      3.6,
+      4.0,
+      4.4,
+      4.800000000000001,
+      5.2,
+      5.6,
+      6.0
+    ],
+    "avg_clustering": 0.375,
+    "transitivity": 0.394737,
+    "num_components": 1,
+    "largest_component_size": 12,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.376454,
+    "graph_id": "erdos_renyi_12_1",
+    "family": "erdos_renyi",
+    "params": {
+      "n": 12,
+      "p": 0.354,
+      "seed": 1
+    }
+  }
+}

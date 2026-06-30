@@ -1,0 +1,84 @@
+{
+  "graph_id": "community_8_2",
+  "family": "community",
+  "num_nodes": 8,
+  "num_edges": 9,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -1.4061452338650948,
+  "optimal_params": [
+    5.113302499229535,
+    2.4762263521661216
+  ],
+  "approximation_ratio": 0.743296,
+  "gradient_norm_at_opt": 0.000556,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T02:46:52.617160+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 8,
+    "num_edges": 9,
+    "density": 0.321429,
+    "degree_min": 1,
+    "degree_max": 3,
+    "degree_mean": 2.25,
+    "degree_std": 0.8292,
+    "degree_histogram": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      4
+    ],
+    "degree_bin_edges": [
+      1.0,
+      1.2,
+      1.4,
+      1.6,
+      1.8,
+      2.0,
+      2.2,
+      2.4000000000000004,
+      2.6,
+      2.8,
+      3.0
+    ],
+    "avg_clustering": 0.5,
+    "transitivity": 0.857143,
+    "num_components": 2,
+    "largest_component_size": 4,
+    "component_size_ratio": 0.5,
+    "algebraic_connectivity": 0.0,
+    "graph_id": "community_8_2",
+    "family": "community",
+    "params": {
+      "n": 8,
+      "num_communities": 2,
+      "seed": 2
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 4,
+    "num_variables": 8,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 5.203072616932547,
+    "optimal_maxcut_exact": 7.0,
+    "nfeval": 40,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is relatively sparse and has a community structure, making k=2 a suitable choice for balancing qubit efficiency and avoiding barren plateaus.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

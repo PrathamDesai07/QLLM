@@ -7,16 +7,16 @@
   "qaoa_p": 1,
   "optimizer": "COBYLA",
   "max_iters": 200,
-  "optimal_energy": -2.2560757148261765,
+  "optimal_energy": -4.597384242914863,
   "optimal_params": [
-    5.29824051031098,
-    3.4789300482102488
+    4.343432050118066,
+    0.19983966429061403
   ],
-  "approximation_ratio": 0.723431,
-  "gradient_norm_at_opt": 0.001694,
+  "approximation_ratio": 0.807049,
+  "gradient_norm_at_opt": 0.001,
   "convergence_iters": null,
   "success": true,
-  "timestamp": "2026-06-29T18:41:47.659034+00:00",
+  "timestamp": "2026-06-30T03:05:42.182639+00:00",
   "duration_seconds": null,
   "params": {
     "num_nodes": 8,
@@ -56,29 +56,9 @@
     "num_components": 1,
     "largest_component_size": 8,
     "component_size_ratio": 1.0,
-    "algebraic_connectivity": 0.638039,
-    "graph_id": "erdos_renyi_8_42",
-    "family": "erdos_renyi",
-    "params": {
-      "n": 8,
-      "p": 0.556,
-      "seed": 42
-    }
+    "algebraic_connectivity": 0.638039
   },
   "extra": {
-    "k": 2,
-    "strategy": "llm_k2",
-    "num_physical_qubits": 4,
-    "num_variables": 8,
-    "compression_ratio": 2.0,
-    "optimal_pce_value": 10.128037857413089,
-    "optimal_maxcut_exact": 14.0,
-    "nfeval": 33,
-    "model_name": "Qwen/Qwen2.5-32B-Instruct",
-    "llm_reasoning": "The graph is dense with a density of 0.642857 and high average degree. Using k=2 allows efficient compression while avoiding potential barren plateaus.",
-    "llm_tags": [
-      "gradient_risk"
-    ],
-    "llm_approx_band": "0.7-0.8"
+    "k": 2
   }
 }

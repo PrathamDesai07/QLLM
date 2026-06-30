@@ -1,0 +1,146 @@
+{
+  "k": 1,
+  "num_physical_qubits": 4,
+  "num_variables": 8,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k1",
+  "pauli_strings": {
+    "0": "XIII",
+    "1": "IXII",
+    "2": "IIXI",
+    "3": "IIIX",
+    "4": "YIII",
+    "5": "IYII",
+    "6": "IIYI",
+    "7": "IIIY"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "XIII"
+    },
+    "1": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IXII"
+    },
+    "2": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIXI"
+    },
+    "3": {
+      "qubits": [
+        3
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIIX"
+    },
+    "4": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "YIII"
+    },
+    "5": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IYII"
+    },
+    "6": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIYI"
+    },
+    "7": {
+      "qubits": [
+        3
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIIY"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is bipartite with low density and small size, making k=1 sufficient.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "bipartite_8_1",
+  "family": "bipartite",
+  "features": {
+    "num_nodes": 8,
+    "num_edges": 6,
+    "density": 0.214286,
+    "degree_min": 0,
+    "degree_max": 2,
+    "degree_mean": 1.5,
+    "degree_std": 0.7071,
+    "degree_histogram": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      5
+    ],
+    "degree_bin_edges": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8,
+      1.0,
+      1.2000000000000002,
+      1.4000000000000001,
+      1.6,
+      1.8,
+      2.0
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 2,
+    "largest_component_size": 7,
+    "component_size_ratio": 0.875,
+    "algebraic_connectivity": 0.0,
+    "graph_id": "bipartite_8_1",
+    "family": "bipartite",
+    "params": {
+      "n_left": 4,
+      "n_right": 4,
+      "p": 0.354,
+      "seed": 1
+    }
+  }
+}
