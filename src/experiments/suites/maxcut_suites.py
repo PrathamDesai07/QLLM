@@ -131,17 +131,18 @@ def suite_status(
     baseline_summary = _parse_summary(EXPERIMENTS_DIR / "baseline_qaoa_summary.json")
 
     # PCE baseline — check by (graph_id, k) by reading record files
-    pce_files = (EXPERIMENTS_DIR / "pce_baseline").glob("*.json")
     pce_done_by_k: dict[int, set[str]] = {k: set() for k in k_values}
-    for f in pce_files:
-        try:
-            with open(f) as fh:
-                d = json.load(fh)
-            k = d.get("extra", {}).get("k")
-            if k in pce_done_by_k:
+    for k in k_values:
+        pce_dir = EXPERIMENTS_DIR / f"pce_baseline_k{k}"
+        if not pce_dir.exists():
+            continue
+        for f in pce_dir.glob("*.json"):
+            try:
+                with open(f) as fh:
+                    d = json.load(fh)
                 pce_done_by_k[k].add(d["graph_id"])
-        except (json.JSONDecodeError, KeyError):
-            pass
+            except (json.JSONDecodeError, KeyError):
+                pass
 
     # LLM PCE
     llm_done = {f.stem for f in (EXPERIMENTS_DIR / "llm_pce").glob("*.json")}
