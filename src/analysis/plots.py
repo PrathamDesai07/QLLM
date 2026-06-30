@@ -505,9 +505,6 @@ if __name__ == "__main__":
                         help="Path to patterns.json")
     parser.add_argument("--output", type=str, default=None,
                         help="Plot output directory")
-    parser.add_argument("--format", type=str, default="png",
-                        choices=["png", "pdf", "svg"],
-                        help="Output format (default: png)")
     args = parser.parse_args()
 
     save_dir = Path(args.output) if args.output else PLOTS_DIR

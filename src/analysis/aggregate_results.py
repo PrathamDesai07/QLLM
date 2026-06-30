@@ -322,11 +322,6 @@ def aggregate(skip_llm: bool = False, verbose: bool = True) -> pd.DataFrame:
         print(f"  Aggregated {len(df)} total rows ({len(all_graph_ids)} graphs × {len(methods)} methods).")
         for m in methods:
             print(f"    {m}: {counts[m]} rows")
-        # Check for missing
-        for gid in all_graph_ids:
-            for m in methods:
-                if counts[m] == 0 and m not in ("pce_baseline_k1", "pce_baseline_k2"):
-                    continue
 
     return df
 

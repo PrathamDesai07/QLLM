@@ -1,12 +1,13 @@
 """Pattern mining for QLLM — statistical & ML analysis to discover interpretable
 structural patterns in the QAOA/PCE design space.
 
-Mines three categories of patterns:
+Mines five categories of patterns:
 
-    1. Feature regime → preferred k (which k gives the best approximation ratio
-       depending on graph features).
-    2. Feature regime → Pauli layout that avoids vanishing gradients.
-    3. Pauli distributions → higher gradient magnitudes / better approximation.
+    1. Feature regime → preferred k.
+    2. Feature regime → gradient health.
+    3. Pauli layout distribution → approximation ratio / gradient norm.
+    4. Compression ratio vs performance trade-off.
+    5. Family-level method comparison.
 
 Usage
 -----
