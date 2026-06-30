@@ -1,0 +1,84 @@
+{
+  "graph_id": "erdos_renyi_8_0",
+  "family": "erdos_renyi",
+  "num_nodes": 8,
+  "num_edges": 16,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -2.9450423751717505,
+  "optimal_params": [
+    5.976050241767146,
+    2.3845180088718703
+  ],
+  "approximation_ratio": 0.789377,
+  "gradient_norm_at_opt": 0.002863,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-29T18:39:17.125328+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 8,
+    "num_edges": 16,
+    "density": 0.571429,
+    "degree_min": 3,
+    "degree_max": 5,
+    "degree_mean": 4.0,
+    "degree_std": 0.7071,
+    "degree_histogram": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      2
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.2,
+      3.4,
+      3.6,
+      3.8,
+      4.0,
+      4.2,
+      4.4,
+      4.6,
+      4.8,
+      5.0
+    ],
+    "avg_clustering": 0.425,
+    "transitivity": 0.42,
+    "num_components": 1,
+    "largest_component_size": 8,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.66738,
+    "graph_id": "erdos_renyi_8_0",
+    "family": "erdos_renyi",
+    "params": {
+      "n": 8,
+      "p": 0.638,
+      "seed": 0
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 4,
+    "num_variables": 8,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 9.472521187585876,
+    "optimal_maxcut_exact": 12.0,
+    "nfeval": 36,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is moderately dense with a density of 0.571429 and average degree of 4.0. Using k=2 allows efficient compression while maintaining diversity in Pauli operators.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

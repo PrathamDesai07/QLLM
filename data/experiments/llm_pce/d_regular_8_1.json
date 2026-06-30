@@ -1,0 +1,84 @@
+{
+  "graph_id": "d_regular_8_1",
+  "family": "d_regular",
+  "num_nodes": 8,
+  "num_edges": 8,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -2.528081086653232,
+  "optimal_params": [
+    5.666372371042449,
+    3.2380089362937587
+  ],
+  "approximation_ratio": 0.87734,
+  "gradient_norm_at_opt": 0.004202,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-29T18:38:00.081027+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 8,
+    "num_edges": 8,
+    "density": 0.285714,
+    "degree_min": 2,
+    "degree_max": 2,
+    "degree_mean": 2.0,
+    "degree_std": 0.0,
+    "degree_histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree_bin_edges": [
+      1.5,
+      1.6,
+      1.7,
+      1.8,
+      1.9,
+      2.0,
+      2.1,
+      2.2,
+      2.3,
+      2.4,
+      2.5
+    ],
+    "avg_clustering": 0.375,
+    "transitivity": 0.375,
+    "num_components": 2,
+    "largest_component_size": 5,
+    "component_size_ratio": 0.625,
+    "algebraic_connectivity": 0.0,
+    "graph_id": "d_regular_8_1",
+    "family": "d_regular",
+    "params": {
+      "n": 8,
+      "d": 2,
+      "seed": 1
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 4,
+    "num_variables": 8,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 5.264040543326616,
+    "optimal_maxcut_exact": 6.0,
+    "nfeval": 39,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is sparse with low density and degree, making k=2 sufficient for efficient encoding while avoiding barren plateaus.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

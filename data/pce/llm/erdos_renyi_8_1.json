@@ -1,0 +1,161 @@
+{
+  "k": 2,
+  "num_physical_qubits": 4,
+  "num_variables": 8,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXII",
+    "1": "XYII",
+    "2": "XZII",
+    "3": "YXII",
+    "4": "YYII",
+    "5": "YZII",
+    "6": "ZXII",
+    "7": "ZYII"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XYII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "XZII"
+    },
+    "3": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "X"
+      ],
+      "pauli_string": "YXII"
+    },
+    "4": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYII"
+    },
+    "5": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "YZII"
+    },
+    "6": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "X"
+      ],
+      "pauli_string": "ZXII"
+    },
+    "7": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Y"
+      ],
+      "pauli_string": "ZYII"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is not highly dense and has a moderate degree range, making k=2 suitable for efficient representation while avoiding potential barren plateaus.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "erdos_renyi_8_1",
+  "family": "erdos_renyi",
+  "features": {
+    "num_nodes": 8,
+    "num_edges": 11,
+    "density": 0.392857,
+    "degree_min": 2,
+    "degree_max": 4,
+    "degree_mean": 2.75,
+    "degree_std": 0.6614,
+    "degree_histogram": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      1
+    ],
+    "degree_bin_edges": [
+      2.0,
+      2.2,
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      3.2,
+      3.4000000000000004,
+      3.6,
+      3.8,
+      4.0
+    ],
+    "avg_clustering": 0.395833,
+    "transitivity": 0.285714,
+    "num_components": 1,
+    "largest_component_size": 8,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.311973,
+    "graph_id": "erdos_renyi_8_1",
+    "family": "erdos_renyi",
+    "params": {
+      "n": 8,
+      "p": 0.354,
+      "seed": 1
+    }
+  }
+}

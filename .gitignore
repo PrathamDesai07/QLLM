@@ -206,6 +206,15 @@ tempCodeRunnerFile.py
 # Ruff stuff:
 .ruff_cache/
 
+# API tokens
+hf.txt
+
+# Pip install logs / stray version markers
+=0.20.0
+=0.6.0
+=1.0
+=1.0.0
+
 # PyPI configuration file
 .pypirc
 

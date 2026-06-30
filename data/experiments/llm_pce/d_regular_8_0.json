@@ -1,0 +1,84 @@
+{
+  "graph_id": "d_regular_8_0",
+  "family": "d_regular",
+  "num_nodes": 8,
+  "num_edges": 8,
+  "method": "llm_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -1.9999998786519881,
+  "optimal_params": [
+    3.927072622706702,
+    4.3197667830590545
+  ],
+  "approximation_ratio": 0.625,
+  "gradient_norm_at_opt": 0.002546,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-29T18:36:46.318722+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 8,
+    "num_edges": 8,
+    "density": 0.285714,
+    "degree_min": 2,
+    "degree_max": 2,
+    "degree_mean": 2.0,
+    "degree_std": 0.0,
+    "degree_histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree_bin_edges": [
+      1.5,
+      1.6,
+      1.7,
+      1.8,
+      1.9,
+      2.0,
+      2.1,
+      2.2,
+      2.3,
+      2.4,
+      2.5
+    ],
+    "avg_clustering": 0.0,
+    "transitivity": 0.0,
+    "num_components": 1,
+    "largest_component_size": 8,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.292893,
+    "graph_id": "d_regular_8_0",
+    "family": "d_regular",
+    "params": {
+      "n": 8,
+      "d": 2,
+      "seed": 0
+    }
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "llm_k2",
+    "num_physical_qubits": 4,
+    "num_variables": 8,
+    "compression_ratio": 2.0,
+    "optimal_pce_value": 4.999999939325994,
+    "optimal_maxcut_exact": 8.0,
+    "nfeval": 41,
+    "model_name": "Qwen/Qwen2.5-32B-Instruct",
+    "llm_reasoning": "The graph is sparse with low degree and no clustering, making k=2 sufficient.",
+    "llm_tags": [
+      "low_order_sufficient"
+    ],
+    "llm_approx_band": "0.7-0.8"
+  }
+}

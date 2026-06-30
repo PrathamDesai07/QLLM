@@ -1,0 +1,161 @@
+{
+  "k": 2,
+  "num_physical_qubits": 4,
+  "num_variables": 8,
+  "compression_ratio": 2.0,
+  "strategy": "llm_k2",
+  "pauli_strings": {
+    "0": "XXII",
+    "1": "YYII",
+    "2": "ZZII",
+    "3": "XYII",
+    "4": "XZII",
+    "5": "IIXX",
+    "6": "IIYY",
+    "7": "IIZZ"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXII"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYII"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZII"
+    },
+    "3": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XYII"
+    },
+    "4": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "XZII"
+    },
+    "5": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IIXX"
+    },
+    "6": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "IIYY"
+    },
+    "7": {
+      "qubits": [
+        2,
+        3
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "IIZZ"
+    }
+  },
+  "tags": [
+    "low_order_sufficient"
+  ],
+  "reasoning": "The graph is moderately dense with a density of 0.571429 and average degree of 4.0. Using k=2 allows efficient compression while maintaining diversity in Pauli operators.",
+  "approx_ratio_band": "0.7-0.8",
+  "graph_id": "erdos_renyi_8_0",
+  "family": "erdos_renyi",
+  "features": {
+    "num_nodes": 8,
+    "num_edges": 16,
+    "density": 0.571429,
+    "degree_min": 3,
+    "degree_max": 5,
+    "degree_mean": 4.0,
+    "degree_std": 0.7071,
+    "degree_histogram": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      2
+    ],
+    "degree_bin_edges": [
+      3.0,
+      3.2,
+      3.4,
+      3.6,
+      3.8,
+      4.0,
+      4.2,
+      4.4,
+      4.6,
+      4.8,
+      5.0
+    ],
+    "avg_clustering": 0.425,
+    "transitivity": 0.42,
+    "num_components": 1,
+    "largest_component_size": 8,
+    "component_size_ratio": 1.0,
+    "algebraic_connectivity": 0.66738,
+    "graph_id": "erdos_renyi_8_0",
+    "family": "erdos_renyi",
+    "params": {
+      "n": 8,
+      "p": 0.638,
+      "seed": 0
+    }
+  }
+}

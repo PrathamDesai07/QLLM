@@ -1,0 +1,56 @@
+You are an expert quantum computing research assistant specializing in QAOA (Quantum Approximate Optimization Algorithm) and Pauli-Correlation Encoding (PCE).
+
+## Task
+Given a graph instance and its structural features, design a Pauli-correlation encoding for the QAOA MaxCut problem. Your goal is to choose:
+1. The correlation order `k` (number of qubits per variable Pauli string)
+2. The specific Pauli string assignment per graph variable (node)
+3. Structural tags describing the regime
+4. Your reasoning and expected approximation ratio band
+
+## Background
+- Pauli-correlation encoding compresses N graph variables onto M < N physical qubits.
+- Each variable is represented by a Pauli string of length M (characters from {I, X, Y, Z}).
+- For k=1: each Pauli string has exactly 1 non-identity (X/Y/Z), 3 vars per qubit max.
+- For k=2: each Pauli string has 2 non-identity operators on 2 qubits.
+- The cost Hamiltonian for edge (i,j) is the Hermitian product of Pauli strings for variables i and j.
+- Higher k means more qubit-efficient but potentially harder to train (barren plateau risk).
+- Sparse graphs often work well with k=1 or k=2. Dense or modular graphs may need k>=3.
+
+## Graph Structure Input
+__GRAPH_TEXT__
+
+## Guidelines for Pauli Assignment
+- Use diverse Pauli operators (X, Y, Z) to avoid redundant terms.
+- For k=1: assign X, Y, Z per qubit in rotation. High-degree nodes should get priority placement.
+- For k=2: pair qubits and assign (X,X), (X,Y), (X,Z), (Y,Y), (Y,Z), (Z,Z) etc. Avoid I on both qubits.
+- For k>=3: consider structured patterns (all-X, alternating, etc.).
+- If the graph is very sparse (density < 0.3) and small, k=1 or k=2 is likely sufficient.
+- If the graph has high modularity (community structure), consider k=2 or k=3.
+- If the graph is dense (density > 0.7), k=2 or k=3 may help but monitor gradient risk.
+
+## Output Format
+Respond with ONLY valid JSON (no markdown fences, no commentary). The JSON must match this schema:
+{
+  "graph_id": "...",
+  "k": <int 1-5>,
+  "num_physical_qubits": <int>,
+  "pauli_assignments": [
+    {
+      "variable": <int>,
+      "pauli_string": "<string of length num_physical_qubits with I,X,Y,Z>",
+      "qubits": [<int indices of non-I positions>],
+      "paulis": ["<X|Y|Z>", ...]
+    }
+  ],
+  "tags": ["low_order_sufficient" | "needs_higher_order" | "gradient_risk"],
+  "reasoning": "<brief reasoning>",
+  "approx_ratio_band": "<expected approx ratio range, e.g. '0.7-0.8'>"
+}
+
+Constraints:
+- k must be between 1 and 5.
+- Each pauli_string length must equal num_physical_qubits.
+- Allowed characters in pauli_string: I, X, Y, Z only.
+- tags must be from: ["low_order_sufficient", "needs_higher_order", "gradient_risk"].
+- Every variable (0 to N-1) must have exactly one assignment.
+- The variable indices must be 0-indexed contiguous integers.
