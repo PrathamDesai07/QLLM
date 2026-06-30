@@ -12,6 +12,7 @@ from qiskit.quantum_info import SparsePauliOp
 from scipy.optimize import minimize
 
 from config import QAOA
+from infra.experiment_tracker import append_index, _git_hash
 from infra.logger import ExperimentRecord, timer
 from infra.simulator import compute_expectation, estimate_gradient
 from pce.manual_pce import build_pce_hamiltonian
@@ -192,6 +193,33 @@ def run_pce_baseline(
         },
     )
     record.save(directory=output_dir)
+
+    # ── Append to central index ─────────────────────────────────────
+    k = encoding.get("k")
+    m_q = result["num_physical_qubits"]
+    comp = result["compression_ratio"]
+    append_index({
+        "graph_id": record.graph_id,
+        "family": record.family,
+        "method": "pce_baseline",
+        "model_name": "",
+        "prompt_file": "",
+        "prompt_hash": "",
+        "timestamp": record.timestamp,
+        "k": str(k) if k is not None else "",
+        "num_physical_qubits": str(m_q),
+        "compression_ratio": str(comp),
+        "optimal_energy": str(record.optimal_energy),
+        "approximation_ratio": str(record.approximation_ratio),
+        "gradient_norm_at_opt": str(record.gradient_norm_at_opt),
+        "success": str(record.success),
+        "convergence_iters": str(record.convergence_iters) if record.convergence_iters is not None else "",
+        "duration_seconds": str(record.duration_seconds) if record.duration_seconds is not None else "",
+        "llm_tags": "",
+        "llm_reasoning": "",
+        "git_commit": _git_hash(),
+    })
+
     return record
 
 

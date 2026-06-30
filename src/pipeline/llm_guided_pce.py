@@ -253,29 +253,31 @@ def run_llm_pce(
     record.save(directory=output_dir)
 
     # ── Append to central index ─────────────────────────────────────
-    index_record = {
+    meta = run_metadata(model_name,
+                        prompt_file=str(prompt_path) if prompt_path else "default")
+    prompt_hashes = meta.get("prompt_hashes", {})
+    prompt_hash = next(iter(prompt_hashes.values()), "")
+    append_index({
         "graph_id": graph_id,
         "family": llm_input.family,
         "method": "llm_pce",
         "model_name": model_name,
         "prompt_file": str(prompt_path) if prompt_path else "default",
+        "prompt_hash": prompt_hash,
         "timestamp": timestamp,
-        "k": qaoa_results["k"],
-        "num_physical_qubits": num_physical_qubits,
-        "compression_ratio": qaoa_results["compression_ratio"],
-        "optimal_energy": record.optimal_energy,
-        "approximation_ratio": record.approximation_ratio,
-        "gradient_norm_at_opt": record.gradient_norm_at_opt,
-        "success": record.success,
-        "convergence_iters": record.convergence_iters,
-        "duration_seconds": record.duration_seconds if record.duration_seconds is not None else "",
+        "k": str(qaoa_results["k"]),
+        "num_physical_qubits": str(num_physical_qubits),
+        "compression_ratio": str(qaoa_results["compression_ratio"]),
+        "optimal_energy": str(record.optimal_energy),
+        "approximation_ratio": str(record.approximation_ratio),
+        "gradient_norm_at_opt": str(record.gradient_norm_at_opt),
+        "success": str(record.success),
+        "convergence_iters": str(record.convergence_iters) if record.convergence_iters is not None else "",
+        "duration_seconds": str(record.duration_seconds) if record.duration_seconds is not None else "",
         "llm_tags": "|".join(llm_output.tags),
-        "llm_reasoning": llm_output.reasoning[:120],
-    }
-    meta = run_metadata(model_name,
-                        prompt_file=str(prompt_path) if prompt_path else "default")
-    index_record["git_commit"] = meta["git_commit"]
-    append_index(index_record)
+        "llm_reasoning": llm_output.reasoning[:120] if llm_output.reasoning else "",
+        "git_commit": meta["git_commit"],
+    })
 
     return {
         "graph_id": graph_id,
@@ -465,31 +467,33 @@ def run_llm_pce_batch_parallel(
         record.save(directory=output_dir)
 
         # ── Index ───────────────────────────────────────────────────
-        index_record = {
+        meta = run_metadata(
+            model_name,
+            prompt_file=str(prompt_path) if prompt_path else "default",
+        )
+        prompt_hashes = meta.get("prompt_hashes", {})
+        prompt_hash = next(iter(prompt_hashes.values()), "")
+        append_index({
             "graph_id": gid,
             "family": llm_input.family,
             "method": "llm_pce",
             "model_name": model_name,
             "prompt_file": str(prompt_path) if prompt_path else "default",
+            "prompt_hash": prompt_hash,
             "timestamp": timestamp,
-            "k": qaoa_results["k"],
-            "num_physical_qubits": m_q,
-            "compression_ratio": qaoa_results["compression_ratio"],
-            "optimal_energy": record.optimal_energy,
-            "approximation_ratio": record.approximation_ratio,
-            "gradient_norm_at_opt": record.gradient_norm_at_opt,
-            "success": record.success,
-            "convergence_iters": record.convergence_iters,
-            "duration_seconds": record.duration_seconds if record.duration_seconds is not None else "",
+            "k": str(qaoa_results["k"]),
+            "num_physical_qubits": str(m_q),
+            "compression_ratio": str(qaoa_results["compression_ratio"]),
+            "optimal_energy": str(record.optimal_energy),
+            "approximation_ratio": str(record.approximation_ratio),
+            "gradient_norm_at_opt": str(record.gradient_norm_at_opt),
+            "success": str(record.success),
+            "convergence_iters": str(record.convergence_iters) if record.convergence_iters is not None else "",
+            "duration_seconds": str(record.duration_seconds) if record.duration_seconds is not None else "",
             "llm_tags": "|".join(llm_output.tags),
-            "llm_reasoning": llm_output.reasoning[:120],
-        }
-        meta = run_metadata(
-            model_name,
-            prompt_file=str(prompt_path) if prompt_path else "default",
-        )
-        index_record["git_commit"] = meta["git_commit"]
-        append_index(index_record)
+            "llm_reasoning": llm_output.reasoning[:120] if llm_output.reasoning else "",
+            "git_commit": meta["git_commit"],
+        })
 
         results.append({
             "graph_id": gid,

@@ -16,8 +16,8 @@
   "gradient_norm_at_opt": 0.005987,
   "convergence_iters": null,
   "success": true,
-  "timestamp": "2026-06-30T03:10:44.546061+00:00",
-  "duration_seconds": 0.8471,
+  "timestamp": "2026-06-30T03:19:19.399574+00:00",
+  "duration_seconds": 0.8096,
   "params": {
     "n_left": 4,
     "n_right": 4,
