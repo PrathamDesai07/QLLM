@@ -1,0 +1,27 @@
+{
+  "instance_id": "budget_n4_seed42",
+  "n": 4,
+  "optimal_energy": -700.940033334974,
+  "optimal_params": [
+    4.844664316586549,
+    2.8175171257999216
+  ],
+  "gradient_norm_at_opt": 2151633.410445,
+  "convergence_iters": null,
+  "nfeval": 28,
+  "success": true,
+  "method": "budget_baseline",
+  "num_physical_qubits": 4,
+  "compression_ratio": 1.0,
+  "brute_force_optimum": {
+    "n": 4,
+    "best_value": 30,
+    "best_selection": [
+      false,
+      true,
+      true,
+      false
+    ],
+    "best_energy": -30
+  }
+}

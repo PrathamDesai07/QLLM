@@ -1,0 +1,18 @@
+{
+  "n": 8,
+  "optimal_energy": -0.7874611476544855,
+  "optimal_params": [
+    3.890798436851734,
+    2.5319574960877675
+  ],
+  "gradient_norm_at_opt": 0.310743,
+  "convergence_iters": null,
+  "nfeval": 31,
+  "success": true,
+  "method": "baseline_qaoa",
+  "num_physical_qubits": 8,
+  "compression_ratio": 1.0,
+  "optimal_maxcut_exact": 8.0,
+  "merit_factor_at_opt": 4.0,
+  "optimal_merit_factor": null
+}

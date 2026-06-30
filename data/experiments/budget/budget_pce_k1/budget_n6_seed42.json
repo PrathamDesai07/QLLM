@@ -1,0 +1,30 @@
+{
+  "instance_id": "budget_n6_seed42",
+  "n": 6,
+  "k": 1,
+  "num_physical_qubits": 2,
+  "compression_ratio": 3.0,
+  "optimal_energy": -3816.257025669501,
+  "optimal_params": [
+    3.879523726655978,
+    2.301483720647981
+  ],
+  "gradient_norm_at_opt": 3442862.124526,
+  "convergence_iters": null,
+  "nfeval": 31,
+  "success": true,
+  "method": "budget_pce_k1",
+  "brute_force_optimum": {
+    "n": 6,
+    "best_value": 41,
+    "best_selection": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "best_energy": -41
+  }
+}

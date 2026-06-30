@@ -1,0 +1,18 @@
+{
+  "n": 4,
+  "k": 2,
+  "num_physical_qubits": 2,
+  "compression_ratio": 2.0,
+  "optimal_energy": -1.9999998348317625,
+  "optimal_params": [
+    5.105005848023989,
+    2.7489532699942316
+  ],
+  "gradient_norm_at_opt": 0.003251,
+  "convergence_iters": null,
+  "nfeval": 40,
+  "success": true,
+  "method": "labs_pce_k2",
+  "optimal_maxcut_exact": 2.0,
+  "merit_factor_at_opt": 4.0
+}
