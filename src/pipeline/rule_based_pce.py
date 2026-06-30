@@ -25,7 +25,6 @@ if str(_src) not in sys.path:
     sys.path.insert(0, str(_src))
 
 import networkx as nx
-import numpy as np
 
 from config import (
     GRAPHS_DIR,
@@ -35,11 +34,9 @@ from config import (
     QAOA,
 )
 from infra.logger import ExperimentRecord
-from infra.experiment_tracker import run_metadata, append_index, INDEX_COLUMNS
-from infra.simulator import compute_expectation, estimate_gradient
-from pce.manual_pce import encode_graph, build_pce_hamiltonian
-from qaoa.pce_qaoa_baseline import pce_qaoa_ansatz, run_pce_qaoa
-from qaoa.baseline_qaoa import brute_force_maxcut
+from infra.experiment_tracker import append_index
+from pce.manual_pce import encode_graph
+from qaoa.pce_qaoa_baseline import run_pce_qaoa
 from rules.encoder_rules import recommend_encoding
 
 

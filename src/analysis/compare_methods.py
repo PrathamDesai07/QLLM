@@ -374,8 +374,6 @@ if __name__ == "__main__":
                         help="Run rule-based PCE for missing graphs first")
     parser.add_argument("--max-graphs", type=int, default=None,
                         help="Limit graphs for testing")
-    parser.add_argument("--plot", action="store_true",
-                        help="TODO: generate comparison plots")
     parser.add_argument("--output", type=str, default=None)
 
     args = parser.parse_args()
