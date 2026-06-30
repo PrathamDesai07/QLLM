@@ -1,0 +1,32 @@
+{
+  "total_runs": 9,
+  "devices": [
+    "ibm_eagle"
+  ],
+  "method_summary": {
+    "baseline_qaoa": {
+      "n": 3,
+      "mean_noisy_approx": 0.7324,
+      "mean_ideal_approx": 0.7335,
+      "mean_noise_impact": -0.0011,
+      "mean_compression": 1.0,
+      "noise_degradation_pct": 0.1
+    },
+    "pce_baseline_k1": {
+      "n": 3,
+      "mean_noisy_approx": 0.7105,
+      "mean_ideal_approx": 0.5976,
+      "mean_noise_impact": 0.1128,
+      "mean_compression": 2.67,
+      "noise_degradation_pct": 18.9
+    },
+    "pce_baseline_k2": {
+      "n": 3,
+      "mean_noisy_approx": 0.778,
+      "mean_ideal_approx": 0.6955,
+      "mean_noise_impact": 0.0825,
+      "mean_compression": 4.0,
+      "noise_degradation_pct": 11.9
+    }
+  }
+}

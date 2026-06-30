@@ -1,0 +1,45 @@
+{
+  "graph_id": "bipartite_8_0",
+  "family": "bipartite",
+  "num_nodes": 8,
+  "num_edges": 12,
+  "device_name": "ibm_eagle",
+  "device_qubits": 27,
+  "methods": {
+    "baseline_qaoa": {
+      "method": "baseline_qaoa",
+      "num_physical_qubits": 8,
+      "compression_ratio": 1.0,
+      "noisy_energy": -3.716395,
+      "noisy_approximation_ratio": 0.65485,
+      "ideal_energy_at_params": -3.75565,
+      "ideal_approx_at_params": 0.656485,
+      "success": true,
+      "nfeval": 45
+    },
+    "pce_baseline_k1": {
+      "method": "pce_baseline_k1",
+      "k": 1,
+      "num_physical_qubits": 3,
+      "compression_ratio": 2.67,
+      "noisy_energy": -1.886478,
+      "noisy_approximation_ratio": 0.578603,
+      "ideal_energy_at_params": 0.082299,
+      "ideal_approx_at_params": 0.496571,
+      "success": false,
+      "nfeval": 50
+    },
+    "pce_baseline_k2": {
+      "method": "pce_baseline_k2",
+      "k": 2,
+      "num_physical_qubits": 2,
+      "compression_ratio": 4.0,
+      "noisy_energy": -3.004321,
+      "noisy_approximation_ratio": 0.62518,
+      "ideal_energy_at_params": -2.065372,
+      "ideal_approx_at_params": 0.586057,
+      "success": true,
+      "nfeval": 42
+    }
+  }
+}

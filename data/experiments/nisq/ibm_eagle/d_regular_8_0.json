@@ -1,0 +1,45 @@
+{
+  "graph_id": "d_regular_8_0",
+  "family": "d_regular",
+  "num_nodes": 8,
+  "num_edges": 8,
+  "device_name": "ibm_eagle",
+  "device_qubits": 27,
+  "methods": {
+    "baseline_qaoa": {
+      "method": "baseline_qaoa",
+      "num_physical_qubits": 8,
+      "compression_ratio": 1.0,
+      "noisy_energy": -1.177455,
+      "noisy_approximation_ratio": 0.764788,
+      "ideal_energy_at_params": -1.18564,
+      "ideal_approx_at_params": 0.76547,
+      "success": true,
+      "nfeval": 33
+    },
+    "pce_baseline_k1": {
+      "method": "pce_baseline_k1",
+      "k": 1,
+      "num_physical_qubits": 3,
+      "compression_ratio": 2.67,
+      "noisy_energy": -0.976709,
+      "noisy_approximation_ratio": 0.748059,
+      "ideal_energy_at_params": 0.730013,
+      "ideal_approx_at_params": 0.605832,
+      "success": false,
+      "nfeval": 50
+    },
+    "pce_baseline_k2": {
+      "method": "pce_baseline_k2",
+      "k": 2,
+      "num_physical_qubits": 2,
+      "compression_ratio": 4.0,
+      "noisy_energy": -1.99351,
+      "noisy_approximation_ratio": 0.832793,
+      "ideal_energy_at_params": -2.0,
+      "ideal_approx_at_params": 0.833333,
+      "success": true,
+      "nfeval": 41
+    }
+  }
+}

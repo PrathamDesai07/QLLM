@@ -1,0 +1,45 @@
+{
+  "graph_id": "erdos_renyi_8_0",
+  "family": "erdos_renyi",
+  "num_nodes": 8,
+  "num_edges": 14,
+  "device_name": "ibm_eagle",
+  "device_qubits": 27,
+  "methods": {
+    "baseline_qaoa": {
+      "method": "baseline_qaoa",
+      "num_physical_qubits": 8,
+      "compression_ratio": 1.0,
+      "noisy_energy": -1.552345,
+      "noisy_approximation_ratio": 0.777617,
+      "ideal_energy_at_params": -1.573444,
+      "ideal_approx_at_params": 0.778672,
+      "success": true,
+      "nfeval": 44
+    },
+    "pce_baseline_k1": {
+      "method": "pce_baseline_k1",
+      "k": 1,
+      "num_physical_qubits": 3,
+      "compression_ratio": 2.67,
+      "noisy_energy": -2.093905,
+      "noisy_approximation_ratio": 0.804695,
+      "ideal_energy_at_params": 0.189842,
+      "ideal_approx_at_params": 0.690508,
+      "success": true,
+      "nfeval": 43
+    },
+    "pce_baseline_k2": {
+      "method": "pce_baseline_k2",
+      "k": 2,
+      "num_physical_qubits": 2,
+      "compression_ratio": 4.0,
+      "noisy_energy": -3.522996,
+      "noisy_approximation_ratio": 0.87615,
+      "ideal_energy_at_params": 0.657508,
+      "ideal_approx_at_params": 0.667125,
+      "success": true,
+      "nfeval": 38
+    }
+  }
+}
