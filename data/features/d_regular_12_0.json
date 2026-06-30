@@ -31,17 +31,21 @@
     3.4,
     3.5
   ],
-  "avg_clustering": 0.083333,
-  "transitivity": 0.083333,
+  "avg_clustering": 0.166667,
+  "transitivity": 0.166667,
   "num_components": 1,
   "largest_component_size": 12,
   "component_size_ratio": 1.0,
-  "algebraic_connectivity": 0.333333,
+  "algebraic_connectivity": 0.289133,
+  "modularity": 0.333333,
   "graph_id": "d_regular_12_0",
   "family": "d_regular",
   "params": {
-    "n": 12,
-    "d": 3,
-    "seed": 0
+    "graph_id": "d_regular_12_4",
+    "family": "d_regular",
+    "params": {
+      "n": 12,
+      "d": 3
+    }
   }
 }

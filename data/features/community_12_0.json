@@ -1,47 +1,51 @@
 {
   "num_nodes": 12,
-  "num_edges": 28,
-  "density": 0.424242,
-  "degree_min": 4,
+  "num_edges": 27,
+  "density": 0.409091,
+  "degree_min": 3,
   "degree_max": 6,
-  "degree_mean": 4.6667,
-  "degree_std": 0.8498,
+  "degree_mean": 4.5,
+  "degree_std": 1.1902,
   "degree_histogram": [
-    7,
+    3,
     0,
     0,
+    4,
     0,
     0,
-    2,
+    1,
     0,
     0,
-    0,
-    3
+    4
   ],
   "degree_bin_edges": [
-    4.0,
+    3.0,
+    3.3,
+    3.6,
+    3.9,
     4.2,
-    4.4,
-    4.6,
+    4.5,
     4.8,
-    5.0,
-    5.2,
+    5.1,
     5.4,
-    5.6,
-    5.8,
+    5.699999999999999,
     6.0
   ],
-  "avg_clustering": 0.525,
-  "transitivity": 0.504673,
+  "avg_clustering": 0.722222,
+  "transitivity": 0.61165,
   "num_components": 1,
   "largest_component_size": 12,
   "component_size_ratio": 1.0,
-  "algebraic_connectivity": 0.264592,
+  "algebraic_connectivity": 0.181709,
+  "modularity": 0.386145,
   "graph_id": "community_12_0",
   "family": "community",
   "params": {
-    "n": 12,
-    "num_communities": 2,
-    "seed": 0
+    "graph_id": "community_12_4",
+    "family": "community",
+    "params": {
+      "n": 12,
+      "num_communities": 2
+    }
   }
 }

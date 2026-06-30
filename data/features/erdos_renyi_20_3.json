@@ -37,6 +37,7 @@
   "largest_component_size": 20,
   "component_size_ratio": 1.0,
   "algebraic_connectivity": 0.605032,
+  "modularity": 0.129464,
   "graph_id": "erdos_renyi_20_3",
   "family": "erdos_renyi",
   "params": {

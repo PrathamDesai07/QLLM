@@ -34,7 +34,7 @@ ANALYSIS_DIR = DATA_DIR / "analysis"
 RESULT_PATH = ANALYSIS_DIR / "qaoa_pce_results.parquet"
 
 # Methods in our dataset
-METHODS = ["baseline_qaoa", "pce_baseline_k1", "pce_baseline_k2", "llm_pce"]
+METHODS = ["baseline_qaoa", "pce_baseline_k1", "pce_baseline_k2", "llm_pce", "rule_pce"]
 
 
 # ---------------------------------------------------------------------------
@@ -118,6 +118,8 @@ def _load_experiment_json(graph_id: str, method: str) -> dict[str, Any] | None:
         base_dir = EXPERIMENTS_DIR / "pce_baseline_k1"
     elif method == "pce_baseline_k2":
         base_dir = EXPERIMENTS_DIR / "pce_baseline_k2"
+    elif method == "rule_pce":
+        base_dir = EXPERIMENTS_DIR / "rule_pce"
     else:
         return None
 
@@ -138,6 +140,8 @@ def _load_pce_encoding(graph_id: str, method: str) -> dict[str, Any] | None:
         path = PCE_DIR / "llm" / f"{graph_id}.json"
     elif method in ("pce_baseline_k1", "pce_baseline_k2"):
         path = PCE_DIR / f"{graph_id}.json"
+    elif method == "rule_pce":
+        path = PCE_DIR / "rule" / f"{graph_id}.json"
     else:
         return None
     if not path.exists():
@@ -227,6 +231,7 @@ def _build_row(graph_id: str, method: str) -> dict[str, Any] | None:
         "largest_component_size": features.get("largest_component_size"),
         "component_size_ratio": features.get("component_size_ratio"),
         "algebraic_connectivity": features.get("algebraic_connectivity"),
+        "modularity": features.get("modularity"),
 
         # Performance metrics
         "optimal_energy": record.get("optimal_energy"),
@@ -256,7 +261,7 @@ def _build_row(graph_id: str, method: str) -> dict[str, Any] | None:
 def _all_graph_ids() -> set[str]:
     """Return the set of every graph_id that appears in any experiment dir."""
     ids: set[str] = set()
-    for method_dir_name in ["baseline_qaoa", "pce_baseline_k1", "pce_baseline_k2", "llm_pce"]:
+    for method_dir_name in ["baseline_qaoa", "pce_baseline_k1", "pce_baseline_k2", "llm_pce", "rule_pce"]:
         d = EXPERIMENTS_DIR / method_dir_name
         if d.exists():
             for f in d.glob("*.json"):
@@ -310,7 +315,7 @@ def aggregate(skip_llm: bool = False, verbose: bool = True) -> pd.DataFrame:
 
     for col in ["compression_ratio", "density", "degree_mean", "degree_std",
                 "avg_clustering", "transitivity", "component_size_ratio",
-                "algebraic_connectivity",
+                "algebraic_connectivity", "modularity",
                 "optimal_energy", "approximation_ratio", "gradient_norm_at_opt",
                 "duration_seconds",
                 "pauli_x_frac", "pauli_y_frac", "pauli_z_frac",

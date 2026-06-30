@@ -71,6 +71,18 @@ def algebraic_connectivity(g: nx.Graph) -> dict:
     return {"algebraic_connectivity": val}
 
 
+def modularity(g: nx.Graph) -> dict:
+    """Community structure strength via Clauset-Newman-Moore greedy modularity."""
+    try:
+        from networkx.algorithms.community import greedy_modularity_communities
+        communities = list(greedy_modularity_communities(g))
+        from networkx.algorithms.community import modularity as modularity_score
+        val = round(modularity_score(g, communities), 6)
+    except Exception:
+        val = None
+    return {"modularity": val}
+
+
 def extract_all(g: nx.Graph) -> dict:
     """Aggregate all feature extractors into a single dict."""
     features = {}
@@ -79,6 +91,7 @@ def extract_all(g: nx.Graph) -> dict:
     features.update(clustering(g))
     features.update(connectivity(g))
     features.update(algebraic_connectivity(g))
+    features.update(modularity(g))
     return features
 
 

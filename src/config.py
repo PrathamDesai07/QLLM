@@ -43,7 +43,7 @@ GRAPH_DEFAULTS = {
 # ── Pauli-Correlation Encoding Defaults ────────────────────────────────
 PCE = {
     "default_k": 2,                    # compression order for manual PCE
-    "max_k": 4,                        # maximum order to consider
+    "max_k": 3,                        # maximum order to consider
 }
 
 # ── HuggingFace Token ──────────────────────────────────────────────────

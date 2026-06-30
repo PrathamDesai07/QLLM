@@ -37,6 +37,7 @@
   "largest_component_size": 12,
   "component_size_ratio": 1.0,
   "algebraic_connectivity": 0.157065,
+  "modularity": 0.399444,
   "graph_id": "community_12_1",
   "family": "community",
   "params": {

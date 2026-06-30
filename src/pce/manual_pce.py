@@ -128,9 +128,70 @@ def encode_k2_paired_pauli(g: nx.Graph, seed: int | None = None) -> dict:
 
 # ── Dispatch ───────────────────────────────────────────────────────────
 
+def encode_k3_triple_pauli(g: nx.Graph, seed: int | None = None) -> dict:
+    """k=3 encoding: each variable → 3-qubit Pauli string for dense modular graphs.
+
+    Variables get distinct 3-qubit (X/Y/Z) string assignments.
+    Falls back to k=2 if insufficient combinations exist.
+    """
+    n = g.number_of_nodes()
+    # m qubits: C(m, 3) * 3^3 >= n → approximate
+    m = 3
+    while m * (m - 1) * (m - 2) // 6 * 27 < n:
+        m += 1
+        if m > 10:
+            return encode_k2_paired_pauli(g, seed=seed)
+
+    nodes = sorted(g.nodes(), key=lambda v: g.degree(v), reverse=True)
+
+    qubit_triples = list(itertools.combinations(range(m), 3))
+    pauli_triples = list(itertools.product(PAULI_OPS, repeat=3))
+    all_assignments = list(itertools.product(qubit_triples, pauli_triples))
+
+    # Also add k=2 and k=1 assignments as fallback options
+    qubit_pairs = list(itertools.combinations(range(m), 2))
+    pauli_pairs = list(itertools.product(PAULI_OPS, repeat=2))
+    all_assignments_all = list(all_assignments) + \
+        list(itertools.product(qubit_pairs, pauli_pairs)) + \
+        list(itertools.product([(q,) for q in range(m)], [(p,) for p in PAULI_OPS]))
+
+    if len(all_assignments_all) < n:
+        return encode_k2_paired_pauli(g, seed=seed)
+
+    pauli_strings: dict[int, str] = {}
+    variable_to_pauli_map: dict[int, dict] = {}
+
+    for idx, node in enumerate(nodes):
+        qubits, paulis = all_assignments_all[idx]
+        label = ["I"] * m
+        for q, p in zip(qubits, paulis):
+            label[q] = p
+        ps = "".join(label)
+        pauli_strings[idx] = ps
+        variable_to_pauli_map[node] = {
+            "qubits": list(qubits),
+            "paulis": list(paulis),
+            "pauli_string": ps,
+        }
+
+    compression_ratio = round(n / m, 2) if m else 1.0
+    return {
+        "k": 3,
+        "num_physical_qubits": m,
+        "num_variables": n,
+        "compression_ratio": compression_ratio,
+        "strategy": "k3_triple_pauli",
+        "pauli_strings": pauli_strings,
+        "variable_to_pauli_map": {str(k): v for k, v in variable_to_pauli_map.items()},
+    }
+
+
+# ── Dispatch ───────────────────────────────────────────────────────────
+
 ENCODERS = {
     1: encode_k1_single_pauli,
     2: encode_k2_paired_pauli,
+    3: encode_k3_triple_pauli,
 }
 
 

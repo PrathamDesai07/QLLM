@@ -37,6 +37,7 @@
   "largest_component_size": 20,
   "component_size_ratio": 1.0,
   "algebraic_connectivity": 0.393943,
+  "modularity": 0.26,
   "graph_id": "d_regular_20_3",
   "family": "d_regular",
   "params": {

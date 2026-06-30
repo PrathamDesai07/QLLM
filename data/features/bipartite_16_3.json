@@ -37,6 +37,7 @@
   "largest_component_size": 16,
   "component_size_ratio": 1.0,
   "algebraic_connectivity": 0.443437,
+  "modularity": 0.210738,
   "graph_id": "bipartite_16_3",
   "family": "bipartite",
   "params": {

@@ -1,0 +1,342 @@
+{
+  "method_summary": {
+    "baseline_qaoa": {
+      "mean_approximation_ratio": 0.6977,
+      "std_approximation_ratio": 0.0847,
+      "median_approximation_ratio": 0.696,
+      "mean_gradient_norm": 0.012041,
+      "median_gradient_norm": 0.006352,
+      "mean_compression_ratio": 1.0,
+      "n": 81
+    },
+    "llm_pce": {
+      "mean_approximation_ratio": 0.6531,
+      "std_approximation_ratio": 0.1094,
+      "median_approximation_ratio": 0.6334,
+      "mean_gradient_norm": 0.041469,
+      "median_gradient_norm": 0.003423,
+      "mean_compression_ratio": 2.0084,
+      "n": 81
+    },
+    "pce_baseline_k1": {
+      "mean_approximation_ratio": 0.6656,
+      "std_approximation_ratio": 0.101,
+      "median_approximation_ratio": 0.6656,
+      "mean_gradient_norm": 0.041039,
+      "median_gradient_norm": 0.00926,
+      "mean_compression_ratio": 2.7984,
+      "n": 81
+    },
+    "pce_baseline_k2": {
+      "mean_approximation_ratio": 0.6916,
+      "std_approximation_ratio": 0.1004,
+      "median_approximation_ratio": 0.6894,
+      "mean_gradient_norm": 0.074825,
+      "median_gradient_norm": 0.015217,
+      "mean_compression_ratio": 4.9877,
+      "n": 81
+    },
+    "rule_pce": {
+      "mean_approximation_ratio": 0.6781,
+      "std_approximation_ratio": 0.1092,
+      "median_approximation_ratio": 0.6744,
+      "mean_gradient_norm": 0.031645,
+      "median_gradient_norm": 0.012082,
+      "mean_compression_ratio": 3.9012,
+      "n": 81
+    }
+  },
+  "best_method_win_rates": {
+    "baseline_qaoa": {
+      "n_wins": 40,
+      "pct": 49.4
+    },
+    "pce_baseline_k2": {
+      "n_wins": 30,
+      "pct": 37.0
+    },
+    "pce_baseline_k1": {
+      "n_wins": 6,
+      "pct": 7.4
+    },
+    "llm_pce": {
+      "n_wins": 5,
+      "pct": 6.2
+    },
+    "rule_pce": {
+      "n_wins": 0,
+      "pct": 0.0
+    }
+  },
+  "pairwise_comparison": {
+    "baseline_qaoa_vs_pce_baseline_k1": {
+      "n": 81,
+      "mean_delta": 0.0321,
+      "std_delta": 0.0517,
+      "median_delta": 0.0345,
+      "pct_improvement": 77.8
+    },
+    "baseline_qaoa_vs_pce_baseline_k2": {
+      "n": 81,
+      "mean_delta": 0.0061,
+      "std_delta": 0.0578,
+      "median_delta": 0.013,
+      "pct_improvement": 55.6
+    },
+    "baseline_qaoa_vs_llm_pce": {
+      "n": 81,
+      "mean_delta": 0.0446,
+      "std_delta": 0.0701,
+      "median_delta": 0.0444,
+      "pct_improvement": 86.4
+    },
+    "baseline_qaoa_vs_rule_pce": {
+      "n": 81,
+      "mean_delta": 0.0196,
+      "std_delta": 0.0657,
+      "median_delta": 0.0204,
+      "pct_improvement": 63.0
+    },
+    "pce_baseline_k1_vs_pce_baseline_k2": {
+      "n": 81,
+      "mean_delta": -0.026,
+      "std_delta": 0.0326,
+      "median_delta": -0.0208,
+      "pct_improvement": 18.5
+    },
+    "pce_baseline_k1_vs_rule_pce": {
+      "n": 81,
+      "mean_delta": -0.0125,
+      "std_delta": 0.0251,
+      "median_delta": 0.0,
+      "pct_improvement": 9.9
+    },
+    "pce_baseline_k2_vs_rule_pce": {
+      "n": 81,
+      "mean_delta": 0.0135,
+      "std_delta": 0.0279,
+      "median_delta": 0.0,
+      "pct_improvement": 39.5
+    },
+    "llm_pce_vs_pce_baseline_k1": {
+      "n": 81,
+      "mean_delta": -0.0124,
+      "std_delta": 0.0672,
+      "median_delta": -0.0129,
+      "pct_improvement": 33.3
+    },
+    "llm_pce_vs_pce_baseline_k2": {
+      "n": 81,
+      "mean_delta": -0.0385,
+      "std_delta": 0.0635,
+      "median_delta": -0.0336,
+      "pct_improvement": 22.2
+    },
+    "llm_pce_vs_rule_pce": {
+      "n": 81,
+      "mean_delta": -0.0249,
+      "std_delta": 0.0657,
+      "median_delta": -0.0215,
+      "pct_improvement": 33.3
+    }
+  },
+  "gradient_analysis": {
+    "threshold": 0.01,
+    "per_method": {
+      "baseline_qaoa": {
+        "total": 81,
+        "vanishing": 51,
+        "healthy": 30,
+        "vanishing_pct": 63.0
+      },
+      "llm_pce": {
+        "total": 81,
+        "vanishing": 63,
+        "healthy": 18,
+        "vanishing_pct": 77.8
+      },
+      "pce_baseline_k1": {
+        "total": 81,
+        "vanishing": 41,
+        "healthy": 40,
+        "vanishing_pct": 50.6
+      },
+      "pce_baseline_k2": {
+        "total": 81,
+        "vanishing": 32,
+        "healthy": 49,
+        "vanishing_pct": 39.5
+      },
+      "rule_pce": {
+        "total": 81,
+        "vanishing": 40,
+        "healthy": 41,
+        "vanishing_pct": 49.4
+      }
+    }
+  },
+  "compression_analysis": {
+    "llm_pce": {
+      "mean_compression": 2.0084,
+      "min_compression": 2.0,
+      "max_compression": 2.67,
+      "median_compression": 2.0
+    },
+    "pce_baseline_k1": {
+      "mean_compression": 2.7984,
+      "min_compression": 2.67,
+      "max_compression": 3.0,
+      "median_compression": 2.67
+    },
+    "pce_baseline_k2": {
+      "mean_compression": 4.9877,
+      "min_compression": 4.0,
+      "max_compression": 6.67,
+      "median_compression": 4.0
+    },
+    "rule_pce": {
+      "mean_compression": 3.9012,
+      "min_compression": 2.67,
+      "max_compression": 6.67,
+      "median_compression": 4.0
+    }
+  },
+  "family_breakdown": {
+    "bipartite": {
+      "per_method": {
+        "baseline_qaoa": {
+          "mean_approximation_ratio": 0.6037,
+          "std_approximation_ratio": 0.0359,
+          "n": 20
+        },
+        "llm_pce": {
+          "mean_approximation_ratio": 0.5245,
+          "std_approximation_ratio": 0.0441,
+          "n": 20
+        },
+        "pce_baseline_k1": {
+          "mean_approximation_ratio": 0.5356,
+          "std_approximation_ratio": 0.0279,
+          "n": 20
+        },
+        "pce_baseline_k2": {
+          "mean_approximation_ratio": 0.5677,
+          "std_approximation_ratio": 0.0384,
+          "n": 20
+        },
+        "rule_pce": {
+          "mean_approximation_ratio": 0.5356,
+          "std_approximation_ratio": 0.0279,
+          "n": 20
+        }
+      },
+      "best_method": "baseline_qaoa"
+    },
+    "community": {
+      "per_method": {
+        "baseline_qaoa": {
+          "mean_approximation_ratio": 0.7611,
+          "std_approximation_ratio": 0.0386,
+          "n": 20
+        },
+        "llm_pce": {
+          "mean_approximation_ratio": 0.7016,
+          "std_approximation_ratio": 0.077,
+          "n": 20
+        },
+        "pce_baseline_k1": {
+          "mean_approximation_ratio": 0.7061,
+          "std_approximation_ratio": 0.0566,
+          "n": 20
+        },
+        "pce_baseline_k2": {
+          "mean_approximation_ratio": 0.7287,
+          "std_approximation_ratio": 0.0464,
+          "n": 20
+        },
+        "rule_pce": {
+          "mean_approximation_ratio": 0.7061,
+          "std_approximation_ratio": 0.0566,
+          "n": 20
+        }
+      },
+      "best_method": "baseline_qaoa"
+    },
+    "d_regular": {
+      "per_method": {
+        "baseline_qaoa": {
+          "mean_approximation_ratio": 0.6598,
+          "std_approximation_ratio": 0.0651,
+          "n": 20
+        },
+        "llm_pce": {
+          "mean_approximation_ratio": 0.6574,
+          "std_approximation_ratio": 0.104,
+          "n": 20
+        },
+        "pce_baseline_k1": {
+          "mean_approximation_ratio": 0.6547,
+          "std_approximation_ratio": 0.0745,
+          "n": 20
+        },
+        "pce_baseline_k2": {
+          "mean_approximation_ratio": 0.6844,
+          "std_approximation_ratio": 0.0909,
+          "n": 20
+        },
+        "rule_pce": {
+          "mean_approximation_ratio": 0.6844,
+          "std_approximation_ratio": 0.0909,
+          "n": 20
+        }
+      },
+      "best_method": "pce_baseline_k2"
+    },
+    "erdos_renyi": {
+      "per_method": {
+        "baseline_qaoa": {
+          "mean_approximation_ratio": 0.7629,
+          "std_approximation_ratio": 0.0572,
+          "n": 21
+        },
+        "llm_pce": {
+          "mean_approximation_ratio": 0.7254,
+          "std_approximation_ratio": 0.0755,
+          "n": 21
+        },
+        "pce_baseline_k1": {
+          "mean_approximation_ratio": 0.761,
+          "std_approximation_ratio": 0.0598,
+          "n": 21
+        },
+        "pce_baseline_k2": {
+          "mean_approximation_ratio": 0.7811,
+          "std_approximation_ratio": 0.0619,
+          "n": 21
+        },
+        "rule_pce": {
+          "mean_approximation_ratio": 0.7811,
+          "std_approximation_ratio": 0.0619,
+          "n": 21
+        }
+      },
+      "best_method": "pce_baseline_k2"
+    }
+  },
+  "rule_pce_vs_llm": {
+    "approx_ratio_delta": {
+      "mean": 0.0249,
+      "std": 0.0657,
+      "median": 0.0215,
+      "rule_wins": 51,
+      "llm_wins": 27,
+      "n": 81
+    },
+    "gradient_norm_delta": {
+      "mean": -0.009824,
+      "std": 0.300111,
+      "median": 0.006178,
+      "n": 81
+    }
+  }
+}

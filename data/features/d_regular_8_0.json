@@ -31,17 +31,21 @@
     2.4,
     2.5
   ],
-  "avg_clustering": 0.0,
-  "transitivity": 0.0,
-  "num_components": 1,
-  "largest_component_size": 8,
-  "component_size_ratio": 1.0,
-  "algebraic_connectivity": 0.292893,
+  "avg_clustering": 0.375,
+  "transitivity": 0.375,
+  "num_components": 2,
+  "largest_component_size": 5,
+  "component_size_ratio": 0.625,
+  "algebraic_connectivity": 0.0,
+  "modularity": 0.46875,
   "graph_id": "d_regular_8_0",
   "family": "d_regular",
   "params": {
-    "n": 8,
-    "d": 2,
-    "seed": 0
+    "graph_id": "d_regular_8_4",
+    "family": "d_regular",
+    "params": {
+      "n": 8,
+      "d": 2
+    }
   }
 }

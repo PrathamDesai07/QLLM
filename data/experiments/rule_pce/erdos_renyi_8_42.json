@@ -1,0 +1,42 @@
+{
+  "graph_id": "erdos_renyi_8_42",
+  "family": "erdos_renyi",
+  "num_nodes": 8,
+  "num_edges": 18,
+  "method": "rule_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -4.597384242914863,
+  "optimal_params": [
+    4.343432050118066,
+    0.19983966429061403
+  ],
+  "approximation_ratio": 0.807049,
+  "gradient_norm_at_opt": 0.023268,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T16:39:05.346899+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 8,
+    "num_edges": 18,
+    "density": 0.642857,
+    "degree_mean": 4.5,
+    "avg_clustering": 0.625,
+    "modularity": 0.111111
+  },
+  "extra": {
+    "k": 2,
+    "strategy": "slight_x_bias",
+    "rule_name": "family_k2",
+    "gradient_risk_level": "medium",
+    "gradient_risk_reasoning": "Small graph (n=8) (risk score: 0.20)",
+    "num_physical_qubits": 2,
+    "num_variables": 8,
+    "compression_ratio": 4.0,
+    "optimal_pce_value": 11.298692121457432,
+    "optimal_maxcut_exact": 14.0,
+    "nfeval": 41
+  }
+}

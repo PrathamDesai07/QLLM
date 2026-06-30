@@ -130,7 +130,8 @@ def pattern_preferred_k(df: pd.DataFrame) -> dict[str, Any]:
     """For each feature, bin the feature and find which k gives the best
     mean approximation ratio in each bin."""
     features = ["density", "degree_mean", "degree_std", "avg_clustering",
-                "transitivity", "algebraic_connectivity", "component_size_ratio"]
+                "transitivity", "algebraic_connectivity", "modularity",
+                "component_size_ratio"]
 
     results: dict[str, Any] = {}
     for feat in features:
@@ -185,8 +186,8 @@ def pattern_gradient_risk(df: pd.DataFrame) -> dict[str, Any]:
     }
 
     features = ["density", "degree_mean", "degree_std", "avg_clustering",
-                "transitivity", "algebraic_connectivity", "num_nodes",
-                "component_size_ratio"]
+                "transitivity", "algebraic_connectivity", "modularity",
+                "num_nodes", "component_size_ratio"]
 
     for feat in features:
         if feat not in pce_df.columns:

@@ -1,0 +1,96 @@
+{
+  "k": 1,
+  "num_physical_qubits": 3,
+  "num_variables": 8,
+  "compression_ratio": 2.67,
+  "strategy": "k1_single_pauli",
+  "pauli_strings": {
+    "0": "XII",
+    "1": "IXI",
+    "2": "IIX",
+    "3": "YII",
+    "4": "IYI",
+    "5": "IIY",
+    "6": "ZII",
+    "7": "IZI"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "XII"
+    },
+    "7": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IXI"
+    },
+    "1": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIX"
+    },
+    "2": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "YII"
+    },
+    "3": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IYI"
+    },
+    "4": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIY"
+    },
+    "5": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "ZII"
+    },
+    "6": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IZI"
+    }
+  },
+  "graph_id": "community_8_3",
+  "family": "community",
+  "rule_name": "family_baseline_fallback",
+  "rule_strategy": "x_only",
+  "gradient_risk": "high"
+}

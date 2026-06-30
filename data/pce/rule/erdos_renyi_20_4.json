@@ -1,0 +1,256 @@
+{
+  "k": 2,
+  "num_physical_qubits": 3,
+  "num_variables": 20,
+  "compression_ratio": 6.67,
+  "strategy": "k2_paired_pauli",
+  "pauli_strings": {
+    "0": "XXI",
+    "1": "XYI",
+    "2": "XZI",
+    "3": "YXI",
+    "4": "YYI",
+    "5": "YZI",
+    "6": "ZXI",
+    "7": "ZYI",
+    "8": "ZZI",
+    "9": "XIX",
+    "10": "XIY",
+    "11": "XIZ",
+    "12": "YIX",
+    "13": "YIY",
+    "14": "YIZ",
+    "15": "ZIX",
+    "16": "ZIY",
+    "17": "ZIZ",
+    "18": "IXX",
+    "19": "IXY"
+  },
+  "variable_to_pauli_map": {
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XXI"
+    },
+    "3": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XYI"
+    },
+    "6": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "XZI"
+    },
+    "7": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "X"
+      ],
+      "pauli_string": "YXI"
+    },
+    "8": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YYI"
+    },
+    "13": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "YZI"
+    },
+    "5": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "X"
+      ],
+      "pauli_string": "ZXI"
+    },
+    "16": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Y"
+      ],
+      "pauli_string": "ZYI"
+    },
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZZI"
+    },
+    "1": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XIX"
+    },
+    "9": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XIY"
+    },
+    "17": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "XIZ"
+    },
+    "10": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "X"
+      ],
+      "pauli_string": "YIX"
+    },
+    "11": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YIY"
+    },
+    "12": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "YIZ"
+    },
+    "14": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "X"
+      ],
+      "pauli_string": "ZIX"
+    },
+    "15": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Y"
+      ],
+      "pauli_string": "ZIY"
+    },
+    "19": {
+      "qubits": [
+        0,
+        2
+      ],
+      "paulis": [
+        "Z",
+        "Z"
+      ],
+      "pauli_string": "ZIZ"
+    },
+    "4": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "IXX"
+    },
+    "18": {
+      "qubits": [
+        1,
+        2
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "IXY"
+    }
+  },
+  "graph_id": "erdos_renyi_20_4",
+  "family": "erdos_renyi",
+  "rule_name": "family_k2",
+  "rule_strategy": "slight_x_bias",
+  "gradient_risk": "low"
+}

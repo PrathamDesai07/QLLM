@@ -1,0 +1,136 @@
+{
+  "k": 1,
+  "num_physical_qubits": 4,
+  "num_variables": 12,
+  "compression_ratio": 3.0,
+  "strategy": "k1_single_pauli",
+  "pauli_strings": {
+    "0": "XIII",
+    "1": "IXII",
+    "2": "IIXI",
+    "3": "IIIX",
+    "4": "YIII",
+    "5": "IYII",
+    "6": "IIYI",
+    "7": "IIIY",
+    "8": "ZIII",
+    "9": "IZII",
+    "10": "IIZI",
+    "11": "IIIZ"
+  },
+  "variable_to_pauli_map": {
+    "2": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "XIII"
+    },
+    "5": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IXII"
+    },
+    "11": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIXI"
+    },
+    "1": {
+      "qubits": [
+        3
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIIX"
+    },
+    "6": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "YIII"
+    },
+    "7": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IYII"
+    },
+    "8": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIYI"
+    },
+    "9": {
+      "qubits": [
+        3
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIIY"
+    },
+    "3": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "ZIII"
+    },
+    "0": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IZII"
+    },
+    "4": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IIZI"
+    },
+    "10": {
+      "qubits": [
+        3
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IIIZ"
+    }
+  },
+  "graph_id": "bipartite_12_2",
+  "family": "bipartite",
+  "rule_name": "family_baseline_fallback",
+  "rule_strategy": "xz_mix",
+  "gradient_risk": "medium"
+}

@@ -1,0 +1,42 @@
+{
+  "graph_id": "community_12_3",
+  "family": "community",
+  "num_nodes": 12,
+  "num_edges": 26,
+  "method": "rule_pce",
+  "qaoa_p": 1,
+  "optimizer": "COBYLA",
+  "max_iters": 200,
+  "optimal_energy": -3.141208063895942,
+  "optimal_params": [
+    4.260180991278228,
+    3.4202954948144733
+  ],
+  "approximation_ratio": 0.809478,
+  "gradient_norm_at_opt": 0.028302,
+  "convergence_iters": null,
+  "success": true,
+  "timestamp": "2026-06-30T16:35:16.796256+00:00",
+  "duration_seconds": null,
+  "params": {
+    "num_nodes": 12,
+    "num_edges": 26,
+    "density": 0.393939,
+    "degree_mean": 4.3333,
+    "avg_clustering": 0.693254,
+    "modularity": 0.343195
+  },
+  "extra": {
+    "k": 1,
+    "strategy": "x_only",
+    "rule_name": "family_baseline_fallback",
+    "gradient_risk_level": "medium",
+    "gradient_risk_reasoning": "No significant risk factors (risk score: 0.20)",
+    "num_physical_qubits": 4,
+    "num_variables": 12,
+    "compression_ratio": 3.0,
+    "optimal_pce_value": 14.57060403194797,
+    "optimal_maxcut_exact": 18.0,
+    "nfeval": 171
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "k": 1,
+  "num_physical_qubits": 7,
+  "num_variables": 20,
+  "compression_ratio": 2.86,
+  "strategy": "k1_single_pauli",
+  "pauli_strings": {
+    "0": "XIIIIII",
+    "1": "IXIIIII",
+    "2": "IIXIIII",
+    "3": "IIIXIII",
+    "4": "IIIIXII",
+    "5": "IIIIIXI",
+    "6": "IIIIIIX",
+    "7": "YIIIIII",
+    "8": "IYIIIII",
+    "9": "IIYIIII",
+    "10": "IIIYIII",
+    "11": "IIIIYII",
+    "12": "IIIIIYI",
+    "13": "IIIIIIY",
+    "14": "ZIIIIII",
+    "15": "IZIIIII",
+    "16": "IIZIIII",
+    "17": "IIIZIII",
+    "18": "IIIIZII",
+    "19": "IIIIIZI"
+  },
+  "variable_to_pauli_map": {
+    "6": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "XIIIIII"
+    },
+    "8": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IXIIIII"
+    },
+    "10": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIXIIII"
+    },
+    "14": {
+      "qubits": [
+        3
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIIXIII"
+    },
+    "1": {
+      "qubits": [
+        4
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIIIXII"
+    },
+    "13": {
+      "qubits": [
+        5
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIIIIXI"
+    },
+    "0": {
+      "qubits": [
+        6
+      ],
+      "paulis": [
+        "X"
+      ],
+      "pauli_string": "IIIIIIX"
+    },
+    "4": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "YIIIIII"
+    },
+    "9": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IYIIIII"
+    },
+    "11": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIYIIII"
+    },
+    "12": {
+      "qubits": [
+        3
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIIYIII"
+    },
+    "15": {
+      "qubits": [
+        4
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIIIYII"
+    },
+    "18": {
+      "qubits": [
+        5
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIIIIYI"
+    },
+    "2": {
+      "qubits": [
+        6
+      ],
+      "paulis": [
+        "Y"
+      ],
+      "pauli_string": "IIIIIIY"
+    },
+    "3": {
+      "qubits": [
+        0
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "ZIIIIII"
+    },
+    "5": {
+      "qubits": [
+        1
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IZIIIII"
+    },
+    "17": {
+      "qubits": [
+        2
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IIZIIII"
+    },
+    "19": {
+      "qubits": [
+        3
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IIIZIII"
+    },
+    "7": {
+      "qubits": [
+        4
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IIIIZII"
+    },
+    "16": {
+      "qubits": [
+        5
+      ],
+      "paulis": [
+        "Z"
+      ],
+      "pauli_string": "IIIIIZI"
+    }
+  },
+  "graph_id": "bipartite_20_0",
+  "family": "bipartite",
+  "rule_name": "family_baseline_fallback",
+  "rule_strategy": "xz_mix",
+  "gradient_risk": "low"
+}

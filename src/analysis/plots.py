@@ -281,7 +281,7 @@ def plot_feature_correlation_heatmap(df: pd.DataFrame,
     """Heatmap: Spearman correlations between graph features and
     performance metrics."""
     feat_cols = ["density", "degree_mean", "degree_std", "avg_clustering",
-                 "transitivity", "algebraic_connectivity",
+                 "transitivity", "modularity", "algebraic_connectivity",
                  "component_size_ratio", "num_nodes"]
     metric_cols = ["approximation_ratio", "gradient_norm_at_opt",
                    "compression_ratio"]

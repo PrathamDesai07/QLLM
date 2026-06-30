@@ -1,0 +1,112 @@
+{
+  "k": 2,
+  "num_physical_qubits": 2,
+  "num_variables": 8,
+  "compression_ratio": 4.0,
+  "strategy": "k2_paired_pauli",
+  "pauli_strings": {
+    "0": "XX",
+    "1": "XY",
+    "2": "XZ",
+    "3": "YX",
+    "4": "YY",
+    "5": "YZ",
+    "6": "ZX",
+    "7": "ZY"
+  },
+  "variable_to_pauli_map": {
+    "0": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "X"
+      ],
+      "pauli_string": "XX"
+    },
+    "1": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Y"
+      ],
+      "pauli_string": "XY"
+    },
+    "2": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "X",
+        "Z"
+      ],
+      "pauli_string": "XZ"
+    },
+    "3": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "X"
+      ],
+      "pauli_string": "YX"
+    },
+    "4": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Y"
+      ],
+      "pauli_string": "YY"
+    },
+    "5": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Y",
+        "Z"
+      ],
+      "pauli_string": "YZ"
+    },
+    "6": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "X"
+      ],
+      "pauli_string": "ZX"
+    },
+    "7": {
+      "qubits": [
+        0,
+        1
+      ],
+      "paulis": [
+        "Z",
+        "Y"
+      ],
+      "pauli_string": "ZY"
+    }
+  },
+  "graph_id": "d_regular_8_3",
+  "family": "d_regular",
+  "rule_name": "family_k2",
+  "rule_strategy": "xz_dominant",
+  "gradient_risk": "high"
+}
